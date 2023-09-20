@@ -3,6 +3,8 @@ Tecnologias usadas:  HTML, CSS e JS
 Layout: Figma
 <<<<<<< HEAD
 
+Grupo: 03
+
 # Link do layout
 
 https://www.figma.com/file/QFt7KIPpKStWVHc5QK9Zq8/Site%2FRestaurante?type=design&node-id=0%3A1&mode=design&t=vSQktO8zKRHfSz8d-1
