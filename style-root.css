@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Inline&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: #4F2F24;
+}
+
+body {
+    background-color: #FFFCF7;
+    font-family: 'Roboto';
+    font-size: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;  
+}
+
+.cabecalho-imagem {
+    width: 150px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 37px;
+    align-items: center;
+}
+
+.cabecalho-button {
+    padding: 10px;
+    border-radius: 48px;
+    background: #F2BD57;
+    width: 120px;
+    border: none;
+    font-size: 100%;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+.cabecalho-button:hover{
+    box-shadow: 0px 0px 10px #F2BD57;
+}
+
+h1 {
+    font-family: 'Audiowide';
+    font-size: 65px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-top: 2px solid #D9D9D9;
+    padding-bottom: 30px;
+}
+
+.titulo-footer {
+    font-family: 'Audiowide';
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.cabecalho-footer-geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.cabecalho-footer-geral img {
+    width: 40px;
+}
+
+.cabecalho-footer {
+    display: flex;
+    gap: 20px;
+}
+
+.copyrigth {
+    padding-top: 20px;
+    text-align: center;
+    color: #9E9797;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+    padding-left: 70px;
+}
+
+.cadastro-para-promocoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+}
+
+.cadastro-para-promocoes img {
+    width: 40px;
+}
+
+
+.email-newsletter {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.logo-rodape {
+    display: flex;
+    padding-top: 80px;
+    margin-bottom: 20px;
+}
+
+.button-confirmar-email-geral {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.botton-confirmar-email {
+    all: unset;
+    cursor: pointer;
+    outline: revert;
+}
+
+/*redes sociais*/
+
+.nossas-redes{
+    display: flex;
+}
+
+.nossas-redes .icon{
+    margin: 0 10px;
+    color: #4F2F24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s cubic-bezier(0.68,-0,55,0,265,1,55);
+}
+
+.nossas-redes .icon span{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: #F2BD57;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+.nossas-redes .icon span i{
+font-size: 20px;
+line-height: 42px;
+}
+
+.nossas-redes .icon:hover span {
+    color: #ffffff;
+}
+
+.nossas-redes .icon .rede{
+    position: absolute;
+    top: 0px;
+    background: #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0,55,0,265,1,55);
+}
+
+.nossas-redes .icon:hover .rede{
+    top: -50px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nossas-redes .icon .rede:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.nossas-redes .icon:hover span,
+.nossas-redes .icon:hover .rede{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+.nossas-redes .facebook:hover span,
+.nossas-redes .facebook:hover .rede,
+.nossas-redes .facebook:hover .rede:before{
+    background: #3B5999;
+}
+
+.nossas-redes .instagram:hover span,
+.nossas-redes .instagram:hover .rede,
+.nossas-redes .instagram:hover .rede:before{
+    background: #E1306C;
+}
+
+.nossas-redes .youtube:hover span,
+.nossas-redes .youtube:hover .rede,
+.nossas-redes .youtube:hover .rede:before{
+    background: #DE463B;
+}
+
+.nossas-redes .twitter:hover span,
+.nossas-redes .twitter:hover .rede,
+.nossas-redes .twitter:hover .rede:before{
+    background: #46C1F6;
+}
