@@ -1,16 +1,15 @@
 .prato-principal-h1{
     padding-top: 10px;  
-    position:absolute;
-    top:1.5em;
+    /*position:absolute;*/
+    /*top:1.5em;*/
 }
 
-.conteiner{  
+.conteiner, .about-us{  
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding-bottom: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 15px;
 }
 
 .p-prato-principal, .section-principal {
@@ -23,8 +22,8 @@
 
 .prato-principal{
     padding: 10px;
-    /*width: 600px; */
-    /*border-radius: 50px;*/
+    width: 600px; 
+    border-radius: 50px;
     font-size: 16px;
 }
 
@@ -32,6 +31,18 @@
     text-align: center;
     font-size: 30px;
 }
+
+/*.about-us{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px; 
+    text-align:center;
+    gap: 10px;
+    font-family: roboto;
+    font-size: 18px;
+    margin-top: 10px;   
+}*/
 
 .p-about-us {
     display: flex;
@@ -45,20 +56,36 @@
     margin-top: 10px;
 }
 
-.section-carousel{
-    position: relative;
+
+.about-img{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.carousel{
+    /*position: relative;
     width: 100%;
-    height: 100px;
+    height: 100px;*/
     overflow:hidden;
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
    
 }
 .carousel-img img{
-    position: absolute;
+   /* position: absolute;
+    list-style: none;
     width: 100%;
     height:340px;
     opacity: 0;
-    transition: opacity 3s ease-in-out;
-    
+    transition: opacity 3s ease-in-out;*/
+    margin: auto;
+    height: 400px;
+    width: 100%;
 }
 
 .carousel-img img.ativo{
