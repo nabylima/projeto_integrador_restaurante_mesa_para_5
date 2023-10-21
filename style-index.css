@@ -1,63 +1,36 @@
 .prato-principal-h1{
     padding-top: 10px;  
-    font-size: 50px;
+    position:absolute;
+    top:1.5em;
 }
 
-.conteiner, .about-us{  
+.conteiner{  
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 50px;
-    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 10px;
 }
 
 .p-prato-principal, .section-principal {
     display: flex;
-    text-align:justify;
-    font-size: 25px;
+    text-align: center;
+    font-size: 18px;
     padding-top: 10px;
     font-family: roboto;
-    text-justify: auto
 }
 
 .prato-principal{
     padding: 10px;
-    width: 600px; 
-    border-radius: 50px;
+    /*width: 600px; */
+    /*border-radius: 50px;*/
     font-size: 16px;
-}
-
-.botao-menu{
-    padding-top: 10px;  
-}
-
-.menu-button{
-    padding: 13px;
-    border-radius: 48px;
-    background: #F2BD57;
-    width: 130px;
-    border: none;
-    font-size: 100%;
-    font-family: 'Roboto';
-    cursor: pointer;
 }
 
 .h1-about-us,  .h1-carousel{
     text-align: center;
-    font-size: 35px;
-    padding-bottom: 15px;
-}
-
-.about-us{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 20px; 
-    text-align:center;
-    gap: 10px;
-    font-family: roboto;
-    font-size: 18px;
-    margin-top: 10px;   
+    font-size: 30px;
 }
 
 .p-about-us {
@@ -65,57 +38,29 @@
     flex-direction: row;
     align-items: center;
     padding: 20px; 
-    text-align:justify;
+    text-align:center;
     gap: 10px;
     font-family: roboto;
     font-size: 18px;
-    width: 600px;
-    font-size: 25px;
-    padding-top: 10px;
-    font-family: roboto;
+    margin-top: 10px;
 }
 
-.about-img{
-    display: flex;
-    flex-direction: row;
+.section-carousel{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow:hidden;
+   
+}
+.carousel-img img{
+    position: absolute;
+    width: 100%;
+    height:340px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+    
 }
 
-.quem-somos-img {
-    width: 550px;
+.carousel-img img.ativo{
+    opacity: 1;
 }
-
-.carousel {
-    margin-top: 1.25rem;
-    margin-bottom: 3.125rem;
-    padding-bottom: 40px;
-    background: #FFFCF7;
-}
-
-.carousel img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 14px;
-    box-shadow: -5px 5px 4px #F2BD57, 5px 5px 4px #F2BD57, 0 -5px 4px #F2BD57;
-}
-
-.texto-carrossel {
-    margin-top: 14px;
-    box-shadow: 0px 0px 3px #808080;
-    background-color: #F8F2E9;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.carousel-cell {
-    text-align: center;
-    width: auto;
-    height: auto;
-    border-radius: 14px;
-    margin-right: 50px;
-    counter-increment: carousel-cell;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-}
-
