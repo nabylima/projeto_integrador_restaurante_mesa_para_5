@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/style-index.css">
     <script src="/script-index.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/flickity-carousel/flickity.css">
+    <script src="/flickity-carousel/flickity.pkgd.js" defer></script>
 </head>
 
 <body>
@@ -34,18 +36,21 @@
                       servido com arroz, couve, farofa e outros acompanhamentos, representando a riqueza da culinária e
                       cultura do Brasil.
                   </p>
-                </section>
+              </section>
+              <div class="botao-menu">
+                <button class="menu-button"><a href="/pages/cardapio/cardapio.html">Veja o menu</button></a>
+              </div>
             </div>
             <div class="prato-principal-img">
-              <img class="prato-principal" src="img/prato_principal.jpg" width="200" alt="Imagem do prato principal" class="img-prato-principal">
+              <img class="prato-principal" src="/img/Prato Principal - img.png" width="400" alt="Imagem do prato principal" class="img-prato-principal">
             </div>
         </div>
-        <div class="section-about-us">
-            <h1 class="h1-about-us">Sobre Nós</h1>
+        <div class="about-us">
             <div class="about-img">
-              <img class="quem-somos-img" src="/img/quem-somo-img.jpeg" width="400" alt="Imagem chefe de cozinha">
+              <img class="quem-somos-img" src="/img/sobre-nos 1.png" width="400" alt="Imagem chefe de cozinha">
             </div>
-            <section class=""></section>
+            <section class="">
+            <h1 class="h1-about-us">Sobre Nós</h1>
               <p class="p-about-us">
                 Bem-vindos ao "Mesa para 5"! Somos um restaurante acolhedor que celebra a culinária como uma experiência
                 de união. Nosso cardápio oferece uma ampla variedade de pratos deliciosos, desde receitas tradicionais
@@ -55,18 +60,29 @@
               </p>
             </section>
           </div>
-
-        <div class="section-carousel">
-            <h1 class="h1-carousel">Cardápio em carrossel</h1>
-            <div class="carousel-img">
-              <img src="img/carrossel_bife.jpeg" alt="Bife Grelhado" width="100" class="ativo">
-              <img src="img/carrossel_lasanha.png" alt="Lasanha" width="100"  class="img2-carousel">
-              <img src="img/carrossel_salmão.jpeg" alt="Salmão" width="100" class="img3-carousel">
+        </div>
+        <div>
+          <h1 class="h1-carousel">Os mais pedidos</h1>
+          <div class="carousel" data-flickity='{"wrapAround": true}'>
+              <div class="carousel-cell">
+                <img src="img/carrossel_salmão.jpeg" alt="Salmão" width="400" >
+              </div>
+              <div class="carousel-cell">
+                <img src="img/carrossel_lasanha.png" alt="Lasanha" width="400">
+              </div>
+              <div class="carousel-cell">
+                <img src="/img/costela_combo3.jpg" alt="costela" width="400">
+              </div>
+              <div class="carousel-cell">
+                <img src="/img/camarão_combo1.jpg" alt="Camarão" width="400">
+              </div>
           </div>
         </div>
     </main>
+    <picture class="logo-rodape">
+      <a href="/index.html"><img class="cabecalho-imagem" src="/img/logo.png" alt="Logo do Restaurante Mesa Para 5" width="100"></a>
+    </picture>
     <footer class="footer">
-
         <div class="cadastro-para-promocoes">
           <h2 class="titulo-footer">Recebe Nossas Promoções</h2>
           <div>
