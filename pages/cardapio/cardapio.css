@@ -1,0 +1,2497 @@
+main {
+    height: 7683px;
+}
+
+.hero-cardapio {
+    height: 681px;
+    display: flex; 
+    align-items: center;
+}
+
+.hero-texto {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.titulo-cardapio {
+    margin-top: 33px;
+    color: #000;
+    text-align: center;
+    font-family: 'Audiowide';
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127px;
+}
+
+
+.subtitulo-1 {
+    /* width: 780px; */
+    margin-top: 68px;
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitulo-2 {
+    /* width: 780px; */
+    margin-top: 71px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitulo-3 {
+    /* width: 768px; */
+    margin-top: 17px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.button-delivery{
+    padding: 10px;
+    margin-top: 48px;
+    border-radius: 48px;
+    background: #F2BD57;
+    width: 120px;
+    border: none;
+    font-size: 100%;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+
+.categorias-cardapio {
+    width: 1290px;
+    height: 298px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-categorias {
+    width: 302px;
+    height: 64px;
+    color: #000;
+    text-align: center;
+    font-family: Audiowide;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icones-categorias {
+    width: 1290px;
+    height: 132px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* categoria especiais */
+.especiais {
+    width: 1290px;
+    margin-top: 48px;
+}
+
+.especiais-titulo {
+    width: 380px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.especiais-cards {
+    width: 1290px;
+    margin-top: 28.58px;
+    display: flex;    
+}
+
+.conteiner-feijoada {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;
+}
+.conteiner-feijoada img {
+    width: 100%;
+}
+.texto-prato-feijoada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px;
+}
+.texto-descr-feijoada{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px;       
+}
+.preco-feijoada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px; 
+}
+.button-feijoada {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;    
+}
+
+.conteiner-file-frango {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;
+}
+.conteiner-file-frango img {
+    width: 100%;    
+}
+.texto-prato-file-frango{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px;
+}
+.texto-descr-file-frango {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px;   
+}
+.preco-file-frango {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;      
+}
+.button-file-frango {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;   
+}
+
+.conteiner-peixe-da-casa {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;   
+}
+.conteiner-peixe-da-casa img {
+    width: 100%;
+}
+.texto-prato-peixe-da-casa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px; 
+}
+.texto-descr-peixe-da-casa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px; 
+}
+.preco-peixe-da-casa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;      
+}
+.button-peixe-da-casa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;     
+}
+
+.conteiner-feijao-tropeiro {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;   
+}
+.conteiner-feijao-tropeiro img {
+    width: 100%;   
+}
+.texto-prato-feijao-tropeiro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px;  
+}
+.texto-descr-feijao-tropeiro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 283px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px; 
+}
+.preco-feijao-tropeiro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;  
+}
+.button-feijao-tropeiro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px; 
+}
+
+/* categoria entradas */
+
+.entradas {
+    width: 1283px;
+    height: 376.96px;
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+.entradas-cards {
+    width: 499px;
+    height: 297.683px;
+    position: relative;  
+}
+#entradas-titulo-img {
+    width: 100%;
+    margin-top: 8.04px;
+
+}
+.entradas-titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 192px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 133.04px;   
+    margin-left: 307px; 
+}
+.conteiner-brusquettas {
+    width: 790.124px;
+    height: 376.962px;
+    position: relative;  
+}
+.conteiner-brusquettas img {
+    width: 100%;
+}
+.titulo-bruschetta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 155.943px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 67.77px;
+    margin-left: 338.12px;
+}
+/* .entrada-prato-1 {
+
+} */
+.tex-entrada-prato-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 287px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 191.96px;
+    margin-left: 106.12px;
+}
+.entrada-prato-1 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200.85px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 202.48px;
+    margin-left: 401.70px;
+}
+.preco-entrada-prato-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 193.96px;
+    margin-left: 609.12px;
+}
+.button-entrada-prato-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 187.79px;
+    margin-left: 695px;
+}
+/* .entrada-prato-2 {
+
+} */
+.tex-entrada-prato-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 371px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 227.96px;
+    margin-left: 106.12px;
+}
+.entrada-prato-2 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 118.023px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 239.22px;
+    margin-left: 484.52px;
+}
+.preco-entrada-prato-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 229.96px;
+    margin-left: 609.12px;
+}
+.button-entrada-prato-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 224.53px;
+    margin-left: 695px;
+}
+/* .entrada-prato-3 {
+
+} */
+.tex-entrada-prato-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 290px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 264.96px;
+    margin-left: 106.12px;
+}
+.entrada-prato-3 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 197.914px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 275.96px;
+    margin-left: 404.63px;
+}
+.preco-entrada-prato-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 266.96px;
+    margin-left: 609.12px;
+}
+.button-entrada-prato-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 261.27px;
+    margin-left: 695px;
+}
+/* .entrada-prato-4 {
+
+} */
+.tex-entrada-prato-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 311px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 301.96px;
+    margin-left: 106.12px;
+}
+.entrada-prato-4 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 179.106px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 312.70px;
+    margin-left: 423.44px;
+}
+.preco-entrada-prato-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 303.96px;
+    margin-left: 609.12px;
+}
+.button-entrada-prato-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 298.01px;
+    margin-left: 695px;
+}
+/* .entrada-prato-5 {
+
+} */
+.tex-entrada-prato-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 312px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 337.96px;
+    margin-left: 106.12px;
+}
+.entrada-prato-5 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 168.753px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 349.44px;
+    margin-left: 433.80px;
+}
+.preco-entrada-prato-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 339.96px;
+    margin-left: 609.12px;
+}
+.button-entrada-prato-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 334.75px;
+    margin-left: 695px;
+}
+
+/* categoria saladas */
+.saladas {
+    width: 1290px;
+    margin-top: 48px;
+}
+
+.saladas-titulo {
+    width: 380px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saladas-cards {
+    width: 1290px;
+    margin-top: 28.58px;
+    display: flex;    
+}
+
+.conteiner-salada-verde {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;
+}
+.conteiner-salada-verde img {
+    width: 100%;
+}
+.texto-prato-salada-verde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px;
+}
+.texto-descr-salada-verde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px;       
+}
+.preco-salada-verde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px; 
+}
+.button-salada-verde {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;    
+}
+
+.conteiner-salada-panzanella {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;
+}
+.conteiner-salada-panzanella img {
+    width: 100%;    
+}
+.texto-prato-salada-panzanella {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 184px;   
+    margin-left: 52.1px;
+}
+.texto-descr-salada-panzanella {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px;   
+}
+.preco-salada-panzanella {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;      
+}
+.button-salada-panzanella {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;   
+}
+
+.conteiner-salada-abacate {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;   
+}
+.conteiner-salada-abacate img {
+    width: 100%;
+}
+.texto-prato-salada-abacate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px; 
+}
+.texto-descr-salada-abacate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px; 
+}
+.preco-salada-abacate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;      
+}
+.button-salada-abacate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;     
+}
+
+.conteiner-salada-nozes {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;   
+}
+.conteiner-salada-nozes img {
+    width: 100%;   
+}
+.texto-prato-salada-nozes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px;  
+}
+.texto-descr-salada-nozes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px; 
+}
+.preco-salada-nozes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;  
+}
+.button-salada-nozes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px; 
+}
+
+/* categorias carnes */
+.carnes {
+    width: 1290px;
+    margin-top: 48px;
+}
+
+.carnes-titulo {
+    width: 380px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carnes-cards {
+    width: 1290px;
+    margin-top: 28.58px;
+    display: flex;    
+}
+
+.conteiner-file-ao-ponto {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;
+}
+.conteiner-file-ao-ponto img {
+    width: 100%;
+}
+.texto-prato-file-ao-ponto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px;
+}
+.texto-descr-file-ao-ponto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px;       
+}
+.preco-file-ao-ponto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px; 
+}
+.button-file-ao-ponto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;    
+}
+
+.conteiner-asinhas-frango {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;
+}
+.conteiner-asinhas-frango img {
+    width: 100%;    
+}
+.texto-prato-asinhas-frango {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 38.44px;
+}
+.texto-descr-asinhas-frango {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px;   
+}
+.preco-asinhas-frango {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;      
+}
+.button-asinhas-frango {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;   
+}
+
+.conteiner-carne-panela {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;   
+}
+.conteiner-carne-panela img {
+    width: 100%;
+}
+.texto-prato-carne-panela {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px; 
+}
+.texto-descr-carne-panela {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px; 
+}
+.preco-carne-panela {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;      
+}
+.button-carne-panela{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;     
+}
+
+.conteiner-peixe-molho {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;   
+}
+.conteiner-peixe-molho img {
+    width: 100%;   
+}
+.texto-prato-peixe-molho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 38px;  
+}
+.texto-descr-peixe-molho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px; 
+}
+.preco-peixe-molho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;  
+}
+.button-peixe-molho {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px; 
+}
+
+/* categoria vegetarianas e massas */
+.vegetarianas-massas {
+    width: 1290px;
+    margin-top: 48px;
+}
+
+.vegetarianas-massas-titulos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vegetarianas-titulo {
+    width: 380px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.massas-titulo {
+    width: 310px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vegetarianas-massas-cards {
+    width: 1290px;
+    margin-top: 28.58px;
+    display: flex;    
+}
+
+.conteiner-berinjela-recheada {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;
+}
+.conteiner-berinjela-recheada img {
+    width: 100%;
+}
+.texto-prato-berinjela-recheada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 184px;   
+    margin-left: 16.65px;
+}
+.texto-descr-berinjela-recheada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px;       
+}
+.preco-berinjela-recheada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px; 
+}
+.button-berinjela-recheada {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;    
+}
+
+.conteiner-repolho-refogado {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;
+}
+.conteiner-repolho-refogado img {
+    width: 100%;    
+}
+.texto-prato-repolho-refogado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 184px;   
+    margin-left: 17.44px;
+}
+.texto-descr-repolho-refogado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px;   
+}
+.preco-repolho-refogado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;      
+}
+.button-repolho-refogado {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;   
+}
+
+.conteiner-espaguete-molho {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;   
+}
+.conteiner-espaguete-molho img {
+    width: 100%;
+}
+.texto-prato-espaguete-molho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px; 
+}
+.texto-descr-espaguete-molho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px; 
+}
+.preco-espaguete-molho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;      
+}
+.button-espaguete-molho{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;     
+}
+
+.conteiner-espaguete-camarao {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;   
+}
+.conteiner-espaguete-camarao img {
+    width: 100%;   
+}
+.texto-prato-espaguete-camarao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 38px;  
+}
+.texto-descr-espaguete-camarao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px; 
+}
+.preco-espaguete-camarao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;  
+}
+.button-espaguete-camarao {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px; 
+}
+
+/* categorias acompanhamento */
+.acompanhamentos {
+    width: 1290px;
+    margin-top: 48px;
+}
+
+.acompanhamentos-titulo {
+    width: 443.336px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acompanhamentos-cards {
+    width: 1290px;
+    margin-top: 28.58px;
+    display: flex;    
+}
+
+.conteiner-arroz-branco {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;
+}
+.conteiner-arroz-branco img {
+    width: 100%;
+}
+.texto-prato-arroz-branco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 184px;   
+    margin-left: 51.65px;
+}
+.texto-descr-arroz-branco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 284.58px; 
+    margin-left: 10.1px;       
+}
+.preco-arroz-branco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px; 
+}
+.button-arroz-branco {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;    
+}
+
+.conteiner-arroz-primavera {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;
+}
+.conteiner-arroz-primavera img {
+    width: 100%;    
+}
+.texto-prato-arroz-primavera {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 38.44px;
+}
+.texto-descr-arroz-primavera {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px;   
+}
+.preco-arroz-primavera {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;      
+}
+.button-arroz-primavera {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;   
+}
+
+.conteiner-pure-batatas {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;   
+}
+.conteiner-pure-batatas img {
+    width: 100%;
+}
+.texto-prato-pure-batatas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 52.1px; 
+}
+.texto-descr-pure-batatas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 284.58px; 
+    margin-left: 10.1px; 
+}
+.preco-pure-batatas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;      
+}
+.button-pure-batatas{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px;     
+}
+
+.conteiner-batatas-fritas {
+    width: 293.924px;
+    height: 413.943px;
+    margin: auto;
+    position: relative;   
+}
+.conteiner-batatas-fritas img {
+    width: 100%;   
+}
+.texto-prato-batatas-fritas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 160px;   
+    margin-left: 38px;  
+}
+.texto-descr-batatas-fritas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 274px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 271.96px; 
+    margin-left: 10.1px; 
+}
+.preco-batatas-fritas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px; 
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 358.96px; 
+    margin-left: 14.1px;  
+}
+.button-batatas-fritas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102.873px;
+    height: 41.639px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-top: 348.63px; 
+    margin-right: 18.78px; 
+}
+
+/* categoria sobremesas e lanches */
+.sobremesas-lanches {
+    width: 1290px;
+    height: 643.20px;
+    margin-top: 48px;
+}
+.sobremesas-lanches-titulos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28.58px;
+}
+.conteiner-sobremesas-lanches {
+    width: 1283px;
+    height: 532.16px;
+    display: flex;
+    justify-content: space-between;
+}
+.sobremesas-titulo {
+    width: 310px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lanches-titulo {
+    width: 310px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sobremesas */
+.conteiner-sobremesas {
+    width: 622.139px;
+    height: 527.43px;
+    position: relative;  
+}
+.conteiner-sobremesas img {
+    width: 100%;
+}
+.titulo-sobremesas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 213.911px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 22.86px;
+    margin-left: 203.65px;
+}
+/* .sobremesa-1 {
+
+} */
+.tex-sobremesa-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 287px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 130.65px;
+    margin-left: 129.73px;
+}
+.sobremesa-1 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 79px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 141.72px;
+    margin-left: 359.65px;
+}
+.preco-sobremesa-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 132.72px;
+    margin-left: 443.65px;
+}
+.button-sobremesa-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 126.73px;
+    margin-left: 538.04px;
+}
+/* .sobremesa-2 {
+
+} */
+.tex-sobremesa-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 248px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 197.73px;
+    margin-left: 130.65px;
+}
+.sobremesa-2 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 208.80px;
+    margin-left: 298.65px;
+}
+.preco-sobremesa-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 199.87px;
+    margin-left: 443.65px;
+}
+.button-sobremesa-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 193.73px;
+    margin-left: 538.04px;
+}
+/* .sobremesa-3 {
+
+} */
+.tex-sobremesa-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 248px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 272.73px;
+    margin-left: 130.65px;
+}
+.sobremesa-3 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 73px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 283.08px;
+    margin-left: 364.65px;  
+}
+.preco-sobremesa-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 274.31px;
+    margin-left: 443.65px;
+}
+.button-sobremesa-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 268.73px;
+    margin-left: 538.04px;
+}
+/* .sobremesa-4 {
+
+} */
+.tex-sobremesa-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 248px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 343.73px;
+    margin-left: 130.65px;
+}
+.sobremesa-4 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 51px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 363.16px;
+    margin-left: 387.65px;
+}
+.preco-sobremesa-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 354.46px;
+    margin-left: 443.65px;
+}
+.button-sobremesa-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 348.73px;
+    margin-left: 538.04px;
+}
+/* .sobremesa-5 {
+
+} */
+.tex-sobremesa-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 248px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 438.73px;
+    margin-left: 130.65px;
+}
+.sobremesa-5 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 51px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 449.82px;
+    margin-left: 387.65px;
+}
+.preco-sobremesa-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 440.92px;
+    margin-left: 443.65px;
+}
+.button-sobremesa-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 434.73px;
+    margin-left: 538.04px;
+}
+
+/* lanches */
+.conteiner-lanches {
+    width: 622.139px;
+    height: 527.43px;
+    position: relative; 
+}
+.conteiner-lanches img {
+    width: 100%;   
+}
+.titulo-lanches {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 273px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 22.86px;
+    margin-left: 174px;
+}
