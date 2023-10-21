@@ -137,7 +137,7 @@
     color: #4F2F24;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .button-enviar:hover{
