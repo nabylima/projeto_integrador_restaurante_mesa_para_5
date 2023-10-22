@@ -1,25 +1,30 @@
-main {
-    height: 7683px;
-}
+
 
 .hero-cardapio {
+    width: 1288px;
+    height: 681px;
+    flex-shrink: 0;
     height: 681px;
     display: flex; 
+    justify-content: space-between;
     align-items: center;
 }
 
 .hero-texto {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    height: 681px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .titulo-cardapio {
-    margin-top: 33px;
+    width: 325px;
     color: #000;
     text-align: center;
     font-family: 'Audiowide';
-    font-size: 100px;
+    font-size: 65px;
     font-style: normal;
     font-weight: 400;
     line-height: 127px;
@@ -27,36 +32,36 @@ main {
 
 
 .subtitulo-1 {
-    /* width: 780px; */
+    width: 551px;
     margin-top: 68px;
     color: #000;
     text-align: center;
     font-family: 'Roboto';
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .subtitulo-2 {
-    /* width: 780px; */
+    width: 551px;
     margin-top: 71px;
     color: #4F2F24;
     text-align: center;
     font-family: 'Roboto';
-    font-size: 40px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .subtitulo-3 {
-    /* width: 768px; */
+    width: 315px;
     margin-top: 17px;
     color: #4F2F24;
     text-align: center;
     font-family: 'Roboto';
-    font-size: 40px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -67,17 +72,27 @@ main {
     margin-top: 48px;
     border-radius: 48px;
     background: #F2BD57;
-    width: 120px;
+    width: 173px;
+    height: 55px;
     border: none;
     font-size: 100%;
+    color: #4F2F24;
+    text-align: center;
     font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     cursor: pointer;
 }
-
+.img-hero {
+    width: 680px;
+    height: 681px;
+}
 
 .categorias-cardapio {
     width: 1290px;
-    height: 298px;
+    height: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,12 +100,11 @@ main {
 }
 
 .titulo-categorias {
-    width: 302px;
-    height: 64px;
+
     color: #000;
     text-align: center;
-    font-family: Audiowide;
-    font-size: 50px;
+    font-family: 'Audiowide';
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -105,7 +119,7 @@ main {
     color: #000;
     text-align: center;
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -505,7 +519,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 191.96px;
-    margin-left: 106.12px;
+    margin-left: 126.12px;
 }
 .entrada-prato-1 svg {
     position: absolute;
@@ -565,7 +579,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 227.96px;
-    margin-left: 106.12px;
+    margin-left: 126.12px;
 }
 .entrada-prato-2 svg {
     position: absolute;
@@ -625,7 +639,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 264.96px;
-    margin-left: 106.12px;
+    margin-left: 126.12px;
 }
 .entrada-prato-3 svg {
     position: absolute;
@@ -685,7 +699,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 301.96px;
-    margin-left: 106.12px;
+    margin-left: 126.12px;
 }
 .entrada-prato-4 svg {
     position: absolute;
@@ -745,7 +759,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 337.96px;
-    margin-left: 106.12px;
+    margin-left: 126.12px;
 }
 .entrada-prato-5 svg {
     position: absolute;
@@ -2185,7 +2199,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 130.65px;
-    margin-left: 129.73px;
+    margin-left: 150.65px;
 }
 .sobremesa-1 svg {
     position: absolute;
@@ -2245,7 +2259,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 197.73px;
-    margin-left: 130.65px;
+    margin-left: 150.65px;
 }
 .sobremesa-2 svg {
     position: absolute;
@@ -2305,7 +2319,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 272.73px;
-    margin-left: 130.65px;
+    margin-left: 150.65px;
 }
 .sobremesa-3 svg {
     position: absolute;
@@ -2365,7 +2379,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 343.73px;
-    margin-left: 130.65px;
+    margin-left: 150.65px;
 }
 .sobremesa-4 svg {
     position: absolute;
@@ -2425,7 +2439,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin-top: 438.73px;
-    margin-left: 130.65px;
+    margin-left: 150.65px;
 }
 .sobremesa-5 svg {
     position: absolute;
@@ -2494,4 +2508,1105 @@ main {
     line-height: normal;
     margin-top: 22.86px;
     margin-left: 174px;
+}
+/* .lanches-1 {
+
+} */
+.tex-lanches-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 248px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 107px;
+    margin-left: 151px;
+}
+.lanches-1 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 106px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 130px;
+    margin-left: 332px;
+}
+.preco-lanches-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 121px;
+    margin-left: 444px;
+}
+.button-lanches-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 115.29px;
+    margin-left: 538.82px;
+}
+/* .lanches-2 {
+
+} */
+.tex-lanches-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 248px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 189px;
+    margin-left: 151px;
+}
+.lanches-2 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 73.007px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 211.5px;
+    margin-left: 365px;
+}
+.preco-lanches-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 203px;
+    margin-left: 444px;
+}
+.button-lanches-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 196.94px;
+    margin-left: 538.82px;
+}
+/* .lanches-3 {
+
+} */
+.tex-lanches-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 238px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 263px;
+    margin-left: 151px;
+}
+.lanches-3 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105.971px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 285.97px;
+    margin-left: 332px;  
+}
+.preco-lanches-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 277px;
+    margin-left: 444px;
+}
+.button-lanches-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 271.23px;
+    margin-left: 538.82px;
+}
+/* .lanches-4 {
+
+} */
+.tex-lanches-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 248px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 343.73px;
+    margin-left: 151px;
+}
+.lanches-4 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 366px;
+    margin-left: 337px;
+}
+.preco-lanches-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 357px;
+    margin-left: 444px;
+}
+.button-lanches-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 351.25px;
+    margin-left: 538.82px;
+}
+/* .lanches-5 {
+
+} */
+.tex-lanches-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 228px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 431px;
+    margin-left: 151px;
+}
+.lanches-5 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83.006px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 448.5px;
+    margin-left: 355px;
+}
+.preco-lanches-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 439px;
+    margin-left: 444px;
+}
+.button-lanches-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 432.89px;
+    margin-left: 538.82px;
+}
+
+/* categorias bebidas */
+.bebidas {
+    width: 1290px;
+    margin-top: 48px;
+}
+.bebidas-titulo {
+    width: 310px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bebidas-cards {
+    width: 1290px;
+    margin-top: 28.58px;
+    display: flex;   
+    justify-content: space-around; 
+}
+.conteiner-bebidas {
+    width: 1278.57px;
+    height: 413.943px;
+    position: relative; 
+}
+.conteiner-bebidas img {
+    width: 100%;
+}
+.titulo-bebidas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 213.911px;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 33.48px;
+    margin-left: 539.65px;
+}
+.titulo-sucos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 133px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 127.19px;
+    margin-left: 41.65px;
+}
+.titulo-refrigerantes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 232px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    line-height: normal;
+    margin-top: 127.19px;
+    margin-left: 659.65px;
+}
+
+/* .suco-1 {
+
+} */
+.tex-suco-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 190.19px;
+    margin-left: 158.65px;
+}
+.suco-1 svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 95px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 201.19px;
+    margin-right: 833.92px;
+}
+.preco-suco-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 192.19px;
+    margin-left: 450px;
+}
+.button-suco-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 186.97px;
+    margin-left: 546.21px;
+}
+/* .suco-2 {
+
+} */
+.tex-suco-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 228.19px;
+    margin-left: 158.65px;
+}
+.suco-2 svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 95px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 239.19px;
+    margin-right: 833.92px;
+}
+.preco-suco-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 230.19px;
+    margin-left: 450px;
+}
+.button-suco-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 224.53px;
+    margin-left: 546.21px;
+}
+/* .suco-3 {
+
+} */
+.tex-suco-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 265.19px;
+    margin-left: 158.65px;
+}
+.suco-3 svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 84.483px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 276.78px;
+    margin-right: 833.92px; 
+}
+.preco-suco-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 268.19px;
+    margin-left: 450px;
+}
+.button-suco-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 262.08px;
+    margin-left: 546.21px;
+}
+/* .suco-4 {
+
+} */
+.tex-suco-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 303.19px;
+    margin-left: 158.65px;
+}
+.suco-4 svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 111px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 314.19px;
+    margin-right: 833.92px;
+}
+.preco-suco-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 305.19px;
+    margin-left: 450px;
+}
+.button-suco-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 299.64px;
+    margin-left: 546.21px;
+}
+/* .suco-5 {
+
+} */
+.tex-suco-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 340.19px;
+    margin-left: 158.65px;
+}
+.suco-5 svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 92px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 352.19px;
+    margin-right: 833.92px;
+}
+.preco-suco-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 343.19px;
+    margin-left: 450px;
+}
+.button-suco-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 337.20px;
+    margin-left: 546.21px;
+}
+
+/* .refrigerante-1 {
+
+} */
+.tex-refrigerante-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 278.41px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 178.19px;
+    margin-left: 777.65px;
+}
+.refrigerante-1 svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 189.19px;
+    margin-right: 215.92px;
+}
+.preco-refrigerante-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 180.19px;
+    margin-left: 1068.65px;
+}
+.button-refrigerante-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 174.72px;
+    margin-left: 1164.27px;
+}
+/* .refrigerante-2 {
+
+} */
+.tex-refrigerante-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 278.411px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 284.19px;
+    margin-left: 777.65px;
+}
+.refrigerante-2 svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 92px;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-top: 295.19px;
+    margin-right: 215.92px;
+}
+.preco-refrigerante-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 286.19px;
+    margin-left: 1068.65px;
+}
+.button-refrigerante-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 280.86px;
+    margin-left: 1164.27px;
+}
+.lista-refrigerante-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+    margin-top: 209.19px;
+    margin-left: 799.65px;
+}
+.lista-refrigerante-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+    margin-top: 316.19px;
+    margin-left: 799.65px;
+}
+
+/* Pedidos */
+.pedidos {
+    width: 1290px;
+    margin-top: 48px;
+}
+.pedido-titulo {
+    width: 310px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-pedidos {
+    width: 1280px;
+    height: auto;
+    border-radius: 28px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 28.58px;
+    padding: 49px 67px 49px 67px;
+}
+.confira-pedido {
+    width: 262px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.desc-pedido {
+    width: 283px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 46px;
+}
+.desc-pedido-campo {
+    width: 1157px;
+    height: 51px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.00);
+    margin-top: 21px;
+    margin-left: 10px;
+}
+.valor-quantidade {
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+}
+.valor-unitario {
+    width: 152px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.valor-unitario-campo {
+    width: 131px;
+    height: 51px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.00);
+    text-align: center;
+    color: #858585;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.conteiner-quantidade {
+    margin-top: 11px;
+    margin-left: 45px;
+}
+.quantidade-titulo {
+    width: 129px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 25px;
+}
+#subtrair {
+    margin-top: 31px;
+}
+#quantidade-campo {
+    width: 89px;
+    height: 51px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.00);
+    text-align: center;
+    color: #858585;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+#adicionar {
+    margin-top: 31px;
+    margin-left: 12px;
+}
+.quantidade-itens{
+    width: 199px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 11px;
+}
+#quantidade-subtotal-campo {
+    width: 131px;
+    height: 51px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.00);
+    text-align: center;
+    color: #858585;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.subtotal {
+    width: 199px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 11px;
+}
+#valor-subtotal-campo {
+    width: 131px;
+    height: 51px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.00);
+    text-align: center;
+    color: #858585;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.radio-titulo {
+    width: 411px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 11px;
+}
+#receber-delivery {
+    margin-left: 50px;
+}
+.button-enviar-pedido {
+    width: 160px;
+    height: 42px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 41px;
+}
+#img-form {
+    width: 293px;
+    height: 559px;
+    transform: rotate(-90deg);
+    border-radius: 0px 0px 0px 28px;
+    margin-left: 486px;
+    margin-bottom: 0;
+    
+}
+
+/* Delivery */
+.delivery {
+    width: 1290px;
+    margin-top: 48px; 
+}
+.delivery-titulo {
+    width: 310px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-delivery {
+    width: 1280px;
+    height: auto;
+    border-radius: 28px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 28.58px;
+    padding: 49px 67px 49px 67px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-delivery label {
+    width: auto;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 11px;
+}
+.form-delivery input {
+    width: 500px;
+    height: 51px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.00);
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+.form-delivery img {
+    margin-top: 70px;
+    margin-right: 50px;
 }
