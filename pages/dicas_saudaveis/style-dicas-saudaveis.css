@@ -1,0 +1,116 @@
+main {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.titulo-main {
+    display: flex;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    padding-bottom: 1rem; 
+}
+
+.apresentacao-pagina  {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    background-color: #F8F2E9;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.apresentacao-pagina p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.apresentacao-pagina strong {
+    color: #F2BD57;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem; 
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px #F2BD57;
+    margin: 0 1.25rem 1.25rem 1.25rem; 
+    line-height: 1.5;
+}
+
+article h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem; 
+    text-align: center;
+}
+
+article p {
+    font-family: 'Roboto', sans-serif;
+}
+
+article ol {
+    padding-left: 20px; 
+}
+
+article ul {
+    padding-left: 20px; 
+}
+
+article a {
+    text-decoration: underline;
+}
+
+#primeiroBotao, #segundoBotao, #terceiroBotao, #quartoBotao, #quintoBotao {
+    background-color: #F2BD57;
+    color: white;
+    margin-top: 1rem; 
+    padding: 0.625rem 1rem; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem; 
+    text-align: center;
+}
+
+#primeiroArtigo, #segundoArtigo, #terceiroArtigo, #quartoArtigo, #quintoArtigo {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel {
+    margin-top: 1.25rem;
+    padding-bottom: 40px;
+    background: #FFFCF7;
+}
+
+.carousel img {
+    max-width: 430px;
+    max-height: 380px;
+    width: auto;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: -5px 5px 4px #F2BD57, 5px 5px 4px #F2BD57, 0 -5px 4px #F2BD57;
+}
+
+.texto-carrossel {
+    margin-top: 14px;
+    box-shadow: 0px 0px 3px #808080;
+    background-color: #F8F2E9;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.carousel-cell {
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 14px;
+    margin-right: 50px;
+    counter-increment: carousel-cell;
+    padding-bottom: 20px;
+}

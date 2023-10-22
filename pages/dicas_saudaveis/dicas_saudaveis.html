@@ -1,67 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/../style-root.css" />
+    <link rel="stylesheet" type="text/css" href="./style-dicas-saudaveis.css" />
+    <link rel="stylesheet" type="text/css" href="flickity/flickity.css" />
+    <script src="flickity/flickity.pkgd.js" defer></script>
+    <script src="./script-dicas-saudaveis.js" defer></script>
     <title>Mesa Para 5</title>
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho">
         <a href="/index.html">
-            <img src="/img/logo.png" alt="logo da empresa nas cores rosa,preto e branco" width="100">
+            <img class="cabecalho-imagem" src="/img/logo.png" alt="Logo do Restaurante Mesa Para 5" width="100">
         </a>
-        <nav>
-            <a href="/pages/cardapio/cardapio.html">Cardápio | </a>
-            <a href="/pages/dicas_saudaveis/dicas_saudaveis.html">Dicas Saudáveis |</a>
+        <nav class="cabecalho-menu">
+            <a href="/index.html">Home</a>
+            <a href="/pages/cardapio/cardapio.html">Cardápio</a>
+            <a href="/pages/dicas_saudaveis/dicas_saudaveis.html">Dicas Saudáveis</a>
             <a href="/pages/trabalhe_conosco/trabalhe_conosco.html">Trabalhe Conosco</a>
-            <a href="/pages/reserva/reserva.html">Reserva |</a>
+            <button class="cabecalho-button"><a href="/pages/reserva/reserva.html">Reserva</button></a>
         </nav>
     </header>
     <main>
-        <h1>Artigos de saúde</h1>
-        <article>
-            <h3>Inclua Vegetais em Todas as Refeições</h3>
-            <p>Adicione vegetais variados a cada refeição para aumentar a ingestão de fibras, vitaminas e minerais
-                essenciais.</p>
-        </article>
-        <article>
-            <h3>Opte por Grãos Integrais</h3>
-            <p>Escolha grãos integrais, como quinoa, arroz integral e aveia, em vez de refinados, para uma fonte de
-                carboidratos mais nutritiva e com fibras.</p>
-        </article>
-        <article>
-            <h3>Priorize Proteínas Magras</h3>
-            <p>Opte por fontes de proteínas magras, como peixes, frango sem pele, legumes, tofu ou leguminosas, para
-                manter uma dieta equilibrada.</p>
-        </article>
-        <article>
-            <h3>Lanches Nutritivos</h3>
-            <p>Mantenha lanches saudáveis à mão, como frutas frescas, nozes, iogurte grego ou vegetais cortados, para
-                evitar opções menos saudáveis quando sentir fome entre as refeições.</p>
-        </article>
-        <section>
+        <h1 class="titu lo-main">Dicas Saudáveis</h1>
+        <div class="apresentacao-pagina">
+            <p>
+                Bem-vindo à nossa página de Dicas Saudáveis! No <strong>Mesa Para 5</strong>, acreditamos que a alimentação saudável é essencial para o bem-estar e a felicidade. É por isso que estamos empenhados em oferecer não apenas refeições deliciosas, mas também opções nutritivas e equilibradas que irão satisfazer seu paladar e nutrir seu corpo.
+            </p>
+            <p>
+                Acreditamos que a comida pode ser ao mesmo tempo saborosa e benéfica para a sua saúde. Nossa equipe de chefs e nutricionistas trabalha diligentemente para criar pratos que sejam tão deliciosos quanto nutritivos. Queremos ajudar você a fazer escolhas alimentares conscientes e informadas, e é por isso que esta página está repleta de dicas, receitas e conselhos que o ajudarão a adotar um estilo de vida mais saudável.
+            </p>
+        </div>
+
+        <div class="artigos-div">
+            <article>
+                <h2 class="titulo-artigo">Vegetais e Frutas</h2>
+                <p>
+                    Uma dieta rica em vegetais e frutas pode reduzir a pressão arterial, reduzir o risco de doenças
+                    cardíacas e derrames, prevenir alguns tipos de câncer, diminuir o risco de problemas oculares e
+                    digestivos e ter um efeito positivo sobre o açúcar no sangue, o que pode ajudar a manter o apetite.
+                    verificar. Comer vegetais e frutas sem amido, como maçãs, peras e vegetais de folhas verdes, pode
+                    até promover a perda de peso. Suas baixas cargas glicêmicas evitam picos de açúcar no sangue que
+                    podem aumentar a fome.
+                </p>
+                <div id="primeiroArtigo">
+                    <ol>
+                        <li>
+                            <strong>Mantenha as frutas onde você possa vê-las.</strong> Coloque várias frutas inteiras
+                            lavadas e prontas para comer em uma tigela ou guarde frutas coloridas picadas em uma tigela
+                            de vidro na geladeira para tentar quem gosta de doces.
+                        </li>
+                        <li>
+                            <strong>Explore o corredor de produtos e escolha algo novo.</strong> Variedade e cor são
+                            fundamentais para uma dieta saudável. Na maioria dos dias, tente consumir pelo menos uma
+                            porção de cada uma das seguintes categorias: vegetais de folhas verdes escuras; frutas e
+                            vegetais amarelos ou laranja; frutas e vegetais vermelhos; leguminosas (feijões) e ervilhas;
+                            e frutas cítricas.
+                        </li>
+                        <li>
+                            <strong>Faça disso uma refeição.</strong> Experimente cozinhar novas receitas que incluam
+                            mais vegetais. Saladas, sopas e salteados são apenas algumas ideias para aumentar a
+                            quantidade de vegetais saborosos nas suas refeições.
+                        </li>
+                    </ol>
+                    <p>
+                        Fonte: <a
+                            href="https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/vegetables-and-fruits/"
+                            target="_blank">https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/vegetables-and-fruits/</a>
+                    </p>
+                </div>
+                <button id="primeiroBotao">Ver Mais</button>
+            </article>
+            <article>
+                <h2>Grãos Integrais</h2>
+                <p>
+                    Os grãos integrais oferecem um “pacote completo” de benefícios à saúde, ao contrário dos grãos
+                    refinados, que são desprovidos de nutrientes valiosos no processo de refinamento.
+                </p>
+                <p>
+                    Todos os grãos integrais contêm três partes: farelo, germe e endosperma. Cada seção contém
+                    nutrientes que promovem a saúde. O farelo é a camada externa rica em fibras que fornece vitaminas B
+                    , ferro , cobre, zinco , magnésio , antioxidantes e fitoquímicos. Os fitoquímicos são compostos
+                    químicos naturais em plantas que foram pesquisados ​​por seu papel na prevenção de doenças. O germe
+                    é o núcleo da semente onde ocorre o crescimento; é rico em gorduras saudáveis, vitamina E ,
+                    vitaminas B, fitoquímicos e antioxidantes. O endosperma é a camada interna que contém carboidratos,
+                    proteínas e pequenas quantidades de algumas vitaminas e minerais do complexo B.
+                </p>
+                <div id="segundoArtigo">
+                    <ul>
+                        <li>
+                            O farelo e a fibra retardam a decomposição do amido em glicose – mantendo assim um nível
+                            estável de açúcar no sangue , em vez de causar picos acentuados.
+                        </li>
+                        <li>
+                            A fibra ajuda a reduzir o colesterol e também a movimentar os resíduos através do trato
+                            digestivo.
+                        </li>
+                        <li>
+                            A fibra também pode ajudar a prevenir a formação de pequenos coágulos sanguíneos que podem
+                            desencadear ataques cardíacos ou derrames.
+                        </li>
+                        <li>
+                            Fitoquímicos e minerais essenciais como magnésio, selênio e cobre encontrados em grãos
+                            integrais podem proteger contra alguns tipos de câncer.
+                        </li>
+                    </ul>
+                    <p>
+                        A invenção dos moinhos de rolos industrializados no final do século XIX mudou a forma como
+                        processamos os grãos. A moagem remove o farelo e o germe e deixa apenas o endosperma macio e
+                        fácil de digerir. Sem o farelo fibroso, o grão fica mais fácil de mastigar. O germe é removido
+                        devido ao seu teor de gordura, o que pode limitar a vida útil dos produtos de trigo processados.
+                        Os grãos altamente processados ​​resultantes têm qualidade nutricional muito inferior.
+                    </p>
+                    <p>
+                        Substituir grãos refinados por grãos integrais e comer pelo menos 2 porções de grãos integrais
+                        diariamente pode ajudar a reduzir o risco de diabetes tipo 2. As fibras, os nutrientes e os
+                        fitoquímicos dos grãos integrais podem melhorar a sensibilidade à insulina e o metabolismo da
+                        glicose e retardar a absorção dos alimentos, evitando picos de açúcar no sangue. Em contraste,
+                        os grãos refinados tendem a ter um alto índice glicêmico e carga glicêmica com menos fibras e
+                        nutrientes.
+                    </p>
+                    <p>
+                        Fonte: <a href="https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/whole-grains/"
+                            target="_blank">https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/whole-grains/</a>
+                    </p>
+                </div>
+                <button id="segundoBotao">Ver Mais</button>
+            </article>
+            <article>
+                <h2>Proteína</h2>
+                <p>
+                    A proteína é encontrada em todo o corpo – nos músculos, ossos, pele, cabelo e praticamente em todas
+                    as outras partes ou tecidos do corpo. Constitui as enzimas que alimentam muitas reações químicas e a
+                    hemoglobina que transporta oxigênio no sangue. Pelo menos 10.000 proteínas diferentes fazem de você
+                    o que você é e o mantêm assim
+                </p>
+                <p>
+                    A proteína é feita de mais de vinte blocos básicos chamados aminoácidos. Como não armazenamos
+                    aminoácidos, nosso corpo os produz de duas maneiras diferentes: do zero ou modificando outros. Nove
+                    aminoácidos – histidina, isoleucina, leucina, lisina, metionina, fenilalanina, treonina, triptofano
+                    e valina – conhecidos como aminoácidos essenciais, devem provir dos alimentos.
+                </p>
+                <div id="terceiroArtigo">
+                    <h3>De quanta proteína eu preciso?</h3>
+                    <p>
+                        A Academia Nacional de Medicina recomenda que os adultos obtenham um mínimo de 0,8 gramas de
+                        proteína para cada quilograma de peso corporal por dia, ou pouco mais de 7 gramas para cada 20
+                        quilos de peso corporal.
+                    </p>
+                    <ul>
+                        <li>
+                            Para uma pessoa de 140 quilos, isso significa cerca de 50 gramas de proteína por dia.
+                        </li>
+                        <li>
+                            Para uma pessoa de 90 quilos, isso significa cerca de 70 gramas de proteína por dia.
+                        </li>
+                    </ul>
+                    <p>
+                        A Academia Nacional de Medicina também estabelece uma ampla faixa de ingestão aceitável de
+                        proteínas – algo entre 10% e 35% das calorias por dia. Além disso, há relativamente pouca
+                        informação sólida sobre a quantidade ideal de proteína na dieta ou a meta mais saudável de
+                        calorias fornecidas pela proteína. Numa análise realizada em Harvard entre mais de 130 mil
+                        homens e mulheres que foram acompanhados durante até 32 anos, a percentagem de calorias
+                        provenientes da ingestão total de proteínas não estava relacionada com a mortalidade geral ou
+                        com causas específicas de morte. No entanto, a fonte de proteína era importante.
+                    </p>
+                    <p>
+                        Fonte: <a href="https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/protein/"
+                            target="_blank">https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/protein/</a>
+                    </p>
+                </div>
+                <button id="terceiroBotao">Ver Mais</button>
+            </article>
+            <article>
+                <h2>Permaneça Ativo(a)</h2>
+                <p>
+                    Embora muitas pessoas vejam o exercício como uma forma de perder peso, ele desempenha um papel
+                    fundamental no bem-estar do corpo, além da perda de peso. A investigação apoia fortemente os seus
+                    benefícios numa série de condições de saúde física e mental para pessoas de todas as idades. No
+                    entanto, estilos de vida agitados e um ambiente que incentiva o sedentarismo durante muitas horas do
+                    dia (dirigir de porta em porta, sentar-se em uma mesa de escritório, relaxar à noite em frente à
+                    televisão) fizeram com que o exercício fosse classificado como uma prioridade baixa para muitas
+                    pessoas.
+                </p>
+                <div id="quartoArtigo">
+                    <h3>Tipos de exercício</h3>
+                    <ul>
+                        <li>
+                            <p>
+                                Todos os tipos de exercícios oferecem benefícios à saúde. A realização de diferentes
+                                tipos de exercícios pode ampliar ainda mais o leque de benefícios. Mas é importante
+                                lembrar que algum exercício é melhor do que nenhum, e que quase todas as pessoas podem
+                                participar de alguma forma de exercício com segurança.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Atividade física aeróbica/cardiovascular:</strong> São atividades intensas o
+                                suficiente e realizadas por tempo suficiente para manter ou melhorar a aptidão cardíaca
+                                e pulmonar. Exemplos: caminhar, correr, dançar, etc.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Atividade de fortalecimento muscular:</strong> Isso pode ser chamado de
+                                treinamento de resistência. Essas atividades mantêm ou aumentam a força, resistência e
+                                potência muscular. Exemplos: aparelhos de musculação, pesos livres, faixas elásticas de
+                                resistência, pilates, etc.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Treinamento de flexibilidade:</strong> Isso pode ser chamado de alongamento. Ele
+                                alonga ou flexiona um músculo esquelético até o ponto de tensão e permanece por vários
+                                segundos para aumentar a elasticidade e a amplitude de movimento ao redor de uma
+                                articulação. Melhorar a flexibilidade pode melhorar o desempenho físico geral de outros
+                                tipos de exercício. Exemplos: alongamentos dinâmicos realizados com movimento (ioga, tai
+                                chi), alongamentos estáticos sem movimento (manter uma postura por vários segundos ou
+                                mais).
+                            </p>
+                        </li>
+                    </ul>
+                    <p>
+                        Fonte: <a
+                            href="https://www.hsph.harvard.edu/nutritionsource/staying-active/">https://www.hsph.harvard.edu/nutritionsource/staying-active/</a>
+                    </p>
+                </div>
+                <button id="quartoBotao">Ver Mais</button>
+            </article>
+            <article>
+                <h2>Gorduras e Colesterol</h2>
+                <p>
+                    Quando se trata de gordura na dieta, o que mais importa é o tipo de gordura que você ingere. Ao
+                    contrário dos conselhos dietéticos anteriores que promoviam dietas com baixo teor de gordura ,
+                    pesquisas mais recentes mostram que as gorduras saudáveis ​​são necessárias e benéficas para a
+                    saúde.
+                </p>
+                <div id="quintoArtigo">
+                    <p>
+                        Em vez de adotar uma dieta com baixo teor de gordura, é mais importante focar na ingestão de
+                        gorduras “boas” benéficas e evitar gorduras “ruins” prejudiciais. A gordura é uma parte
+                        importante de uma dieta saudável. Escolha alimentos com gorduras insaturadas “boas”, limite os
+                        alimentos ricos em gordura saturada e evite gordura trans “ruim”.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Gorduras insaturadas “boas” –</strong> gorduras monoinsaturadas e poliinsaturadas –
+                            reduzem o risco de doenças. Alimentos ricos em gorduras boas incluem óleos vegetais (como
+                            azeite, canola, girassol, soja e milho), nozes, sementes e peixes.
+                        </li>
+                        <li>
+                            <strong>As gorduras “ruins” –</strong> gorduras trans – aumentam o risco de doenças, mesmo
+                            quando consumidas em pequenas quantidades. Os alimentos que contêm gorduras trans estão
+                            principalmente em alimentos processados ​​feitos com gordura trans de óleo parcialmente
+                            hidrogenado. Felizmente, as gorduras trans foram eliminadas de muitos desses alimentos.
+                        </li>
+                        <li>
+                            <strong>As gorduras saturadas</strong>, embora não sejam tão prejudiciais quanto as gorduras
+                            trans, em comparação com as gorduras insaturadas, impactam negativamente a saúde e são
+                            melhor consumidas com moderação. Alimentos que contêm grandes quantidades de gordura
+                            saturada incluem carne vermelha, manteiga, queijo e sorvete. Algumas gorduras vegetais, como
+                            óleo de coco e óleo de palma, também são ricas em gordura saturada.
+                        </li>
+                    </ul>
+                    <p>
+                        Fonte: <a
+                            href="https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/fats-and-cholesterol/">https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/fats-and-cholesterol/</a>
+                    </p>
+                </div>
+                <button id="quintoBotao">Ver Mais</button>
+            </article>
+        </div>
+
+        <div>
             <h1>Pratos saudáveis da casa</h1>
-            <img src="/img/prato_casa1.jpg" width="200">
-            <img src="/img/prato_casa2.jpg" width="200">
-            <img src="/img/prato_casa3.jpg" width="200">
-            <img src="/img/prato_casa4.jpg" width="200">
-        </section>
+            <div class="carousel" data-flickity='{"wrapAround": true}'>
+                <div class="carousel-cell">
+                    <img src="./img/dicas_saudaveis_bolo-banana-aveia.jpg" width="430px">
+                    <div class="texto-carrossel"><p>Bolo de banana com aveia ---- 35 R$</p></div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./img/dicas_saudaveis_peito-frango-grelhado.jpg">
+                    <div class="texto-carrossel"><p>Frango Grelhado ---- 35 R$</p></div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./img/dicas_saudaveis_muesli.jpg" >
+                    <div class="texto-carrossel"><p>Muesli ---- 35 R$</p></div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./img/dicas_saudaveis_smoothie.jpg" >
+                    <div class="texto-carrossel"><p>Smoothie ---- 35 R$</p></div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./img/dicas_saudaveis_salmao-assado.jpg" >
+                    <div class="texto-carrossel"><p>Salmão Grelhado ---- 35 R$</p></div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./img/dicas_saudaveis_sopa-vegetal.jpg" >
+                    <div class="texto-carrossel"><p>Sopa de Vegetais ---- 35 R$</p></div>  
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <img src="/img/logo.png" alt="logo da empresa nas cores rosa,preto e branco" width="100">
-        <ul>
-            <a href="">
-                <li>Facebook</li>
-            </a>
-            <a href="">
-                <li>Instagram</li>
-            </a>
-            <a href="">
-                <li>Linkedin</li>
-            </a>
-        </ul>
+
+    <picture class="logo-rodape">
+        <img class="cabecalho-imagem" src="/img/logo.png" alt="Logo do Restaurante Mesa Para 5" width="100">
+    </picture>
+    <footer class="footer">
+        <div class="cadastro-para-promocoes">
+            <h2 class="titulo-footer">Recebe Nossas Promoções</h2>
+            <div>
+                <form class="button-confirmar-email-geral" action="#">
+                    <input class="email-newsletter" type="email" name="email-newsletter" placeholder="Insira seu Email"
+                        required>
+                    <button class="botton-confirmar-email" type="submit" aria-label="Confirmar o Envio"><img
+                            src="/img/cadastro-email-newsletter.png" alt=""></button>
+                </form>
+            </div>
+        </div>
+        <div class="cabecalho-footer-geral">
+            <a href="/pages/dicas_saudaveis/dicas_saudaveis.html"><img src="/img/retornar-topo.png"
+                    alt="Retornar ao Topo da Página"></a>
+            <nav class="cabecalho-footer">
+                <a href="/index.html">Home</a>
+                <a href="/pages/cardapio/cardapio.html">Cardápio</a>
+                <a href="/pages/dicas_saudaveis/dicas_saudaveis.html">Dicas Saudáveis</a>
+                <a href="/pages/trabalhe_conosco/trabalhe_conosco.html">Trabalhe Conosco</a>
+                <a href="/pages/reserva/reserva.html">Reserva</a>
+            </nav>
+            <p class="copyrigth">Copyrigth © 2023 - Grupo 3. Todos os Direitos Reservados.</p>
+        </div>
+        <div class="redes-sociais">
+            <h2 class="titulo-footer">Nos Siga nas Redes Sociais</h2>
+            <div class="nossas-redes">
+                <div class="icon facebook">
+                    <div class="rede">Facebook</div>
+                    <span><i class="fa fa-facebook-f"></i></span>
+                </div>
+                <div class="icon instagram">
+                    <div class="rede">Instagram</div>
+                    <span><i class="fa fa-instagram"></i></span>
+                </div>
+                <div class="icon youtube">
+                    <div class="rede">Youtube</div>
+                    <span><i class="fa fa-youtube-play"></i></span>
+                </div>
+                <div class="icon twitter">
+                    <div class="rede">Twitter</div>
+                    <span><i class="fa fa-twitter"></i></span>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 

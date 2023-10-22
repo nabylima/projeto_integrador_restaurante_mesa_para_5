@@ -4,67 +4,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesa Para 5</title>
+  <title>trabalhe | conosco</title>
+  <link rel="stylesheet" href="/projeto_integrador_restaurante_mesa_para_5/style-root.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
+  <header class="cabecalho">
     <a href="/index.html">
-      <img src="/img/logo.png" alt="logo da empresa nas cores rosa,preto e branco" width="100">
+      <img class="cabecalho-imagem" src="/projeto_integrador_restaurante_mesa_para_5/img/logo.png" alt="Logo do Restaurante Mesa Para 5" width="100">
     </a>
-    <nav>
-      <a href="/pages/cardapio/cardapio.html">Cardápio | </a>
-      <a href="/pages/dicas_saudaveis/dicas_saudaveis.html">Dicas Saudáveis |</a>
+    <nav class="cabecalho-menu">
+      <a href="/index.html">Home</a>
+      <a href="/pages/cardapio/cardapio.html">Cardápio</a>
+      <a href="/pages/dicas_saudaveis/dicas_saudaveis.html">Dicas Saudáveis</a>
       <a href="/pages/trabalhe_conosco/trabalhe_conosco.html">Trabalhe Conosco</a>
-      <a href="/pages/reserva/reserva.html">Reserva |</a>
+      <button class="cabecalho-button"><a href="/pages/reserva/reserva.html">Reserva</button></a>
     </nav>
   </header>
   <main>
-    <section>
-      <h1>Trabalhe Conosco</h1>
-      <p>Envie seu curriculo através do nosso email:</p>
-      <strong>mesapara5@gmail.com</strong>
-    </section>
-    <section>
-      <h1>Mapa de localização</h1>
-      <img src="/img/localização.png" width="200">
-    </section>
-    <section>
-      <h1>Avaliações</h1>
-      <p> <strong>Ana - &#9733 &#9733 &#9733 &#9733 &#9733</strong><br>
-        Comida deliciosa em um ambiente aconchegante! O Sabor Eclético realmente vive até o seu nome. Eles oferecem uma
-        variedade incrível de pratos de diferentes cozinhas do mundo. Experimentei o frango ao curry indiano e estava
-        divino! O atendimento foi cordial, e a decoração do restaurante é charmosa. O único ponto negativo foi o preço
-        um pouco mais alto, mas a qualidade da comida compensa.
-      </p>
-      <p> <strong>Carlos - &#9733 &#9733 &#9733 &#9733 &#9733</strong><br>
-        O Sabor Eclético tem uma boa ideia, mas a execução deixa a desejar. Pedimos uma pizza italiana e um sushi
-        japonês, e ambos estavam apenas medianos. Acho que eles estão tentando fazer muitas coisas diferentes e não se
-        dedicam totalmente a nenhuma delas. Além disso, o serviço foi um pouco lento, e o restaurante estava um pouco
-        barulhento. Pode ser uma boa opção para grupos com gostos diversos, mas eu prefiro um restaurante especializado.
-      </p>
-      <p> <strong>Maria - &#9733 &#9733 &#9733 &#9733 &#9733</strong><br>
-        Que descoberta maravilhosa! O Sabor Eclético é o meu novo restaurante favorito. Eles realmente acertaram em
-        cheio ao oferecer uma variedade tão ampla de pratos de alta qualidade. O bife argentino que pedi estava
-        perfeitamente grelhado, e o tiramisu de sobremesa era divino. A equipe foi atenciosa e prestativa, e o ambiente
-        é muito agradável para um jantar romântico ou uma noite com amigos. Definitivamente voltarei!
-      </p>
+  
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário de Currículo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Currículo</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Número de Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="curriculo">Envie seu Currículo:</label>
+                <div> <stron>RestauranteMesapara5@gmail.com</strong>
+
+                </div>
+                <input type="file" id="curriculo" name="curriculo" accept=".pdf, .doc, .docx" required>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
     </section>
   </main>
-  <footer>
-    <img src="/img/logo.png" alt="logo da empresa nas cores rosa,preto e branco" width="100">
-    <ul>
-      <a href="">
-        <li>Facebook</li>
-      </a>
-      <a href="">
-        <li>Instagram</li>
-      </a>
-      <a href="">
-        <li>Linkedin</li>
-      </a>
-    </ul>
+  <picture class="logo-rodape">
+    <img class="cabecalho-imagem" src="/projeto_integrador_restaurante_mesa_para_5/img/logo.png" alt="Logo do Restaurante Mesa Para 5" width="100">
+  </picture>
+  <picture class="logo-rodape">
+   
+  </picture>
+
+  <footer class="footer">
+
+    <div class="cadastro-para-promocoes">
+      <h2 class="titulo-footer">Recebe Nossas Promoções</h2>
+      <div>
+        <form class="button-confirmar-email-geral" action="#">
+          <input class="email-newsletter" type="email" name="email-newsletter" placeholder="Insira seu Email" required>
+          <button class="botton-confirmar-email" type="submit" aria-label="Confirmar o Envio"><img
+              src="/img/cadastro-email-newsletter.png" alt=""></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="cabecalho-footer-geral">
+      <a href="/projeto_integrador_restaurante_mesa_para_5/pages/trabalhe_conosco/trabalhe_conosco.html"><img src="/projeto_integrador_restaurante_mesa_para_5/img/retornar-topo.png" alt="Retornar ao Topo da Página"></a>
+      <nav class="cabecalho-footer">
+        <a href="/index.html">Home</a>
+        <a href="/pages/cardapio/cardapio.html">Cardápio</a>
+        <a href="/pages/dicas_saudaveis/dicas_saudaveis.html">Dicas Saudáveis</a>
+        <a href="/pages/trabalhe_conosco/trabalhe_conosco.html">Trabalhe Conosco</a>
+        <a href="/pages/reserva/reserva.html">Reserva</a>
+      </nav>
+      <p class="copyrigth">Copyrigth © 2023 - Grupo 3. Todos os Direitos Reservados.</p>
+    </div>
+    <div class="redes-sociais">
+      <h2 class="titulo-footer">Nos Siga nas Redes Sociais</h2>
+      <div class="nossas-redes">
+        <div class="icon facebook">
+          <div class="rede">Facebook</div>
+          <span><i class="fa fa-facebook-f"></i></span>
+        </div>
+        <div class="icon instagram">
+          <div class="rede">Instagram</div>
+          <span><i class="fa fa-instagram"></i></span>
+        </div>
+        <div class="icon youtube">
+          <div class="rede">Youtube</div>
+          <span><i class="fa fa-youtube-play"></i></span>
+        </div>
+        <div class="icon twitter">
+          <div class="rede">Twitter</div>
+          <span><i class="fa fa-twitter"></i></span>
+        </div>
+      </div>
+    </div>
   </footer>
+</body>
+
+</html>
 </body>
 
 </html>
