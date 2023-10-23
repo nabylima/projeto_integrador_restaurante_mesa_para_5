@@ -1,16 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     max-width: 645px; /* Reduzimos a largura do container */
     margin: 0 auto;
     padding: 20px;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,16 +29,16 @@ input {
     border-radius: 5px;
 }
 
-button {
+.buton-form {
     width: 100%;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: #F2BD57;
+    color: #4F2F24;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
+.buton-form:hover {
+    background-color: #f2cd89;
 }
