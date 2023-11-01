@@ -1,4 +1,68 @@
-
+h1 {
+    color: #000;
+    text-align: center;
+    font-family: 'Audiowide';
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127px;
+}
+h2{
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+h3 {
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+h4 {
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+h5 {
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+h6 {
+    /* botão G  */
+    color:#4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+p {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+button:hover {
+    box-shadow: 0px 0px 10px #F2BD57;
+}
 
 .hero-cardapio {
     width: 1288px;
@@ -9,7 +73,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .hero-texto {
     height: 681px;
     display: flex;
@@ -18,19 +81,9 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
 .titulo-cardapio {
     width: 325px;
-    color: #000;
-    text-align: center;
-    font-family: 'Audiowide';
-    font-size: 65px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 127px;
 }
-
-
 .subtitulo-1 {
     width: 551px;
     margin-top: 68px;
@@ -42,7 +95,6 @@
     font-weight: 700;
     line-height: normal;
 }
-
 .subtitulo-2 {
     width: 551px;
     margin-top: 71px;
@@ -54,7 +106,6 @@
     font-weight: 700;
     line-height: normal;
 }
-
 .subtitulo-3 {
     width: 315px;
     margin-top: 17px;
@@ -66,8 +117,7 @@
     font-weight: 700;
     line-height: normal;
 }
-
-.button-delivery{
+.button-delivery {
     padding: 10px;
     margin-top: 48px;
     border-radius: 48px;
@@ -84,12 +134,12 @@
     font-weight: 700;
     line-height: normal;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 .img-hero {
     width: 680px;
     height: 681px;
 }
-
 .categorias-cardapio {
     width: 1290px;
     height: 225px;
@@ -98,9 +148,7 @@
     align-items: center;
     justify-content: center;
 }
-
 .titulo-categorias {
-
     color: #000;
     text-align: center;
     font-family: 'Audiowide';
@@ -109,106 +157,101 @@
     font-weight: 400;
     line-height: normal;
 }
-
 .icones-categorias {
     width: 1290px;
     height: 132px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    color: #000;
     text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
-
 /* categoria especiais */
-.especiais {
+#especiais, #saladas, #carnes, #vegetarianas-massas, #acompanhamentos, #bebidas, #pedidos, #delivery {
     width: 1290px;
     margin-top: 48px;
 }
-
-.especiais-titulo {
+.especiais-titulo, .saladas-titulo, .carnes-titulo, .vegetarianas-titulo, .acompanhamentos-titulo, .sobremesas-titulo, .bebidas-titulo, .pedido-titulo, .delivery-titulo {
     width: 380px;
     height: 82px;
     border-radius: 259px;
     background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.especiais-cards {
-    width: 1290px;
-    margin-top: 28.58px;
-    display: flex;    
+.vegetarianas-massas-titulos {
+    display: flex;
+    justify-content: space-between;
 }
-
-.conteiner-feijoada {
+.massas-titulo, .lanches-titulo {
+    width: 310px;
+    height: 82px;
+    border-radius: 259px;
+    background: #F8F2E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.especiais-cards, .saladas-cards, .carnes-cards, .vegetarianas-massas-cards, .acompanhamentos-cards {
+    width: 1290px;
+    display: flex; 
+    flex-wrap: wrap;   
+}
+.conteiner-especiais, .conteiner-Saladas, .conteiner-Carnes, .conteiner-VegetarianaMassas, .conteiner-Acompanhamentos { 
     width: 293.924px;
     height: 413.943px;
+    border-radius: 28px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: auto;
+    margin-top: 28px;
     position: relative;
 }
-.conteiner-feijoada img {
-    width: 100%;
+.imagemEspeciais, .imagemSaladas, .imagemCarnes, .imagemVegetarianaMassas, .imagemAcompanhamentos {
+    width: 155.127px;
+    height: 146.962px;
+    margin-top: 13.06px;
+    margin-left: 69.1px;
 }
-.texto-prato-feijoada {
+.tituloEspeciais, .tituloSaladas, .tituloCarnes, .tituloVegetarianaMassas, .tituloAcompanhamentos {
     position: absolute;
     top: 0;
     left: 0;
-    width: 190px;
-    color: #4F2F24;
+    width: 218px;
+    height: 70px;
     text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 169px;   
+    margin-left: 38.1px;
 }
-.texto-descr-feijoada{
+.imagemEstrelas {
+    width: 131px;
+    height: 23px;
+    margin-top: 80px;
+    margin-left: 81.1px;
+}
+.descEspeciais, .descSaladas, .descCarnes, .descVegetarianaMassas, .descAcompanhamentos {
     position: absolute;
     top: 0;
     left: 0;
-    width: 274px;
-    color: #4F2F24;
+    width: 283px;
     text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
     margin-top: 271.96px; 
-    margin-left: 10.1px;       
+    margin-left: 5.46px;       
 }
-.preco-feijoada {
+.precoEspeciais, .precoSaladas, .precoCarnes, .precoVegetarianaMassas, .precoAcompanhamentos {
     position: absolute;
     top: 0;
     left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    width: 102px;
+    text-align: center; 
     margin-top: 358.96px; 
     margin-left: 14.1px; 
 }
-.button-feijoada {
+.button-especiais, .button-saladas, .button-Carnes, .button-VegetarianaMassas, .button-Acompanhamentos {
     position: absolute;
     top: 0;
     right: 0;
@@ -228,233 +271,38 @@
     margin-right: 18.78px;    
 }
 
-.conteiner-file-frango {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;
-}
-.conteiner-file-frango img {
-    width: 100%;    
-}
-.texto-prato-file-frango{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px;
-}
-.texto-descr-file-frango {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px;   
-}
-.preco-file-frango {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;      
-}
-.button-file-frango {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;   
-}
-
-.conteiner-peixe-da-casa {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;   
-}
-.conteiner-peixe-da-casa img {
-    width: 100%;
-}
-.texto-prato-peixe-da-casa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px; 
-}
-.texto-descr-peixe-da-casa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px; 
-}
-.preco-peixe-da-casa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;      
-}
-.button-peixe-da-casa {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;     
-}
-
-.conteiner-feijao-tropeiro {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;   
-}
-.conteiner-feijao-tropeiro img {
-    width: 100%;   
-}
-.texto-prato-feijao-tropeiro {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 218px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px;  
-}
-.texto-descr-feijao-tropeiro {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 283px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px; 
-}
-.preco-feijao-tropeiro {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;  
-}
-.button-feijao-tropeiro {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px; 
-}
-
 /* categoria entradas */
-
-.entradas {
+#entradas {
     width: 1283px;
     height: 376.96px;
     display: flex;
     align-items: center;
     margin-top: 22px;
+}
+#entradas button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72.665px;
+    height: 29.392px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 695px;
+}
+#entradas svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke-width: 1px;
+    stroke: #000;
 }
 .entradas-cards {
     width: 499px;
@@ -464,20 +312,12 @@
 #entradas-titulo-img {
     width: 100%;
     margin-top: 8.04px;
-
 }
 .entradas-titulo {
     position: absolute;
     top: 0;
     left: 0;
     width: 192px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 133.04px;   
     margin-left: 307px; 
 }
@@ -494,298 +334,121 @@
     top: 0;
     left: 0;
     width: 155.943px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 67.77px;
     margin-left: 338.12px;
 }
 /* .entrada-prato-1 {
 
 } */
-.tex-entrada-prato-1 {
+.tex-entrada-prato-1, .tex-entrada-prato-2, .tex-entrada-prato-3, .tex-entrada-prato-4, .tex-entrada-prato-5 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 287px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 191.96px;
     margin-left: 126.12px;
 }
-.entrada-prato-1 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200.85px;
-    stroke-width: 1px;
-    stroke: #000;
-    margin-top: 202.48px;
-    margin-left: 401.70px;
-}
-.preco-entrada-prato-1 {
+.preco-entrada-prato-1, .preco-entrada-prato-2, .preco-entrada-prato-3, .preco-entrada-prato-4, .preco-entrada-prato-5{
     position: absolute;
     top: 0;
     left: 0;
     width: 83px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    margin-top: 193.96px;
     margin-left: 609.12px;
 }
+.tex-entrada-prato-1 {
+    width: 287px;
+    margin-top: 191.96px;
+}
+.entrada-prato-1 svg {
+    width: 200.85px;
+    margin-top: 202.48px;
+    margin-left: 401.70px;
+}
+.preco-entrada-prato-1 {
+    margin-top: 193.96px;
+}
 .button-entrada-prato-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 187.79px;
-    margin-left: 695px;
 }
 /* .entrada-prato-2 {
 
 } */
 .tex-entrada-prato-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 371px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 227.96px;
-    margin-left: 126.12px;
 }
 .entrada-prato-2 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 118.023px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 239.22px;
     margin-left: 484.52px;
 }
 .preco-entrada-prato-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 83px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 229.96px;
-    margin-left: 609.12px;
 }
 .button-entrada-prato-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 224.53px;
-    margin-left: 695px;
 }
 /* .entrada-prato-3 {
 
 } */
 .tex-entrada-prato-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 290px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 264.96px;
-    margin-left: 126.12px;
 }
 .entrada-prato-3 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 197.914px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 275.96px;
     margin-left: 404.63px;
 }
 .preco-entrada-prato-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 83px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 266.96px;
-    margin-left: 609.12px;
 }
 .button-entrada-prato-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 261.27px;
-    margin-left: 695px;
 }
 /* .entrada-prato-4 {
 
 } */
 .tex-entrada-prato-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 311px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 301.96px;
-    margin-left: 126.12px;
 }
 .entrada-prato-4 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 179.106px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 312.70px;
     margin-left: 423.44px;
 }
 .preco-entrada-prato-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 83px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 303.96px;
-    margin-left: 609.12px;
 }
 .button-entrada-prato-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 298.01px;
-    margin-left: 695px;
 }
 /* .entrada-prato-5 {
 
 } */
 .tex-entrada-prato-5 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 312px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 337.96px;
-    margin-left: 126.12px;
 }
 .entrada-prato-5 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 168.753px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 349.44px;
     margin-left: 433.80px;
 }
 .preco-entrada-prato-5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 83px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 339.96px;
-    margin-left: 609.12px;
 }
 .button-entrada-prato-5 {
+    margin-top: 334.75px;
+}
+
+/* categoria sobremesas e lanches */
+#sobremesas-lanches {
+    width: 1290px;
+    height: 643.20px;
+    margin-top: 48px;
+}
+#sobremesas-lanches button {
     position: absolute;
     top: 0;
     left: 0;
@@ -801,1320 +464,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 334.75px;
-    margin-left: 695px;
 }
-
-/* categoria saladas */
-.saladas {
-    width: 1290px;
-    margin-top: 48px;
-}
-
-.saladas-titulo {
-    width: 380px;
-    height: 82px;
-    border-radius: 259px;
-    background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.saladas-cards {
-    width: 1290px;
-    margin-top: 28.58px;
-    display: flex;    
-}
-
-.conteiner-salada-verde {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;
-}
-.conteiner-salada-verde img {
-    width: 100%;
-}
-.texto-prato-salada-verde {
+.conteiner-sobremesas-lanches svg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px;
-}
-.texto-descr-salada-verde {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px;       
-}
-.preco-salada-verde {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px; 
-}
-.button-salada-verde {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;    
-}
-
-.conteiner-salada-panzanella {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;
-}
-.conteiner-salada-panzanella img {
-    width: 100%;    
-}
-.texto-prato-salada-panzanella {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 184px;   
-    margin-left: 52.1px;
-}
-.texto-descr-salada-panzanella {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px;   
-}
-.preco-salada-panzanella {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;      
-}
-.button-salada-panzanella {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;   
-}
-
-.conteiner-salada-abacate {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;   
-}
-.conteiner-salada-abacate img {
-    width: 100%;
-}
-.texto-prato-salada-abacate {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px; 
-}
-.texto-descr-salada-abacate {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px; 
-}
-.preco-salada-abacate {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;      
-}
-.button-salada-abacate {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;     
-}
-
-.conteiner-salada-nozes {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;   
-}
-.conteiner-salada-nozes img {
-    width: 100%;   
-}
-.texto-prato-salada-nozes {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px;  
-}
-.texto-descr-salada-nozes {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px; 
-}
-.preco-salada-nozes {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;  
-}
-.button-salada-nozes {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px; 
-}
-
-/* categorias carnes */
-.carnes {
-    width: 1290px;
-    margin-top: 48px;
-}
-
-.carnes-titulo {
-    width: 380px;
-    height: 82px;
-    border-radius: 259px;
-    background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carnes-cards {
-    width: 1290px;
-    margin-top: 28.58px;
-    display: flex;    
-}
-
-.conteiner-file-ao-ponto {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;
-}
-.conteiner-file-ao-ponto img {
-    width: 100%;
-}
-.texto-prato-file-ao-ponto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px;
-}
-.texto-descr-file-ao-ponto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px;       
-}
-.preco-file-ao-ponto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px; 
-}
-.button-file-ao-ponto {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;    
-}
-
-.conteiner-asinhas-frango {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;
-}
-.conteiner-asinhas-frango img {
-    width: 100%;    
-}
-.texto-prato-asinhas-frango {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 218px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 38.44px;
-}
-.texto-descr-asinhas-frango {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px;   
-}
-.preco-asinhas-frango {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;      
-}
-.button-asinhas-frango {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;   
-}
-
-.conteiner-carne-panela {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;   
-}
-.conteiner-carne-panela img {
-    width: 100%;
-}
-.texto-prato-carne-panela {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px; 
-}
-.texto-descr-carne-panela {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px; 
-}
-.preco-carne-panela {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;      
-}
-.button-carne-panela{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;     
-}
-
-.conteiner-peixe-molho {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;   
-}
-.conteiner-peixe-molho img {
-    width: 100%;   
-}
-.texto-prato-peixe-molho {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 218px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 38px;  
-}
-.texto-descr-peixe-molho {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px; 
-}
-.preco-peixe-molho {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;  
-}
-.button-peixe-molho {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px; 
-}
-
-/* categoria vegetarianas e massas */
-.vegetarianas-massas {
-    width: 1290px;
-    margin-top: 48px;
-}
-
-.vegetarianas-massas-titulos {
-    display: flex;
-    justify-content: space-between;
-}
-
-.vegetarianas-titulo {
-    width: 380px;
-    height: 82px;
-    border-radius: 259px;
-    background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.massas-titulo {
-    width: 310px;
-    height: 82px;
-    border-radius: 259px;
-    background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.vegetarianas-massas-cards {
-    width: 1290px;
-    margin-top: 28.58px;
-    display: flex;    
-}
-
-.conteiner-berinjela-recheada {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;
-}
-.conteiner-berinjela-recheada img {
-    width: 100%;
-}
-.texto-prato-berinjela-recheada {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 260px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 184px;   
-    margin-left: 16.65px;
-}
-.texto-descr-berinjela-recheada {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px;       
-}
-.preco-berinjela-recheada {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px; 
-}
-.button-berinjela-recheada {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;    
-}
-
-.conteiner-repolho-refogado {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;
-}
-.conteiner-repolho-refogado img {
-    width: 100%;    
-}
-.texto-prato-repolho-refogado {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 260px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 184px;   
-    margin-left: 17.44px;
-}
-.texto-descr-repolho-refogado {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px;   
-}
-.preco-repolho-refogado {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;      
-}
-.button-repolho-refogado {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;   
-}
-
-.conteiner-espaguete-molho {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;   
-}
-.conteiner-espaguete-molho img {
-    width: 100%;
-}
-.texto-prato-espaguete-molho {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px; 
-}
-.texto-descr-espaguete-molho {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px; 
-}
-.preco-espaguete-molho {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;      
-}
-.button-espaguete-molho{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;     
-}
-
-.conteiner-espaguete-camarao {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;   
-}
-.conteiner-espaguete-camarao img {
-    width: 100%;   
-}
-.texto-prato-espaguete-camarao {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 218px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 38px;  
-}
-.texto-descr-espaguete-camarao {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px; 
-}
-.preco-espaguete-camarao {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;  
-}
-.button-espaguete-camarao {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px; 
-}
-
-/* categorias acompanhamento */
-.acompanhamentos {
-    width: 1290px;
-    margin-top: 48px;
-}
-
-.acompanhamentos-titulo {
-    width: 443.336px;
-    height: 82px;
-    border-radius: 259px;
-    background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.acompanhamentos-cards {
-    width: 1290px;
-    margin-top: 28.58px;
-    display: flex;    
-}
-
-.conteiner-arroz-branco {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;
-}
-.conteiner-arroz-branco img {
-    width: 100%;
-}
-.texto-prato-arroz-branco {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 184px;   
-    margin-left: 51.65px;
-}
-.texto-descr-arroz-branco {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 284.58px; 
-    margin-left: 10.1px;       
-}
-.preco-arroz-branco {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px; 
-}
-.button-arroz-branco {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;    
-}
-
-.conteiner-arroz-primavera {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;
-}
-.conteiner-arroz-primavera img {
-    width: 100%;    
-}
-.texto-prato-arroz-primavera {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 218px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 38.44px;
-}
-.texto-descr-arroz-primavera {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px;   
-}
-.preco-arroz-primavera {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;      
-}
-.button-arroz-primavera {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;   
-}
-
-.conteiner-pure-batatas {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;   
-}
-.conteiner-pure-batatas img {
-    width: 100%;
-}
-.texto-prato-pure-batatas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 190px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 52.1px; 
-}
-.texto-descr-pure-batatas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 284.58px; 
-    margin-left: 10.1px; 
-}
-.preco-pure-batatas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;      
-}
-.button-pure-batatas{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px;     
-}
-
-.conteiner-batatas-fritas {
-    width: 293.924px;
-    height: 413.943px;
-    margin: auto;
-    position: relative;   
-}
-.conteiner-batatas-fritas img {
-    width: 100%;   
-}
-.texto-prato-batatas-fritas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 218px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 160px;   
-    margin-left: 38px;  
-}
-.texto-descr-batatas-fritas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 274px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-top: 271.96px; 
-    margin-left: 10.1px; 
-}
-.preco-batatas-fritas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 102px; 
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 358.96px; 
-    margin-left: 14.1px;  
-}
-.button-batatas-fritas {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102.873px;
-    height: 41.639px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color:#4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-    margin-top: 348.63px; 
-    margin-right: 18.78px; 
-}
-
-/* categoria sobremesas e lanches */
-.sobremesas-lanches {
-    width: 1290px;
-    height: 643.20px;
-    margin-top: 48px;
+    stroke-width: 1px;
+    stroke: #000;
 }
 .sobremesas-lanches-titulos {
     display: flex;
@@ -2127,39 +483,6 @@
     display: flex;
     justify-content: space-between;
 }
-.sobremesas-titulo {
-    width: 310px;
-    height: 82px;
-    border-radius: 259px;
-    background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.lanches-titulo {
-    width: 310px;
-    height: 82px;
-    border-radius: 259px;
-    background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* sobremesas */
 .conteiner-sobremesas {
     width: 622.139px;
@@ -2174,317 +497,123 @@
     top: 0;
     left: 0;
     width: 213.911px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 22.86px;
     margin-left: 203.65px;
 }
 /* .sobremesa-1 {
 
 } */
-.tex-sobremesa-1 {
+.tex-sobremesa-1, .tex-sobremesa-2, .tex-sobremesa-3, .tex-sobremesa-4, .tex-sobremesa-5, .tex-lanches-1, .tex-lanches-2, .tex-lanches-3, .tex-lanches-4, .tex-lanches-5 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 287px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 130.65px;
-    margin-left: 150.65px;
+    width: 248px;
 }
-.sobremesa-1 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 79px;
-    stroke-width: 1px;
-    stroke: #000;
-    margin-top: 141.72px;
-    margin-left: 359.65px;
-}
-.preco-sobremesa-1 {
+.preco-sobremesa-1, .preco-sobremesa-2, .preco-sobremesa-3, .preco-sobremesa-4, .preco-sobremesa-5, .preco-lanches-1, .preco-lanches-2, .preco-lanches-3, .preco-lanches-4, .preco-lanches-5 {
     position: absolute;
     top: 0;
     left: 0;
     width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+}
+.tex-sobremesa-1 {
+    margin-top: 130.65px;
+    margin-left: 150.65px;
+}
+.sobremesa-1 svg {
+    width: 79px;
+    margin-top: 141.72px;
+    margin-left: 359.65px;
+}
+.preco-sobremesa-1 {
     margin-top: 132.72px;
     margin-left: 443.65px;
+    
 }
 .button-sobremesa-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 126.73px;
+    margin-top: 130.73px;
     margin-left: 538.04px;
 }
 /* .sobremesa-2 {
 
 } */
 .tex-sobremesa-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 248px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 197.73px;
     margin-left: 150.65px;
 }
 .sobremesa-2 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 140px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 208.80px;
     margin-left: 298.65px;
 }
 .preco-sobremesa-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 199.87px;
     margin-left: 443.65px;
 }
 .button-sobremesa-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 193.73px;
+    margin-top: 197.73px;
     margin-left: 538.04px;
 }
 /* .sobremesa-3 {
 
 } */
 .tex-sobremesa-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 248px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 272.73px;
     margin-left: 150.65px;
 }
 .sobremesa-3 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 73px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 283.08px;
     margin-left: 364.65px;  
 }
 .preco-sobremesa-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 274.31px;
     margin-left: 443.65px;
 }
 .button-sobremesa-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 268.73px;
+    margin-top: 272.73px;
     margin-left: 538.04px;
 }
 /* .sobremesa-4 {
 
 } */
 .tex-sobremesa-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 248px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 343.73px;
     margin-left: 150.65px;
 }
 .sobremesa-4 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 51px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 363.16px;
     margin-left: 387.65px;
 }
 .preco-sobremesa-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 354.46px;
     margin-left: 443.65px;
 }
 .button-sobremesa-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 348.73px;
+    margin-top: 352.73px;
     margin-left: 538.04px;
 }
 /* .sobremesa-5 {
 
 } */
 .tex-sobremesa-5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 248px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 438.73px;
     margin-left: 150.65px;
 }
 .sobremesa-5 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 51px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 449.82px;
     margin-left: 387.65px;
 }
 .preco-sobremesa-5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 440.92px;
     margin-left: 443.65px;
 }
 .button-sobremesa-5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 434.73px;
+    margin-top: 438.73px;
     margin-left: 538.04px;
 }
-
 /* lanches */
 .conteiner-lanches {
     width: 622.139px;
@@ -2499,13 +628,6 @@
     top: 0;
     left: 0;
     width: 273px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 22.86px;
     margin-left: 174px;
 }
@@ -2513,284 +635,107 @@
 
 } */
 .tex-lanches-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 248px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 107px;
     margin-left: 151px;
 }
 .lanches-1 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 106px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 130px;
     margin-left: 332px;
 }
 .preco-lanches-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 121px;
     margin-left: 444px;
 }
 .button-lanches-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 115.29px;
+    margin-top: 119.29px;
     margin-left: 538.82px;
 }
 /* .lanches-2 {
 
 } */
 .tex-lanches-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 248px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 189px;
     margin-left: 151px;
 }
 .lanches-2 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 73.007px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 211.5px;
     margin-left: 365px;
 }
 .preco-lanches-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 203px;
     margin-left: 444px;
 }
 .button-lanches-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 196.94px;
+    margin-top: 200.94px;
     margin-left: 538.82px;
 }
 /* .lanches-3 {
 
 } */
 .tex-lanches-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 238px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 263px;
     margin-left: 151px;
 }
 .lanches-3 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 105.971px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 285.97px;
     margin-left: 332px;  
 }
 .preco-lanches-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 277px;
     margin-left: 444px;
 }
 .button-lanches-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 271.23px;
+    margin-top: 275.23px;
     margin-left: 538.82px;
 }
 /* .lanches-4 {
 
 } */
 .tex-lanches-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 248px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 343.73px;
     margin-left: 151px;
 }
 .lanches-4 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 101px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 366px;
     margin-left: 337px;
 }
 .preco-lanches-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 357px;
     margin-left: 444px;
 }
 .button-lanches-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 351.25px;
+    margin-top: 355.25px;
     margin-left: 538.82px;
 }
 /* .lanches-5 {
 
 } */
 .tex-lanches-5 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 228px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 431px;
     margin-left: 151px;
 }
 .lanches-5 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 83.006px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 448.5px;
     margin-left: 355px;
 }
 .preco-lanches-5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 439px;
     margin-left: 444px;
 }
 .button-lanches-5 {
+    margin-top: 436.89px;
+    margin-left: 538.82px;
+}
+
+/* categorias bebidas */
+#bebidas button {
     position: absolute;
     top: 0;
     left: 0;
@@ -2806,30 +751,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 432.89px;
-    margin-left: 538.82px;
 }
-
-/* categorias bebidas */
-.bebidas {
-    width: 1290px;
-    margin-top: 48px;
-}
-.bebidas-titulo {
-    width: 310px;
-    height: 82px;
-    border-radius: 259px;
-    background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#bebidas svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    stroke-width: 1px;
+    stroke: #000;
 }
 .bebidas-cards {
     width: 1290px;
@@ -2850,13 +778,6 @@
     top: 0;
     left: 0;
     width: 213.911px;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 33.48px;
     margin-left: 539.65px;
 }
@@ -2865,12 +786,6 @@
     top: 0;
     left: 0;
     width: 133px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 127.19px;
     margin-left: 41.65px;
 }
@@ -2879,74 +794,39 @@
     top: 0;
     left: 0;
     width: 232px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    line-height: normal;
     margin-top: 127.19px;
     margin-left: 659.65px;
 }
-
 /* .suco-1 {
 
 } */
-.tex-suco-1 {
+.tex-suco-1, .tex-suco-2, .tex-suco-3, .tex-suco-4, .tex-suco-5 {
     position: absolute;
     top: 0;
     left: 0;
     width: 220px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 190.19px;
     margin-left: 158.65px;
 }
-.suco-1 svg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 95px;
-    stroke-width: 1px;
-    stroke: #000;
-    margin-top: 201.19px;
-    margin-right: 833.92px;
-}
-.preco-suco-1 {
+.preco-suco-1, .preco-suco-2, .preco-suco-3, .preco-suco-4, .preco-suco-5, .preco-refrigerante-1, .preco-refrigerante-2 {
     position: absolute;
     top: 0;
     left: 0;
     width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+}
+.tex-suco-1 {
+    margin-top: 190.19px;
+}
+.suco-1 svg {
+    width: 95px;
+    margin-top: 201.19px;
+    margin-right: 833.92px;
+}
+.preco-suco-1 {
     margin-top: 192.19px;
     margin-left: 450px;
 }
 .button-suco-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 186.97px;
     margin-left: 546.21px;
 }
@@ -2954,59 +834,18 @@
 
 } */
 .tex-suco-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 220px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 228.19px;
-    margin-left: 158.65px;
 }
 .suco-2 svg {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 95px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 239.19px;
     margin-right: 833.92px;
 }
 .preco-suco-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 230.19px;
     margin-left: 450px;
 }
 .button-suco-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 224.53px;
     margin-left: 546.21px;
 }
@@ -3014,59 +853,18 @@
 
 } */
 .tex-suco-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 220px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 265.19px;
-    margin-left: 158.65px;
 }
 .suco-3 svg {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 84.483px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 276.78px;
     margin-right: 833.92px; 
 }
 .preco-suco-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 268.19px;
     margin-left: 450px;
 }
 .button-suco-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 262.08px;
     margin-left: 546.21px;
 }
@@ -3074,59 +872,18 @@
 
 } */
 .tex-suco-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 220px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 303.19px;
-    margin-left: 158.65px;
 }
 .suco-4 svg {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 111px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 314.19px;
     margin-right: 833.92px;
 }
 .preco-suco-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 305.19px;
     margin-left: 450px;
 }
 .button-suco-4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 299.64px;
     margin-left: 546.21px;
 }
@@ -3134,120 +891,44 @@
 
 } */
 .tex-suco-5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 220px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 340.19px;
-    margin-left: 158.65px;
 }
 .suco-5 svg {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 92px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 352.19px;
     margin-right: 833.92px;
 }
 .preco-suco-5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 343.19px;
     margin-left: 450px;
 }
 .button-suco-5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 337.20px;
     margin-left: 546.21px;
 }
-
 /* .refrigerante-1 {
 
 } */
-.tex-refrigerante-1 {
+.tex-refrigerante-1, .tex-refrigerante-2 {
     position: absolute;
     top: 0;
     left: 0;
     width: 278.41px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 178.19px;
     margin-left: 777.65px;
 }
+.tex-refrigerante-1 {
+    margin-top: 178.19px;
+}
 .refrigerante-1 svg {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 25px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 189.19px;
     margin-right: 215.92px;
 }
 .preco-refrigerante-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 180.19px;
     margin-left: 1068.65px;
 }
 .button-refrigerante-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 174.72px;
     margin-left: 1164.27px;
 }
@@ -3255,112 +936,42 @@
 
 } */
 .tex-refrigerante-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 278.411px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-top: 284.19px;
-    margin-left: 777.65px;
 }
 .refrigerante-2 svg {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 92px;
-    stroke-width: 1px;
-    stroke: #000;
     margin-top: 295.19px;
     margin-right: 215.92px;
 }
 .preco-refrigerante-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 286.19px;
     margin-left: 1068.65px;
 }
 .button-refrigerante-2 {
+    margin-top: 280.86px;
+    margin-left: 1164.27px;
+}
+.lista-refrigerante-1, .lista-refrigerante-2 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 72.665px;
-    height: 29.392px;
-    border-radius: 48px;
-    border: 2px solid #F2BD57;
-    background: #FFFCF7;
     color: #4F2F24;
-    text-align: center;
     font-family: 'Roboto';
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 280.86px;
-    margin-left: 1164.27px;
+    list-style: none;
+    margin-left: 799.65px;
 }
 .lista-refrigerante-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    list-style: none;
     margin-top: 209.19px;
-    margin-left: 799.65px;
 }
 .lista-refrigerante-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    list-style: none;
     margin-top: 316.19px;
-    margin-left: 799.65px;
 }
 
 /* Pedidos */
-.pedidos {
-    width: 1290px;
-    margin-top: 48px;
-}
-.pedido-titulo {
-    width: 310px;
-    height: 82px;
-    border-radius: 259px;
-    background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .form-pedidos {
     width: 1280px;
     height: auto;
@@ -3372,21 +983,9 @@
 }
 .confira-pedido {
     width: 262px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 .desc-pedido {
     width: 283px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 46px;
 }
 .desc-pedido-campo {
@@ -3397,6 +996,7 @@
     background: rgba(217, 217, 217, 0.00);
     margin-top: 21px;
     margin-left: 10px;
+    flex-wrap: wrap;
 }
 .valor-quantidade {
     margin-top: 11px;
@@ -3405,11 +1005,6 @@
 }
 .valor-unitario {
     width: 152px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
     line-height: normal;
 }
 .valor-unitario-campo {
@@ -3434,12 +1029,6 @@
 }
 .quantidade-titulo {
     width: 129px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-left: 25px;
 }
 #subtrair {
@@ -3467,12 +1056,6 @@
 }
 .quantidade-itens{
     width: 199px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 11px;
 }
 #quantidade-subtotal-campo {
@@ -3493,12 +1076,6 @@
 }
 .subtotal {
     width: 199px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 11px;
 }
 #valor-subtotal-campo {
@@ -3519,12 +1096,6 @@
 }
 .radio-titulo {
     width: 411px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 11px;
 }
 #receber-delivery {
@@ -3551,30 +1122,12 @@
     transform: rotate(-90deg);
     border-radius: 0px 0px 0px 28px;
     margin-left: 486px;
-    margin-bottom: 0;
-    
+    margin-bottom: 0;  
 }
-
 /* Delivery */
 .delivery {
     width: 1290px;
     margin-top: 48px; 
-}
-.delivery-titulo {
-    width: 310px;
-    height: 82px;
-    border-radius: 259px;
-    background: #F8F2E9;
-    color: #4F2F24;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .form-delivery {
     width: 1280px;
