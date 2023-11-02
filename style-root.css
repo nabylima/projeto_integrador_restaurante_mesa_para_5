@@ -37,6 +37,25 @@ body {
     align-items: center;
 }
 
+.cabecalho-menu a{
+    position: relative;
+}
+
+.cabecalho-menu a::after{
+    display: block;
+    content: " ";
+    width: 0%;
+    height: 3px;
+    top: 100%;
+    background-color: #F2BD57;    
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.cabecalho-menu a:hover::after{
+    width: 100%;
+}
+
 .cabecalho-button {
     padding: 10px;
     border-radius: 48px;
@@ -87,9 +106,33 @@ h1 {
     width: 40px;
 }
 
+.cabecalho-footer-geral img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+
 .cabecalho-footer {
     display: flex;
     gap: 20px;
+}
+
+.cabecalho-footer a{
+    position: relative;
+}
+
+.cabecalho-footer a::after{
+    display: block;
+    content: " ";
+    width: 0%;
+    height: 3px;
+    top: 100%;
+    background-color: #F2BD57;    
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.cabecalho-footer a:hover::after{
+    width: 100%;
 }
 
 .copyrigth {
@@ -118,6 +161,10 @@ h1 {
     width: 40px;
 }
 
+.cadastro-para-promocoes img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
 
 .email-newsletter {
     padding: 10px;
