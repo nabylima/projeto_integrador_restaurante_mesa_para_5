@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style-root.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/pages/cardapio/cardapio.css">
+    <link rel="stylesheet" href="./cardapio.css">
+    <script src="./cardapio.js" defer></script>
     <title>Cardápio | Mesa Para 5</title>
 </head>
 
@@ -27,289 +28,174 @@
         <section class="hero-cardapio">
           <div class="hero-texto">
             <h1 class="titulo-cardapio">Cardápio</h1>
-            <p class="subtitulo-1">
+            <h3 class="subtitulo-1">
                 <strong>A MELHOR COMIDA BRASILEIRA DA REGIÃO ESTÁ AQUI!</strong>
-            </p>
-            <p class="subtitulo-2">
+            </h3>
+            <h4 class="subtitulo-2">
                 <strong>Qual o seu pedido para hoje?</strong>
-            </p>
-            <p class="subtitulo-3">
+            </h4>
+            <h4 class="subtitulo-3">
                 <strong>Peça já pelo nosso Delivery!</strong>
-            </p>
-            <button class="button-delivery"><a href="">Delivery</a></button>
+            </h4>
+            <button class="button-delivery">
+              <a  href="#delivery">Delivery</a>
+            </button>
           </div>
           <div class="img-hero">
             <img src="./img_cardapio/1-img-hero.png" alt="imagem de um prato com comida">
           </div>  
         </section>
         <section class="categorias-cardapio">
-          <h1 class="titulo-categorias">Categorias</h1>
+          <h2 class="titulo-categorias">Categorias</h2>
           <div class="icones-categorias">
             <div>
-              <img src="./img_cardapio/1-icone-especiais.svg" alt="Icone Especiais">
-              <p>Especiais</p>
+              <a href="#especiais">
+                <img src="./img_cardapio/1-icone-especiais.svg" alt="Icone Especiais">
+                <p>Especiais</p> 
+              </a>
             </div>
             <div>
-              <img src="./img_cardapio/1-icone-entradas.svg" alt="Icone Entradas">
-              <p>Entradas</p>
+              <a href="#entradas">
+                <img src="./img_cardapio/1-icone-entradas.svg" alt="Icone Entradas">
+                <p>Entradas</p> 
+              </a>
             </div>
             <div>
-              <img src="./img_cardapio/1-icone-saladas.svg" alt="Icone Saladas">
-              <p>Saladas</p>
+              <a href="#saladas">
+                <img src="./img_cardapio/1-icone-saladas.svg" alt="Icone Saladas">
+                <p>Saladas</p>  
+              </a>
             </div>
             <div>
-              <img src="./img_cardapio/1-icone-carnes.svg" alt="Icone Carnes">
-              <p>Carnes</p>
+              <a href="#carnes">
+                <img src="./img_cardapio/1-icone-carnes.svg" alt="Icone Carnes">
+                <p>Carnes</p> 
+              </a>
             </div>
             <div>
-              <img src="./img_cardapio/1-icone-vegetarianas.svg" alt="Icone Vegetarianas">
-              <p>Vegetarianas</p>
+              <a href="#vegetarianas-massas">
+                <img src="./img_cardapio/1-icone-vegetarianas.svg" alt="Icone Vegetarianas">
+                <p>Vegetarianas</p> 
+              </a> 
             </div>
             <div>
-              <img src="./img_cardapio/1-icone-massas.svg" alt="Icone Massas">
-              <p>Massas</p>
+              <a href="#vegetarianas-massas">
+                <img src="./img_cardapio/1-icone-massas.svg" alt="Icone Massas">
+                <p>Massas</p> 
+              </a>
             </div>
             <div>
-              <img src="./img_cardapio/1-icone-acompanhamentos.svg" alt="Icone Acompanhamentos">
-              <p>Acompanhamentos</p>
+              <a href="#acompanhamentos">
+                <img src="./img_cardapio/1-icone-acompanhamentos.svg" alt="Icone Acompanhamentos">
+                <p>Acompanhamentos</p> 
+              </a>
+              
             </div>
             <div>
-              <img src="./img_cardapio/1-icone-sobremesas.svg" alt="Icone Sobremesas">
-              <p>Sobremesas</p>
+              <a href="#sobremesas-lanches">
+                <img src="./img_cardapio/1-icone-sobremesas.svg" alt="Icone Sobremesas">
+                <p>Sobremesas</p> 
+              </a>
             </div>
             <div>
-              <img src="./img_cardapio/1-icone-lanches.svg" alt="Icone Lanches">
-              <p>Lanches</p>
+              <a href="#sobremesas-lanches">
+                <img src="./img_cardapio/1-icone-lanches.svg" alt="Icone Lanches">
+                <p>Lanches</p>
+              </a>
             </div>
             <div>
-              <img src="./img_cardapio/1-icone-bebidas.svg" alt="Icone Bebidas">
-              <p>Bebidas</p>
+              <a href="#bebidas">
+                <img src="./img_cardapio/1-icone-bebidas.svg" alt="Icone Bebidas">
+                <p>Bebidas</p> 
+              </a>
             </div>
             <div>
-              <img src="./img_cardapio/1-icone-delivery.svg" alt="Icone Delivery">
-              <p>Delivery</p>
+              <a href="#delivery">
+                <img src="./img_cardapio/1-icone-delivery.svg" alt="Icone Delivery">
+                <p>Delivery</p> 
+              </a>
             </div>
           </div>
         </section>
-        <section class="especiais">
+        <section id="especiais">
           <h2 class="especiais-titulo">Especiais</h2>
           <div class="especiais-cards">
-            <div class="conteiner-feijoada">
-              <img src="./img_cardapio/2-feijoada-tradicional.svg" alt="Prato de feijoada">
-              <p class="texto-prato-feijoada">Feijoada tradicional</p>
-              <p class="texto-descr-feijoada">Feijoada acompanhada de arroz, couve, farofa e vinagrete</p>
-              <p class="preco-feijoada">R$ 35,00</p>
-              <button class="button-feijoada">Adicionar</button> 
-            </div>
-            <div class="conteiner-file-frango">
-              <img src="./img_cardapio/2-file-de-frango.svg" alt="Prato de filé de frango">
-              <p class="texto-prato-file-frango">Filé de frango da casa</p>
-              <p class="texto-descr-file-frango">Filé de frango, feijão, brócolis, mandioca, cenoura, couve e tomates</p>
-              <p class="preco-file-frango">R$ 20,00</p>
-              <button class="button-file-frango">Adicionar</button> 
-            </div>
-            <div class="conteiner-peixe-da-casa">
-              <img src="./img_cardapio/2-peixe-da-casa.svg" alt="Prato de filé de peixe">
-              <p class="texto-prato-peixe-da-casa">Peixe a moda da casa</p>
-              <p class="texto-descr-peixe-da-casa">Peixe grelhado com purê, grão de bico e salada verde</p>
-              <p class="preco-peixe-da-casa">R$ 30,00</p>
-              <button class="button-peixe-da-casa">Adicionar</button> 
-            </div>
-            <div class="conteiner-feijao-tropeiro">
-              <img src="./img_cardapio/2-feijao-tropeiro.svg" alt="Prato de feijão tropeiro">
-              <p class="texto-prato-feijao-tropeiro">Feijão tropeiro tradicional</p>
-              <p class="texto-descr-feijao-tropeiro">Feijão, farofa, couve, bacon, pimentões e linguiça calabresa</p>
-              <p class="preco-feijao-tropeiro">R$ 40,00</p>
-              <button class="button-feijao-tropeiro">Adicionar</button> 
-            </div>
           </div>
         </section>
-        <section class="entradas">
+        <section id="entradas">
           <div class="entradas-cards">
            <h2 class="entradas-titulo">Entradas</h2>
            <img id="entradas-titulo-img" src="./img_cardapio/3-titulo-entradas.svg" alt="Entradas"> 
           </div>
           <div class="conteiner-brusquettas">
             <img src="./img_cardapio/3-brusquettas.svg" alt="Pratos de entradas com cinco brusquettas">
-            <h2 class="titulo-bruschetta">Bruschetta</h2>
+            <h3 class="titulo-bruschetta">Bruschetta</h3>
             <div class="entrada-prato-1">
-              <p class="tex-entrada-prato-1">.Pão, tomate, cebola e pepino</p>
+              <h5 class="tex-entrada-prato-1">.Pão, tomate, cebola e pepino</h5>
               <svg xmlns="http://www.w3.org/2000/svg" width="202" height="2" viewBox="0 0 202 2" fill="none">
                 <path d="M0.576782 1.48145L201.423 1.48145" stroke="black"/>
               </svg>
-              <p class="preco-entrada-prato-1">R$ 12,00</p>
+              <h5 class="preco-entrada-prato-1">R$ 12,00</h5>
               <button class="button-entrada-prato-1">Adicionar</button>
             </div>
             <div class="entrada-prato-2">
-              <p class="tex-entrada-prato-2">.Pão, carne, tomates seco e ervas finas</p>
+              <h5 class="tex-entrada-prato-2">.Pão, carne, tomates seco e ervas finas</h5>
               <svg xmlns="http://www.w3.org/2000/svg" width="119" height="2" viewBox="0 0 119 2" fill="none">
                 <path d="M0.400146 1.22168L118.424 1.22168" stroke="black"/>
               </svg>
-              <p class="preco-entrada-prato-2">R$ 12,00</p>
+              <h5 class="preco-entrada-prato-2">R$ 12,00</h5>
               <button class="button-entrada-prato-2">Adicionar</button>
             </div>
             <div class="entrada-prato-3">
-              <p class="tex-entrada-prato-3">.Pão, cogumelos e ervas finas</p>
+              <h5 class="tex-entrada-prato-3">.Pão, cogumelos e ervas finas</h5>
               <svg xmlns="http://www.w3.org/2000/svg" width="199" height="2" viewBox="0 0 199 2" fill="none">
                 <path d="M0.509521 0.961914L198.424 0.961914" stroke="black"/>
               </svg>
-              <p class="preco-entrada-prato-3">R$ 12,00</p>
+              <h5 class="preco-entrada-prato-3">R$ 12,00</h5>
               <button class="button-entrada-prato-3">Adicionar</button>
             </div>
             <div class="entrada-prato-4">
-              <p class="tex-entrada-prato-4">.Pão, peixe, tomate e ervas finas</p>
+              <h5 class="tex-entrada-prato-4">.Pão, peixe, tomate e ervas finas</h5>
               <svg xmlns="http://www.w3.org/2000/svg" width="180" height="2" viewBox="0 0 180 2" fill="none">
                 <path d="M0.317993 0.703125L179.424 0.703125" stroke="black"/>
               </svg>
-              <p class="preco-entrada-prato-4">R$ 12,00</p>
+              <h5 class="preco-entrada-prato-4">R$ 12,00</h5>
               <button class="button-entrada-prato-4">Adicionar</button>
             </div>
             <div class="entrada-prato-5">
-              <p class="tex-entrada-prato-5">.Tartare: pão, carne, ovo e alface</p>
+              <h5 class="tex-entrada-prato-5">.Tartare: pão, carne, ovo e alface</h5>
               <svg xmlns="http://www.w3.org/2000/svg" width="170" height="2" viewBox="0 0 170 2" fill="none">
                 <path d="M0.670898 1.44336L169.424 1.44336" stroke="black"/>
               </svg>
-              <p class="preco-entrada-prato-5">R$ 12,00</p>
+              <h5 class="preco-entrada-prato-5">R$ 12,00</h5>
               <button class="button-entrada-prato-5">Adicionar</button>
             </div>
           </div>         
         </section>
-        <section class="saladas">
+        <section id="saladas">
           <h2 class="saladas-titulo">Saladas</h2>
           <div class="saladas-cards">
-            <div class="conteiner-salada-verde">
-              <img src="./img_cardapio/4-salada-verde.svg" alt="Prato de salada verde com peixe">
-              <p class="texto-prato-salada-verde">Salada verde com peixe</p>
-              <p class="texto-descr-salada-verde">Peixe, ovos, tomates, repolho, pepino, alface e ervas finas</p>
-              <p class="preco-salada-verde">R$ 15,00</p>
-              <button class="button-salada-verde">Adicionar</button> 
-            </div>
-            <div class="conteiner-salada-panzanella">
-              <img src="./img_cardapio/4-salada-panzanella.svg" alt="Prato de salada panzanella">
-              <p class="texto-prato-salada-panzanella">Panzanella</p>
-              <p class="texto-descr-salada-panzanella">Salada com pão, tomates e ervas finas</p>
-              <p class="preco-salada-panzanella">R$ 12,00</p>
-              <button class="button-salada-panzanella">Adicionar</button> 
-            </div>
-            <div class="conteiner-salada-abacate">
-              <img src="./img_cardapio/4-salada-abacate.svg" alt="Prato de salada de abacate">
-              <p class="texto-prato-salada-abacate">Salada de abacate</p>
-              <p class="texto-descr-salada-abacate">Abacate, tomates, ricota e ervas finas</p>
-              <p class="preco-salada-abacate">R$ 12,00</p>
-              <button class="button-salada-abacate">Adicionar</button> 
-            </div>
-            <div class="conteiner-salada-nozes">
-              <img src="./img_cardapio/4-salada-nozes.svg" alt="Prato de feijão tropeiro">
-              <p class="texto-prato-salada-nozes">Salada com nozes</p>
-              <p class="texto-descr-salada-nozes">Alface, cenoura, nozes, azeitonas e cebola</p>
-              <p class="preco-salada-nozes">R$ 15,00</p>
-              <button class="button-salada-nozes">Adicionar</button> 
-            </div>
           </div>
         </section>
-        <section class="carnes">
+        <section id="carnes">
           <h2 class="carnes-titulo">Carnes</h2>
           <div class="carnes-cards">
-            <div class="conteiner-file-ao-ponto">
-              <img src="./img_cardapio/5-file-ao-ponto.svg" alt="Prato de filé ao ponto do chef">
-              <p class="texto-prato-file-ao-ponto">Filé ao ponto do chef</p>
-              <p class="texto-descr-file-ao-ponto">Carne bovina acompanhada de brócolis e ervilhas</p>
-              <p class="preco-file-ao-ponto">R$ 35,00</p>
-              <button class="button-file-ao-ponto">Adicionar</button> 
-            </div>
-            <div class="conteiner-asinhas-frango">
-              <img src="./img_cardapio/5-asinhas-frango.svg" alt="Prato de asinhas de frango">
-              <p class="texto-prato-asinhas-frango">Asinhas de frango picante</p>
-              <p class="texto-descr-asinhas-frango">Asinhas de frango ao molho picante</p>
-              <p class="preco-asinhas-frango">R$ 20,00</p>
-              <button class="button-asinhas-frango">Adicionar</button> 
-            </div>
-            <div class="conteiner-carne-panela">
-              <img src="./img_cardapio/5-carne-panela.svg" alt="Prato de carne de panela">
-              <p class="texto-prato-carne-panela">Carne de panela</p>
-              <p class="texto-descr-carne-panela">Carne bovina cozida no molho vermelho</p>
-              <p class="preco-carne-panela">R$ 25,00</p>
-              <button class="button-carne-panela">Adicionar</button> 
-            </div>
-            <div class="conteiner-peixe-molho">
-              <img src="./img_cardapio/5-peixe-molho.svg" alt="Prato de peixe ao molho">
-              <p class="texto-prato-peixe-molho">Peixe ao molho de coco</p>
-              <p class="texto-descr-peixe-molho">Peixe cozido ao molho de coco com ervas finas</p>
-              <p class="preco-peixe-molho">R$ 25,00</p>
-              <button class="button-peixe-molho">Adicionar</button> 
-            </div>
           </div>
         </section>
-        <section class="vegetarianas-massas" >
+        <section id="vegetarianas-massas" >
           <div class="vegetarianas-massas-titulos">
             <h2 class="vegetarianas-titulo">Vegetarianas</h2>
             <h2 class="massas-titulo">Massas</h2>
           </div>
           <div class="vegetarianas-massas-cards">
-            <div class="conteiner-berinjela-recheada">
-              <img src="./img_cardapio/6-berinjela-recheada.svg" alt="Prato de beringela recheada">
-              <p class="texto-prato-berinjela-recheada">Berinjela recheada</p>
-              <p class="texto-descr-berinjela-recheada">Berinjela recheada com carne vegetal e creme branco</p>
-              <p class="preco-berinjela-recheada">R$ 25,00</p>
-              <button class="button-berinjela-recheada">Adicionar</button> 
-            </div>
-            <div class="conteiner-repolho-refogado">
-              <img src="./img_cardapio/6-repolho-refogado.svg" alt="Prato de repolho refogado">
-              <p class="texto-prato-repolho-refogado">Repolho refogado</p>
-              <p class="texto-descr-repolho-refogado">Repolho refogado com queijo e ervas finas</p>
-              <p class="preco-repolho-refogado">R$ 25,00</p>
-              <button class="button-repolho-refogado">Adicionar</button> 
-            </div>
-            <div class="conteiner-espaguete-molho">
-              <img src="./img_cardapio/6-espaguete-molho.svg" alt="Prato de espaguete ao molho">
-              <p class="texto-prato-espaguete-molho">Espaguete ao molho</p>
-              <p class="texto-descr-espaguete-molho">Espaguete ao molho vermelho com tomates e ervas finas</p>
-              <p class="preco-espaguete-molho">R$ 25,00</p>
-              <button class="button-espaguete-molho">Adicionar</button> 
-            </div>
-            <div class="conteiner-espaguete-camarao">
-              <img src="./img_cardapio/6-espaguete-camarao.svg" alt="Prato de espaguete com camarão">
-              <p class="texto-prato-espaguete-camarao">Espaguete com camarão</p>
-              <p class="texto-descr-espaguete-camarao">Espaguete com camarão e tiras de carne bovina</p>
-              <p class="preco-espaguete-camarao">R$ 35,00</p>
-              <button class="button-espaguete-camarao">Adicionar</button> 
-            </div>
           </div>
         </section>
-        <section class="acompanhamentos" >
+        <section id="acompanhamentos" >
           <h2 class="acompanhamentos-titulo">Acompanhamentos</h2>
           <div class="acompanhamentos-cards">
-            <div class="conteiner-arroz-branco">
-              <img src="./img_cardapio/7-arroz-branco.svg" alt="Prato de arroz branco">
-              <p class="texto-prato-arroz-branco">Arroz branco</p>
-              <p class="texto-descr-arroz-branco">Arroz branco</p>
-              <p class="preco-arroz-branco">R$ 8,00</p>
-              <button class="button-arroz-branco">Adicionar</button> 
-            </div>
-            <div class="conteiner-arroz-primavera">
-              <img src="./img_cardapio/7-arroz-primavera.svg" alt="Prato de arroz primavera">
-              <p class="texto-prato-arroz-primavera">Arroz Primavera</p>
-              <p class="texto-descr-arroz-primavera">Arroz cozido com pimentões, vagem e cebolinha fresca</p>
-              <p class="preco-arroz-primavera">R$ 8,00</p>
-              <button class="button-arroz-primavera">Adicionar</button> 
-            </div>
-            <div class="conteiner-pure-batatas">
-              <img src="./img_cardapio/7-pure-batatas.svg" alt="Prato de purê de batatas">
-              <p class="texto-prato-pure-batatas">Purê de batatas</p>
-              <p class="texto-descr-pure-batatas">Purê de batatas</p>
-              <p class="preco-pure-batatas">R$ 12,00</p>
-              <button class="button-pure-batatas">Adicionar</button> 
-            </div>
-            <div class="conteiner-batatas-fritas">
-              <img src="./img_cardapio/7-batatas-fritas.svg" alt="Prato de batatas fritas">
-              <p class="texto-prato-batatas-fritas">Batatas fritas</p>
-              <p class="texto-descr-batatas-fritas">Batatas fritas crocantes por fora e macias por dentro</p>
-              <p class="preco-batatas-fritas">R$ 12,00</p>
-              <button class="button-batatas-fritas">Adicionar</button> 
-            </div>
           </div>
         </section>
-        <section class="sobremesas-lanches">
+        <section id="sobremesas-lanches">
           <div class="sobremesas-lanches-titulos">
             <h2 class="sobremesas-titulo">Sobremesas</h2>
             <h2 class="lanches-titulo">Lanches</h2>
@@ -317,149 +203,149 @@
           <div class="conteiner-sobremesas-lanches">
             <div class="conteiner-sobremesas">
               <img src="./img_cardapio/8-sobremesas.svg" alt="Pratos de lanches">
-              <h2 class="titulo-sobremesas">Sobremesas</h2>
+              <h3 class="titulo-sobremesas">Sobremesas</h3>
               <div class="sobremesa-1">
-                <p class="tex-sobremesa-1">.Mousse de chocolate</p>
+                <h5 class="tex-sobremesa-1">.Mousse de chocolate</h5>
                 <svg xmlns="http://www.w3.org/2000/svg" width="79" height="2" viewBox="0 0 79 2" fill="none">
                   <path d="M0 1L79 0.996094" stroke="black"/>
                 </svg>
-                <p class="preco-sobremesa-1">R$ 12,00</p>
+                <h5 class="preco-sobremesa-1">R$ 12,00</h5>
                 <button class="button-sobremesa-1">Adicionar</button>
               </div>
               <div class="sobremesa-2">
-                <p class="tex-sobremesa-2">.Pudim de leite</p>
+                <h5 class="tex-sobremesa-2">.Pudim de leite</h5>
                 <svg xmlns="http://www.w3.org/2000/svg" width="140" height="2" viewBox="0 0 140 2" fill="none">
                   <path d="M0 1.07227H140" stroke="black"/>
                 </svg>
-                <p class="preco-sobremesa-2">R$ 12,00</p>
+                <h5 class="preco-sobremesa-2">R$ 12,00</h5>
                 <button class="button-sobremesa-2">Adicionar</button>
               </div>
               <div class="sobremesa-3">
-                <p class="tex-sobremesa-3">.Cupcake de morango</p>
+                <h5 class="tex-sobremesa-3">.Cupcake de morango</h5>
                 <svg xmlns="http://www.w3.org/2000/svg" width="74" height="2" viewBox="0 0 74 2" fill="none">
                   <path d="M-0.00164795 1.34912L73.571 1.34912" stroke="black"/>
                 </svg>
-                <p class="preco-sobremesa-3">R$ 12,00</p>
+                <h5 class="preco-sobremesa-3">R$ 12,00</h5>
                 <button class="button-sobremesa-3">Adicionar</button>
               </div>
               <div class="sobremesa-4">
-                <p class="tex-sobremesa-4">.Cupcake de chocolate e menta</p>
+                <h5 class="tex-sobremesa-4">.Cupcake de chocolate e menta</h5>
                 <svg xmlns="http://www.w3.org/2000/svg" width="51" height="2" viewBox="0 0 51 2" fill="none">
                   <path d="M-0.00366211 1.43359L51.0041 1.43359" stroke="black"/>
                 </svg>
-                <p class="preco-sobremesa-4">R$ 12,00</p>
+                <h5 class="preco-sobremesa-4">R$ 12,00</h5>
                 <button class="button-sobremesa-4">Adicionar</button>
               </div>
               <div class="sobremesa-5">
-                <p class="tex-sobremesa-5">.Milk-shake de chocolate</p>
+                <h5 class="tex-sobremesa-5">.Milk-shake de chocolate</h5>
                 <svg xmlns="http://www.w3.org/2000/svg" width="51" height="2" viewBox="0 0 51 2" fill="none">
                   <path d="M-0.000183105 1.09473H51.0002" stroke="black"/>
                 </svg>
-                <p class="preco-sobremesa-5">R$ 12,00</p>
+                <h5 class="preco-sobremesa-5">R$ 12,00</h5>
                 <button class="button-sobremesa-5">Adicionar</button>
               </div>
             </div>
             <div class="conteiner-lanches">
               <img src="./img_cardapio/8-lanches.svg" alt="Pratos de lanches">
-              <h2 class="titulo-lanches">Lanches</h2>
+              <h3 class="titulo-lanches">Lanches</h3>
               <div class="lanches-1">
-                <p class="tex-lanches-1">.Sanduíche natural vegetariano </p>
+                <h5 class="tex-lanches-1">.Sanduíche natural vegetariano </h5>
                 <svg xmlns="http://www.w3.org/2000/svg" width="106" height="2" viewBox="0 0 106 2" fill="none">
                     <path d="M0 1L106 1" stroke="black"/>
                 </svg>
-                <p class="preco-lanches-1">R$ 15,00</p>
+                <h5 class="preco-lanches-1">R$ 15,00</h5>
                 <button class="button-lanches-1">Adicionar</button>
               </div>
               <div class="lanches-2">
-                <p class="tex-lanches-2">.Hambúrguer de carne bovina</p>
+                <h5 class="tex-lanches-2">.Hambúrguer de carne bovina</h5>
                 <svg xmlns="http://www.w3.org/2000/svg" width="73" height="1" viewBox="0 0 73 1" fill="none">
                     <path d="M-0.00341797 0.5H73.0034" stroke="black"/>
                 </svg>
-                <p class="preco-lanches-2">R$ 15,00</p>
+                <h5 class="preco-lanches-2">R$ 15,00</h5>
                 <button class="button-lanches-2">Adicionar</button>
               </div>
               <div class="lanches-3">
-                <p class="tex-lanches-3">.Porção de batatas rústicas</p>
+                <h5 class="tex-lanches-3">.Porção de batatas rústicas</h5>
                 <svg xmlns="http://www.w3.org/2000/svg" width="106" height="2" viewBox="0 0 106 2" fill="none">
                     <path d="M0 0.966797H105.971" stroke="black"/>
                 </svg>
-                <p class="preco-lanches-3">R$ 15,00</p>
+                <h5 class="preco-lanches-3">R$ 15,00</h5>
                 <button class="button-lanches-3">Adicionar</button>
               </div>
               <div class="lanches-4">
-                <p class="tex-lanches-4">.Porção de asinhas empanadas</p>
+                <h5 class="tex-lanches-4">.Porção de asinhas empanadas</h5>
                 <svg xmlns="http://www.w3.org/2000/svg" width="101" height="2" viewBox="0 0 101 2" fill="none">
                     <path d="M0 1L101 1" stroke="black"/>
                 </svg>
-                <p class="preco-lanches-4">R$ 15,00</p>
+                <h5 class="preco-lanches-4">R$ 15,00</h5>
                 <button class="button-lanches-4">Adicionar</button>
               </div>
               <div class="lanches-5">
-                <p class="tex-lanches-5">.Porção de calabresa com batatas</p>
+                <h5 class="tex-lanches-5">.Porção de calabresa com batatas</h5>
                 <svg xmlns="http://www.w3.org/2000/svg" width="83" height="1" viewBox="0 0 83 1" fill="none">
                     <path d="M-0.00305176 0.5H83.003" stroke="black"/>
                 </svg>
-                <p class="preco-lanches-5">R$ 15,00</p>
+                <h5 class="preco-lanches-5">R$ 15,00</h5>
                 <button class="button-lanches-5">Adicionar</button>
               </div>
             </div>  
           </div>
         </section>
-        <section class="bebidas">
+        <section id="bebidas">
             <h2 class="bebidas-titulo">Bebidas</h2>
             <div class="bebidas-cards">
               <div class="conteiner-bebidas">
                 <img src="./img_cardapio/9-bebidas.svg" alt="Bebidas">
-                <h2 class="titulo-bebidas">Bebidas</h2>
+                <h3 class="titulo-bebidas">Bebidas</h3>
                 <div class="conteiner-sucos-refrigerantes">
-                    <p class="titulo-sucos">Sucos</p>
-                    <p class="titulo-refrigerantes">Refrigerantes</p>
+                    <h4 class="titulo-sucos">Sucos</h4>
+                    <h4 class="titulo-refrigerantes">Refrigerantes</h4>
                     <div class="suco-1">
-                        <p class="tex-suco-1">. Suco de laranja</p>
+                        <h5 class="tex-suco-1">. Suco de laranja</h5>
                         <svg xmlns="http://www.w3.org/2000/svg" width="95" height="2" viewBox="0 0 95 2" fill="none">
                             <path d="M0 1L95 1" stroke="black"/>
                         </svg>
-                        <p class="preco-suco-1">R$ 8,00</p>
+                        <h5 class="preco-suco-1">R$ 8,00</h5>
                         <button class="button-suco-1">Adicionar</button>
                     </div>
                     <div class="suco-2">
-                    <p class="tex-suco-2">. Suco de manga</p>
+                    <h5 class="tex-suco-2">. Suco de manga</h5>
                     <svg xmlns="http://www.w3.org/2000/svg" width="95" height="2" viewBox="0 0 95 2" fill="none">
                         <path d="M0 1L95 1" stroke="black"/>
                     </svg>
-                    <p class="preco-suco-2">R$ 8,00</p>
+                    <h5 class="preco-suco-2">R$ 8,00</h5>
                     <button class="button-suco-2">Adicionar</button>
                     </div>
                     <div class="suco-3">
-                    <p class="tex-suco-3">. Suco de melância</p>
+                    <h5 class="tex-suco-3">. Suco de melância</h5>
                     <svg xmlns="http://www.w3.org/2000/svg" width="86" height="2" viewBox="0 0 86 2" fill="none">
                         <path d="M0.700073 0.589844L85.1826 0.592589" stroke="black"/>
                     </svg>
-                    <p class="preco-suco-3">R$ 8,00</p>
+                    <h5 class="preco-suco-3">R$ 8,00</h5>
                     <button class="button-suco-3">Adicionar</button>
                     </div>
                     <div class="suco-4">
-                    <p class="tex-suco-4">. Suco de limão</p>
+                    <h5 class="tex-suco-4">. Suco de limão</h5>
                     <svg xmlns="http://www.w3.org/2000/svg" width="111" height="2" viewBox="0 0 111 2" fill="none">
                         <path d="M0 1L111 1" stroke="black"/>
                     </svg>
-                    <p class="preco-suco-4">R$ 8,00</p>
+                    <h5 class="preco-suco-4">R$ 8,00</h5>
                     <button class="button-suco-4">Adicionar</button>
                     </div>
                     <div class="suco-5">
-                    <p class="tex-suco-5">. Suco de abacaxi</p>
+                    <h5 class="tex-suco-5">. Suco de abacaxi</h5>
                     <svg xmlns="http://www.w3.org/2000/svg" width="92" height="2" viewBox="0 0 92 2" fill="none">
                         <path d="M0 1L92 1" stroke="black"/>
                     </svg>
-                    <p class="preco-suco-5">R$ 8,00</p>
+                    <h5 class="preco-suco-5">R$ 8,00</h5>
                     <button class="button-suco-5">Adicionar</button>
                     </div>
                     <div class="refrigerante-1">
-                    <p class="tex-refrigerante-1">. Refrigerante lata 250ml:</p>
+                    <h5 class="tex-refrigerante-1">. Refrigerante lata 250ml:</h5>
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
                         <path d="M0 1L25 1" stroke="black"/>
                     </svg>
-                    <p class="preco-refrigerante-1">R$ 8,00</p>
+                    <h5 class="preco-refrigerante-1">R$ 8,00</h5>
                     <button class="button-refrigerante-1">Adicionar</button>
                     <ul class="lista-refrigerante-1">
                         <li>. Coca-Cola</li>
@@ -469,11 +355,11 @@
                     </ul>
                     </div>
                     <div class="refrigerante-2">
-                    <p class="tex-refrigerante-2">. Refrigerante 2L:</p>
+                    <h5 class="tex-refrigerante-2">. Refrigerante 2L:</h5>
                     <svg xmlns="http://www.w3.org/2000/svg" width="99" height="2" viewBox="0 0 99 2" fill="none">
                         <path d="M0 1L99 1" stroke="black"/>
                     </svg>
-                    <p class="preco-refrigerante-2">R$ 8,00</p>
+                    <h5 class="preco-refrigerante-2">R$ 8,00</h5>
                     <button class="button-refrigerante-2">Adicionar</button>
                     <ul class="lista-refrigerante-2">
                         <li>. Coca-Cola</li>
@@ -486,20 +372,20 @@
               </div>
             </div>
         </section>
-        <section class="pedidos">
+        <section id="pedidos">
             <h2 class="pedido-titulo">Pedido</h2>
             <form class="form-pedidos" action="#">
-              <p class="confira-pedido">Confira seu pedido!</p>
-              <p class="desc-pedido">Descrição do seu pedido:</p> 
+              <h3 class="confira-pedido">Confira seu pedido!</h3>
+              <h4 class="desc-pedido">Descrição do seu pedido:</h4> 
               <div class="campos-desc-pedido"> 
                 <div class="desc-pedido-campo"></div>
                 <div class="valor-quantidade">
                   <div class="conteiner-valor">
-                    <p class="valor-unitario">Valor unitário</p>
+                    <h4 class="valor-unitario">Valor unitário</h4>
                     <div class="valor-unitario-campo">0</div>
                   </div>
                   <div class="conteiner-quantidade">
-                    <p class="quantidade-titulo">Quantidade</p>
+                    <h4 class="quantidade-titulo">Quantidade</h4>
                     <button id="subtrair"><img src="./img_cardapio/11-Botão -.svg" alt=""></button>
                     <input id="quantidade-campo" type="" value="0" min="0" placeholder="0"required>
                     <button id="adicionar"><img src="./img_cardapio/11-Botão +.svg" alt=""></button>
@@ -507,13 +393,13 @@
                 </div>
               </div>
               <div class="subtotal-quantidade">
-                <p class="quantidade-itens">Quantidade itens:</p>
+                <h4 class="quantidade-itens">Quantidade itens:</h4>
                 <p id="quantidade-subtotal-campo">0</p>
-                <p class="subtotal">Subtotal</p>
+                <h4 class="subtotal">Subtotal</h4>
                 <p id="valor-subtotal-campo">0</p>
               </div>
               <div class="radio-form">
-                <p class="radio-titulo">Como prefere receber o seu pedido?</p>
+                <h4 class="radio-titulo">Como prefere receber o seu pedido?</h4>
                 <input type="radio" id="retirar-pedido" name="pedido" value="retirar">
                 <label for="retirar">Retirar na loja</label>
                 <input type="radio" id="receber-delivery" name="pedido" value="delivery">
@@ -523,7 +409,7 @@
               <!-- <p>Seu pedido está sendo preparado e em breve estará pronto para ser retirado. AGRADEMOS O SEU PEDIDO!</p> -->
             </form>
         </section>
-        <section class="delivery">
+        <section id="delivery">
           <h2 class="delivery-titulo">Delivery</h2>
           <form class="form-delivery" action="#">
             <div>
@@ -538,6 +424,7 @@
               <label>Pedido:</label><br>
               <input type=""><br>
               <button class="button-enviar-pedido" type="submit">Enviar Pedido</button>
+              <!-- <p>Seu pedido está sendo preparado e em breve será entregue. AGRADEMOS O SEU PEDIDO!</p> -->
             </div>
             <div>
               <img src="./img_cardapio/12-delivery.png" alt="">
