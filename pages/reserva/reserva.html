@@ -38,6 +38,9 @@
           <img src="/img/mesa-06.jpg">
           <img src="/img/mesa-07.jpg">
           <img src="/img/mesa-08.jpg">
+          <img src="/img/areas-das-mesas-01.png">
+          <img src="/img/areas-das-mesas-02.png">
+          <img src="/img/areas-das-mesas-03.png">
         </div>
         <div onclick="side_slide(-1)" class="slide left">
           <span class="fa fa-arrow-left"></span>
@@ -54,18 +57,25 @@
           <span onclick="btm_slide(6)">Mesa 06</span>
           <span onclick="btm_slide(7)">Mesa 07</span>
           <span onclick="btm_slide(8)">Mesa 08</span>
+          <span onclick="btm_slide(9)">Área das Mesas</span>
+          <span onclick="btm_slide(10)">Área das Mesas</span>
+          <span onclick="btm_slide(11)">Área das Mesas</span>
         </div>
       </div>
       <section>
         <div class="form-conteudo">
           <form class="form" action="#">
-            <label for="name">Nome:</label>
-            <input id="input-nome" class="input" type="text" id="name" name="name" placeholder="Insira Seu Nome"
-              required>
-            <!-- <p id="text-error" class="error-text">*Por favor introduza seu nome</p> -->
-            <label for="mesa">Escolha sua Mesa:</label>
-            <select class="select" name="mesa" required="required">
-              <option value="">Escolha uma ou mais mesas para Reservar!</option>
+            <label for="username">Nome:</label>
+            <input class="input-name" type="text" id="username" name="username" placeholder="Insira Seu Nome">
+            <div class="error-container">
+              <p id="username-helper" class="error-text">Por favor introduza seu nome</p>
+            </div>
+            <label for="email" class="label-email">E-mail:</label>
+            <input class="input-email" type="text" id="email" name="email" placeholder="silvia@gmail.com">
+            <p id="email-helper" class="error-text">*Por favor introduza seu email</p>
+            <label for="mesas" class="label-escolha-da-mesa">Escolha sua Mesa:</label>
+            <select id="mesas" class="select" name="mesas">
+              <option value="">Escolha a mesa de sua preferência para reservar!</option>
               <option value="1">Mesa 01</option>
               <option value="2">Mesa 02</option>
               <option value="3">Mesa 03</option>
@@ -75,53 +85,67 @@
               <option value="7">Mesa 07</option>
               <option value="7">Mesa 08</option>
             </select>
+            <p id="mesas-helper" class="error-text">*Por favor introduza seu email</p>
             <div class="pessoas-telefone">
               <div>
-                <label for="total_de_pessoas">Total de Pessoas:</label>
-                <input class="input-pessoas" type="text" id="total_de_pessoas" name="total_de_pessoas" placeholder="0"
-                  required>
-                <!-- <p id="text-error" class="error-text">*Por favor insira o nº de pessoas</p>-->
+                <label for="total_de_pessoas" class="label-total-de-pessoas">Total de Pessoas:</label>
+                <input class="input-pessoas" type="text" id="total_de_pessoas" name="total_de_pessoas" placeholder="0">
+                <p id="pessoas-helper" class="error-text">*Por favor insira o nº de pessoas</p>
               </div>
               <div>
-                <label for="phone">Telefone:</label>
-                <input class="input-telefone" type="tel" id="phone" name="phone" placeholder="Telefone para Contato"
-                  required>
-                <!--  <p id="text-error" class="error-text">*Por favor insira o nº para contato</p>-->
+                <label for="phone">Celular:</label>
+                <input class="input-telefone" type="tel" id="phone" name="phone" placeholder="119XXXXXXXX">
+                <p id="phone-helper" class="error-text">*Por favor insira o nº para contato</p>
               </div>
             </div>
             <div class="radio-form">
               <p class="radio-titulo">Algum Aniversariante no Dia?</p>
               <input type="radio" id="sim" name="
               birthday" value="sim">
-              <label for="sim">Sim</label>
+              <label class="label-aniversariante" for="sim">Sim</label>
               <input type="radio" id="nao" name="
               birthday" value="nao">
-              <label for="nao">Não</label>
+              <label class="label-aniversariante" for="nao">Não</label>
             </div>
             <div class="date-time">
               <div>
                 <label for="date">Data:</label>
-                <input class="input-date" type="date" id="date" name="date" required>
-                <!-- <p id="text-error" class="error-text">*Por favor insira a data da reserva</p> -->
+                <input class="input-date" type="date" id="date" name="date">
+                <p id="date-helper" class="error-text">*Por favor insira a data da reserva</p>
               </div>
               <div>
                 <label for="time">Hora:</label>
-                <input class="input-time" type="time" id="time" name="time" required>
-                <!--  <p id="text-error" class="error-text">*Por favor insira a hora da reserva</p> -->
+                <input class="input-time" type="time" id="time" name="time">
+                <p id="time-helper" class="error-text">*Por favor insira a hora da reserva</p>
               </div>
             </div>
-            <label for="cupom">Cupom de Desconto</label>
-            <div class="box-cupom">
-              <input class="input-cupom" type="text" id="cupom" name="cupom" placeholder="Insira seu Cupom de Desconto">
-              <button type="submit" class="button-resgatar">Resgatar</button>
-            </div>
-            <label for="mensagem">Mensagem</label>
+            <label for="mensagem" class="label-mensagem">Mensagem</label>
             <textarea class="textearea" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem"></textarea>
             <button class="button-enviar" type="submit">CONFIRMAR A RESERVA</button>
           </form>
+          <br>
+          <label for="cupom" class="label-cupom-de-desconto">Cupom de Desconto</label>
+          <div class="box-cupom">
+            <input class="input-cupom" type="text" id="cupom" name="cupom" placeholder="Digite um Cupom de Desconto">
+            <button id="botaoResgatar" onclick="exibirImagemDoCupom()" class="button-resgatar">Resgatar</button>
+            <p id="cupom-helper" class="error-text">Cupom de desconto não encontrado.</p>
+          </div>
         </div>
     </div>
     </section>
+
+
+    <div id="imagemModal">
+      <div id="modalConteudo">
+        <span id="fecharBotao" onclick="fecharImagem()">
+          <div id="circulo">
+            <span class="fa fa-close"></span>
+          </div>
+        </span>
+        <img id="modalImagem" alt="Imagem relacionada ao cupom de desconto">
+      </div>
+    </div>
+
     <div class="observacoes-atendimento">
       <div class="texto-atendimento">
         <h2 class="titulo-atendimento">Jornada de trabalho</h2>

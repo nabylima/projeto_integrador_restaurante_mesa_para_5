@@ -42,6 +42,56 @@
     cursor: pointer;
 }
 
+.modal{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s
+    ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.modal-content{
+    background-color: /*rgb(198, 189, 189);*/#f1c779;
+    padding: 20px 24px;
+    
+    width: 500px;
+    border-radius: 0.5rem;
+    
+}
+
+.span-modal{
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 24px;
+}
+
+.modal-content-h1{
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.span-modal:hover{
+    background-color: darkgray;
+}
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform:scale(1.0);
+}
+
 .h1-about-us,  .h1-carousel{
     text-align: center;
     font-size: 35px;

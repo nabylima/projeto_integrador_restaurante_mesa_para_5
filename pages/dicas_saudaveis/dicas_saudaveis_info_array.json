@@ -1,0 +1,52 @@
+{
+    "pratos": [
+        {
+            "id": "boloBanana",
+            "diretorioImg": "./img/dicas_saudaveis-torta-banana.png",
+            "altImg": "Torta à base de banana, açúcar demerara e aveia.",
+            "pratoNome": "Bolo de banana com aveia",
+            "descricaoPrato": "Deliciosa torta à base de banana, açúcar demerara e aveia.",
+            "valorPrato": "35 R$"
+        },
+        {
+            "id": "frangoGrelhado",
+            "diretorioImg": "./img/dicas_saudaveis-frango_grelhado.png", 
+            "altImg": "Peito de frango grelhado e legumes.",
+            "pratoNome": "Frango Grelhado",
+            "descricaoPrato": "Peito de frango grelhado e legumes.",
+            "valorPrato": "35 R$"
+        },
+        {
+            "id": "muesli",
+            "diretorioImg": "./img/dicas_saudaveis-muesli.png", 
+            "altImg": "Sobremesa gelada com iogurte, mirtilo, morango e amêndoas torradas.",
+            "pratoNome": "Muesli",
+            "descricaoPrato": "Sobremesa gelada com iogurte, mirtilo, morango e amêndoas torradas.",
+            "valorPrato": "35 R$"
+        },
+        {
+            "id": "salmãoGrelhado",
+            "diretorioImg": "./img/dicas-saudaveis_salmão_grelhado.png",
+            "altImg": "Salmão grelhado com arroz e legumes.",
+            "pratoNome": "Salmão Grelhado",
+            "descricaoPrato": "Salmão grelhado com arroz e legumes.",
+            "valorPrato": "35 R$"
+        },
+        {
+            "id": "smoothies",
+            "diretorioImg": "./img/dicas_saudaveis-smoothies.png", 
+            "altImg": "Smoothies suco de frutas e frutas frescas.",
+            "pratoNome": "Smoothies",
+            "descricaoPrato": "Smoothies suco de frutas e frutas frescas.",
+            "valorPrato": "35 R$"
+        },
+        {
+            "id": "penne",
+            "diretorioImg": "./img/dicas-saudaveis_penne.png",
+            "altImg": "Macarrão italiano picante com tomate, alho e pimenta vermelha.",
+            "pratoNome": "Penne all'arrabbiata",
+            "descricaoPrato": "Macarrão italiano picante com tomate, alho e pimenta vermelha.            ",
+            "valorPrato": "35 R$"
+        }
+    ]
+}
