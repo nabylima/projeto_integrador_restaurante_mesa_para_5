@@ -119,15 +119,16 @@
                 <p id="time-helper" class="error-text">*Por favor insira a hora da reserva</p>
               </div>
             </div>
-            <label for="cupom" class="label-cupom-de-desconto">Cupom de Desconto</label>
-            <p id="cupom-helper" class="error-text">Cupom de desconto não encontrado.</p>
             <label for="mensagem" class="label-mensagem">Mensagem</label>
             <textarea class="textearea" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem"></textarea>
             <button class="button-enviar" type="submit">CONFIRMAR A RESERVA</button>
           </form>
+          <br>
+          <label for="cupom" class="label-cupom-de-desconto">Cupom de Desconto</label>
           <div class="box-cupom">
             <input class="input-cupom" type="text" id="cupom" name="cupom" placeholder="Digite um Cupom de Desconto">
             <button id="botaoResgatar" onclick="exibirImagemDoCupom()" class="button-resgatar">Resgatar</button>
+            <p id="cupom-helper" class="error-text">Cupom de desconto não encontrado.</p>
           </div>
         </div>
     </div>

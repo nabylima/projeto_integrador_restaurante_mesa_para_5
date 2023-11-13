@@ -248,10 +248,6 @@
     box-shadow: inset 0px 0px 2px 2px #F2BD57;
 }
 
-.label-cupom-de-desconto {
-    padding-top: 10px;
-}
-
 .box-cupom {
     margin-top: 5px;
     display: flex;
@@ -313,7 +309,7 @@
     color: #757575;
     font-family: 'Roboto';
     resize: none;
-    height: 130px;
+    height: 120px;
     border-color: #b1afaf;
     outline: none;
     margin-bottom: 10px;
