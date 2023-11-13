@@ -60,6 +60,9 @@ p {
     font-weight: 700;
     line-height: normal;
 }
+button {
+    cursor: pointer;
+}
 button:hover {
     box-shadow: 0px 0px 10px #F2BD57;
 }
@@ -972,137 +975,177 @@ button:hover {
 }
 
 /* Pedidos */
-.form-pedidos {
+.confira-pedido {
+    width: 262px;
+    margin-bottom: 30px;
+}
+.content {
     width: 1280px;
-    height: auto;
+    display: flex;    
     border-radius: 28px;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-top: 28.58px;
     padding: 49px 67px 49px 67px;
 }
-.confira-pedido {
-    width: 262px;
+.content section {
+    flex: 1;
 }
-.desc-pedido {
-    width: 283px;
-    margin-top: 46px;
+.content aside {
+    min-width: 250px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr {
+    border-bottom: 3px solid rgba(242, 189, 87, 0.20);
+}
+tbody tr:last-child {
+    border: 0;
+}
+th {
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    padding-bottom: 10px;
+}
+td {
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 30px 0; 
 }
 .desc-pedido-campo {
-    width: 1157px;
-    height: 51px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    background: rgba(217, 217, 217, 0.00);
-    margin-top: 21px;
-    margin-left: 10px;
-    flex-wrap: wrap;
-}
-.valor-quantidade {
-    margin-top: 11px;
     display: flex;
     align-items: center;
 }
-.valor-unitario {
-    width: 152px;
-    line-height: normal;
+.desc-pedido-campo img {
+    border-radius: 6px;
 }
-.valor-unitario-campo {
-    width: 131px;
-    height: 51px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    background: rgba(217, 217, 217, 0.00);
-    text-align: center;
-    color: #858585;
+.info {
+    margin-left: 20px;
+}
+.name {
+    color: #4F2F24;
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 20px;
-    margin-left: 10px;
-}
+    margin-bottom: 10px;
+  }
+  .category {
+    color: #98817a;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 .conteiner-quantidade {
-    margin-top: 11px;
-    margin-left: 45px;
+    height: 30px;
+    background: rgba(242, 189, 87, 0.10);
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 60px;
+    border-radius: 20px;
+    overflow: hidden;
 }
-.quantidade-titulo {
-    width: 129px;
-    margin-left: 25px;
-}
-#subtrair {
-    margin-top: 31px;
-}
-#quantidade-campo {
-    width: 89px;
-    height: 51px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    background: rgba(217, 217, 217, 0.00);
+.conteiner-quantidade input {
+    margin: 0 10px;
+    width: 20px;
+    background: transparent;
+    border: 0;
     text-align: center;
-    color: #858585;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.conteiner-quantidade button {
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 18px;
+    height: 100%;
+}
+.remove-pedido {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.resumo-compra {
+    margin-bottom: 15px;
+    border: 0;
+    background: rgba(242, 189, 87, 0.10);
+}
+.resumo-compra-titulo {
+    padding: 15px 20px;
+    color: #4F2F24;
     font-family: 'Roboto';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 20px;
-    margin-left: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(242, 189, 87, 0.50);
 }
-#adicionar {
-    margin-top: 31px;
-    margin-left: 12px;
+.resumo-descricao {
+    padding: 20px;
 }
-.quantidade-itens{
-    width: 199px;
-    margin-top: 11px;
+.resumo-descricao div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-#quantidade-subtotal-campo {
-    width: 131px;
-    height: 51px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    background: rgba(217, 217, 217, 0.00);
-    text-align: center;
-    color: #858585;
+.resumo-descricao div:last-child {
+    margin-bottom: 0;
+}
+.resumo-total {
+    padding: 15px 20px;
+    color: #4F2F24;
     font-family: 'Roboto';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 20px;
-    margin-left: 10px;
+    text-align: left;
+    background: rgba(242, 189, 87, 0.20);
+    display: flex; 
+    justify-content: space-between;   
 }
-.subtotal {
-    width: 199px;
-    margin-top: 11px;
-}
-#valor-subtotal-campo {
-    width: 131px;
-    height: 51px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    background: rgba(217, 217, 217, 0.00);
-    text-align: center;
-    color: #858585;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-.radio-titulo {
-    width: 411px;
-    margin-top: 11px;
-}
-#receber-delivery {
-    margin-left: 50px;
-}
-.button-enviar-pedido {
-    width: 160px;
+.button-resumo-compra {
+    width: 100%;
     height: 42px;
     border-radius: 48px;
     border: 2px solid #F2BD57;
@@ -1114,15 +1157,14 @@ button:hover {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 41px;
+    display: block;
 }
-#img-form {
-    width: 293px;
-    height: 559px;
-    transform: rotate(-90deg);
-    border-radius: 0px 0px 0px 28px;
-    margin-left: 486px;
-    margin-bottom: 0;  
+.radio-titulo {
+    width: 411px;
+    margin-top: 11px;
+}
+#receber-delivery {
+    margin-left: 50px;
 }
 /* Delivery */
 .delivery {
@@ -1158,6 +1200,21 @@ button:hover {
     background: rgba(217, 217, 217, 0.00);
     margin-top: 10px;
     margin-bottom: 11px;
+}
+.button-enviar-pedido {
+    width: 160px;
+    height: 42px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 41px;
 }
 .form-delivery img {
     margin-top: 70px;

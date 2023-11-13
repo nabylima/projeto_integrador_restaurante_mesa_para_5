@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./cardapio.css">
     <script src="./cardapio.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Cardápio | Mesa Para 5</title>
 </head>
-
 <body >
     <header class="cabecalho">
         <a href="/index.html">
@@ -374,40 +374,67 @@
         </section>
         <section id="pedidos">
             <h2 class="pedido-titulo">Pedido</h2>
-            <form class="form-pedidos" action="#">
-              <h3 class="confira-pedido">Confira seu pedido!</h3>
-              <h4 class="desc-pedido">Descrição do seu pedido:</h4> 
-              <div class="campos-desc-pedido"> 
-                <div class="desc-pedido-campo"></div>
-                <div class="valor-quantidade">
-                  <div class="conteiner-valor">
-                    <h4 class="valor-unitario">Valor unitário</h4>
-                    <div class="valor-unitario-campo">0</div>
+            <div class="content">
+              <section>
+                <h3 class="confira-pedido">Confira seu pedido!</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Descrição do seu pedido</th>
+                      <th>Preço</th>
+                      <th>Quantidade</th>
+                      <th>Total</th>
+                      <th>-</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="desc-pedido-campo">
+                        <img src="https://picsum.photos/100/120" alt="" />
+                        <div class="info">
+                          <div class="name">Nome do produto</div>
+                          <div class="category">Categoria</div>
+                        </div>
+                      </td>
+                      <td>R$ 15,00</td>
+                      <td>
+                        <div class="conteiner-quantidade">
+                          <button><i class='bx bx-minus'></i></button>
+                          <input class="quantCart" type="number" value="0">
+                          <button><i class='bx bx-plus'></i></button>
+                        </div>
+                      </td>
+                      <td>R$ 30,00</td>
+                      <td>
+                        <button class="remove-pedido"><i class='bx bx-x'></i></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="radio-form">
+                  <h4 class="radio-titulo">Como prefere receber o seu pedido?</h4>
+                  <input type="radio" id="retirar-pedido" name="pedido" value="retirar">
+                  <label for="retirar">Retirar na loja</label>
+                  <input type="radio" id="receber-delivery" name="pedido" value="delivery">
+                  <label for="delivery">Delivery</label>
+                </div>
+              </section>
+              <aside>
+                <div class="resumo-compra">
+                  <div class="resumo-compra-titulo">Resumo da compra</div>
+                  <div class="resumo-descricao">
+                    <div><span>Sub-total</span><span>R$ 30,00</span></div>
+                    <div><span>Quantidade itens</span><span>2</span></div>
                   </div>
-                  <div class="conteiner-quantidade">
-                    <h4 class="quantidade-titulo">Quantidade</h4>
-                    <button id="subtrair"><img src="./img_cardapio/11-Botão -.svg" alt=""></button>
-                    <input id="quantidade-campo" type="" value="0" min="0" placeholder="0"required>
-                    <button id="adicionar"><img src="./img_cardapio/11-Botão +.svg" alt=""></button>
+                  <div class="resumo-total">
+                    <span>Total</span>
+                    <span>R$ 30,00</span>
                   </div>
                 </div>
-              </div>
-              <div class="subtotal-quantidade">
-                <h4 class="quantidade-itens">Quantidade itens:</h4>
-                <p id="quantidade-subtotal-campo">0</p>
-                <h4 class="subtotal">Subtotal</h4>
-                <p id="valor-subtotal-campo">0</p>
-              </div>
-              <div class="radio-form">
-                <h4 class="radio-titulo">Como prefere receber o seu pedido?</h4>
-                <input type="radio" id="retirar-pedido" name="pedido" value="retirar">
-                <label for="retirar">Retirar na loja</label>
-                <input type="radio" id="receber-delivery" name="pedido" value="delivery">
-                <label for="delivery">Delivery</label>
-              </div>
-              <button class="button-enviar-pedido" type="submit">Enviar Pedido</button>
-              <!-- <p>Seu pedido está sendo preparado e em breve estará pronto para ser retirado. AGRADEMOS O SEU PEDIDO!</p> -->
-            </form>
+                <button class="button-resumo-compra" type="submit">Enviar Pedido</button>
+                <!-- <span>Seu pedido está sendo preparado e em breve estará pronto para ser retirado. AGRADEMOS O SEU PEDIDO!</span> -->
+              </aside>
+            </div>
         </section>
         <section id="delivery">
           <h2 class="delivery-titulo">Delivery</h2>
