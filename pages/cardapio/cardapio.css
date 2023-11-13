@@ -1062,8 +1062,18 @@ td {
     border-radius: 20px;
     overflow: hidden;
 }
-.conteiner-quantidade span {
+.conteiner-quantidade input {
     margin: 0 10px;
+    width: 20px;
+    background: transparent;
+    border: 0;
+    text-align: center;
+    color: #4F2F24;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 .conteiner-quantidade button {
     background: transparent;
@@ -1190,6 +1200,21 @@ td {
     background: rgba(217, 217, 217, 0.00);
     margin-top: 10px;
     margin-bottom: 11px;
+}
+.button-enviar-pedido {
+    width: 160px;
+    height: 42px;
+    border-radius: 48px;
+    border: 2px solid #F2BD57;
+    background: #FFFCF7;
+    color: #4F2F24;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 41px;
 }
 .form-delivery img {
     margin-top: 70px;

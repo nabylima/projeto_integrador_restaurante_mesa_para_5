@@ -213,3 +213,4 @@ acompanhamentosCards.appendChild(divAcompanhamentos)
 }
 
 
+
