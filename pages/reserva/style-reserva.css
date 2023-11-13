@@ -18,7 +18,7 @@
 
 .content {
     width: 950px;
-    height: 700px;
+    height: 725px;
     overflow: hidden;
     position: relative;
     align-items: flex-start;
@@ -27,12 +27,12 @@
 
 .content .imagens {
     height: 100%;
-    width: 100%;    
+    width: 100%;
 }
 
 .imagens img {
     height: 100%;
-    width: 100%;  
+    width: 100%;
 }
 
 .btm-sliders {
@@ -40,6 +40,7 @@
     bottom: 20px;
     color: #4F2F24;
     display: flex;
+    flex-wrap: wrap;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -49,13 +50,12 @@
     width: 80px;
     background: #FFFFFF;
     border-radius: 10px;
-    margin:  3px;
+    margin: 3px;
     cursor: pointer;
     text-align: center;
     padding-top: 4px;
+    flex: 5 0 20%;
 }
-
-
 
 .content .slide {
     position: absolute;
@@ -72,10 +72,10 @@
     color: #4F2F24;
 }
 
-.content .slide:hover{
+.content .slide:hover {
     background: #F2BD57;
     border: 2px solid #F2BD57;
-} 
+}
 
 .content .right {
     right: 0;
@@ -113,7 +113,6 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .form-conteudo {
@@ -140,11 +139,12 @@
     transition: all 0.3s ease 0s;
 }
 
-.button-enviar:hover{
+.button-enviar:hover {
     box-shadow: 0px 0px 48px 0px #F2BD57;
 }
 
-.input {
+.input-name {
+    margin-top: 5px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #b1afaf;
@@ -152,19 +152,41 @@
     outline: none;
 }
 
-.input:focus{
+.input-name:focus {
+    box-shadow: inset 0px 0px 2px 2px #F2BD57;
+}
+
+.label-email {
+    padding-top: 10px;
+}
+
+.input-email {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #b1afaf;
+    color: #757575;
+    outline: none;
+}
+
+.label-escolha-da-mesa {
+    padding-top: 10px;
+}
+
+.input-email:focus {
     box-shadow: inset 0px 0px 2px 2px #F2BD57;
 }
 
 .pessoas-telefone {
     display: flex;
+    padding-top: 10px;
 }
 
 .date-time {
     display: flex;
 }
 
-.input-pessoas{
+.input-pessoas {
     padding: 10px;
     border-radius: 10px;
     width: 180px;
@@ -173,8 +195,16 @@
     outline: none;
 }
 
-.input-pessoas:focus{
+.input-pessoas:focus {
     box-shadow: inset 0px 0px 2px 2px #F2BD57;
+}
+
+.radio-form {
+    padding-top: 10px;
+}
+
+.date-time {
+    padding-top: 10px;
 }
 
 .input-telefone {
@@ -186,7 +216,7 @@
     outline: none;
 }
 
-.input-telefone:focus{
+.input-telefone:focus {
     box-shadow: inset 0px 0px 2px 2px #F2BD57;
 }
 
@@ -200,13 +230,13 @@
     outline: none;
 }
 
-.input-date:focus{
+.input-date:focus {
     box-shadow: inset 0px 0px 2px 2px #F2BD57;
 }
 
 .input-time {
     border-radius: 10px;
-    padding: 10px;
+    padding: 9px;
     width: 180px;
     color: #757575;
     border: 1px solid #b1afaf;
@@ -214,11 +244,16 @@
     outline: none;
 }
 
-.input-time:focus{
+.input-time:focus {
     box-shadow: inset 0px 0px 2px 2px #F2BD57;
 }
 
+.label-cupom-de-desconto {
+    padding-top: 10px;
+}
+
 .box-cupom {
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
     border: 1px solid #b1afaf;
@@ -226,7 +261,7 @@
     padding: 10px;
 }
 
-.box-cupom:hover{
+.box-cupom:hover {
     box-shadow: inset 0px 0px 2px 2px #F2BD57;
 }
 
@@ -259,7 +294,7 @@
     border-color: #b1afaf;
 }
 
-.select:focus{
+.select:focus {
     box-shadow: inset 0px 0px 2px 2px #F2BD57;
 }
 
@@ -267,31 +302,210 @@
     padding-bottom: 10px;
 }
 
+.label-mensagem {
+    padding-top: 10px;
+}
+
 .textearea {
+    margin-top: 5px;
     border-radius: 10px;
     padding: 10px;
     color: #757575;
     font-family: 'Roboto';
     resize: none;
-    height: 150px;
+    height: 130px;
     border-color: #b1afaf;
     outline: none;
+    margin-bottom: 10px;
 }
 
-.textearea:focus{
+.textearea:focus {
     box-shadow: inset 0px 0px 2px 2px #F2BD57;
+}
+
+/* popups */
+
+label[for="username"],
+label[for="email"] {
+    position: relative;
+}
+
+.required-popup::after {
+    content: "*Campo Obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #4F2F24;
+    font-size: 12px;
+    padding: .2rem .3rem;
+    border-radius: 10px;
+    width: auto;
+    display: block;
+    background-color: #F2BD57;
 }
 
 /* Erros Form */
 
-.input.error {
+input.error {
+    background-color: #CCBBBB;
     border: solid 2px #992020;
     color: #662020;
 }
 
-.error-text {
+input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+}
+
+#username-helper,
+#username-helper {
+    display: none;
+    font-size: 13px;
+}
+
+#email-helper,
+#email-helper,
+#pessoas-helper,
+#phone-helper,
+#date-helper,
+#time-helper,
+#mesas-helper,
+#cupom-helper {
+    display: none;
+    font-size: 13px;
+}
+
+.error-container {
+    padding-top: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.error-container img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+#username-helper.visible,
+#username-helper.visible {
     display: block;
-    font-size: .7rem;
-    font-weight: 600;
-    color: #992020;
+}
+
+#email-helper.visible,
+#email-helper.visible,
+#pessoas-helper.visible,
+#phone-helper.visible,
+#date-helper.visible,
+#time-helper.visible,
+#mesas-helper.visible,
+#cupom-helper.visible {
+    display: block;
+}
+
+label[for="email"].required-popup::after {
+    top: 0.6rem;
+    /* Ajuste a distância conforme necessário */
+}
+
+/* radio personalizado */
+
+.label-aniversariante {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 23px;
+    margin-right: 10px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.label-aniversariante:before {
+    content: "";
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: transparent;
+    border: 1px solid #F2BD57;
+    transition: background-color 0.3s ease;
+}
+
+input[type=radio]:checked+.label-aniversariante:before {
+    content: "\2022";
+    color: transparent;
+    text-align: center;
+    line-height: 19px;
+    font-size: 30px;
+    background-color: #F2BD57;
+}
+
+
+/* Modal para os Cupons */
+
+#imagemModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+#modalConteudo {
+    position: relative;
+    max-width: 50%;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#modalImagem {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: auto;
+}
+
+#fecharBotao {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #4F2F24;
+    font-size: 20px;
+    z-index: 4;
+}
+
+#circulo {
+    width: 45px;
+    height: 45px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: translate(-50%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circulo:hover {
+    background-color: #F2BD57;
 }
