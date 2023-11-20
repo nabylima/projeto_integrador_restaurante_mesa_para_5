@@ -121,12 +121,11 @@ button:hover {
     line-height: normal;
 }
 .button-delivery {
-    padding: 10px;
     margin-top: 48px;
     border-radius: 48px;
     background: #F2BD57;
     width: 173px;
-    height: 55px;
+    height: 70px;
     border: none;
     font-size: 100%;
     color: #4F2F24;
@@ -138,6 +137,10 @@ button:hover {
     line-height: normal;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .img-hero {
     width: 680px;
@@ -211,13 +214,13 @@ button:hover {
     margin-top: 28px;
     position: relative;
 }
-.imagemEspeciais, .imagemSaladas, .imagemCarnes, .imagemVegetarianaMassas, .imagemAcompanhamentos {
+.imagemProduto {
     width: 155.127px;
     height: 146.962px;
     margin-top: 13.06px;
     margin-left: 69.1px;
 }
-.tituloEspeciais, .tituloSaladas, .tituloCarnes, .tituloVegetarianaMassas, .tituloAcompanhamentos {
+.tituloProduto {
     position: absolute;
     top: 0;
     left: 0;
@@ -236,7 +239,7 @@ button:hover {
     margin-top: 80px;
     margin-left: 81.1px;
 }
-.descEspeciais, .descSaladas, .descCarnes, .descVegetarianaMassas, .descAcompanhamentos {
+.descProduto {
     position: absolute;
     top: 0;
     left: 0;
@@ -245,7 +248,7 @@ button:hover {
     margin-top: 271.96px; 
     margin-left: 5.46px;       
 }
-.precoEspeciais, .precoSaladas, .precoCarnes, .precoVegetarianaMassas, .precoAcompanhamentos {
+.precoProduto {
     position: absolute;
     top: 0;
     left: 0;
@@ -254,7 +257,7 @@ button:hover {
     margin-top: 358.96px; 
     margin-left: 14.1px; 
 }
-.button-especiais, .button-saladas, .button-Carnes, .button-VegetarianaMassas, .button-Acompanhamentos {
+.buttonProduto {
     position: absolute;
     top: 0;
     right: 0;
@@ -307,6 +310,7 @@ button:hover {
     stroke-width: 1px;
     stroke: #000;
 }
+
 .entradas-cards {
     width: 499px;
     height: 297.683px;
@@ -329,7 +333,7 @@ button:hover {
     height: 376.962px;
     position: relative;  
 }
-.conteiner-brusquettas img {
+.imgBrusquettas {
     width: 100%;
 }
 .titulo-bruschetta {
@@ -357,6 +361,16 @@ button:hover {
     font-weight: 700;
     margin-left: 609.12px;
 }
+.imgBrusquettas-01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 172px;
+    margin-top: 191.96px;   
+    margin-left: 70px;   
+}
 .tex-entrada-prato-1 {
     width: 287px;
     margin-top: 191.96px;
@@ -375,6 +389,16 @@ button:hover {
 /* .entrada-prato-2 {
 
 } */
+.imgBrusquettas-02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    border-radius: 172px;
+    margin-top: 227.96px;
+    margin-left: 70px; 
+}
 .tex-entrada-prato-2 {
     width: 371px;
     margin-top: 227.96px;
@@ -393,6 +417,16 @@ button:hover {
 /* .entrada-prato-3 {
 
 } */
+.imgBrusquettas-03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    border-radius: 172px;
+    margin-top: 264.96px;
+    margin-left: 70px; 
+}
 .tex-entrada-prato-3 {
     width: 290px;
     margin-top: 264.96px;
@@ -411,6 +445,17 @@ button:hover {
 /* .entrada-prato-4 {
 
 } */
+.imgBrusquettas-04 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    border-radius: 172px;
+    margin-top: 301.96px;
+    margin-left: 70px; 
+    
+}
 .tex-entrada-prato-4 {
     width: 311px;
     margin-top: 301.96px;
@@ -429,6 +474,16 @@ button:hover {
 /* .entrada-prato-5 {
 
 } */
+.imgBrusquettas-05 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    border-radius: 172px;
+    margin-top: 337.96px;
+    margin-left: 70px;  
+}
 .tex-entrada-prato-5 {
     width: 312px;
     margin-top: 337.96px;
@@ -1043,16 +1098,16 @@ td {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 10px;
-  }
-  .category {
-    color: #98817a;
+}
+#quantCart {
+    color: #4F2F24;
     font-family: 'Roboto';
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-  }
-.conteiner-quantidade {
+    width: 40px;
+    text-align: center;
     height: 30px;
     background: rgba(242, 189, 87, 0.10);
     display: inline-flex;
@@ -1061,30 +1116,15 @@ td {
     min-width: 60px;
     border-radius: 20px;
     overflow: hidden;
+    border: 2px solid #F2BD57;
 }
-.conteiner-quantidade input {
-    margin: 0 10px;
-    width: 20px;
-    background: transparent;
-    border: 0;
-    text-align: center;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    box-shadow: 0px 0px 10px #F2BD57;
+    margin: 0;
 }
-.conteiner-quantidade button {
-    background: transparent;
-    border: 0;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    color: #4F2F24;
-    font-family: 'Roboto';
-    font-size: 18px;
-    height: 100%;
+input[type="number"]{
+    outline:none;
 }
 .remove-pedido {
     width: 30px;
@@ -1173,12 +1213,13 @@ td {
 }
 .form-delivery {
     width: 1280px;
-    height: auto;
-    border-radius: 28px;
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    color: #4F2F24;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 2px 2px 8px #dfdfdf;
+    padding: 49px 67px;
     margin-top: 28.58px;
-    padding: 49px 67px 49px 67px;
     display: flex;
     justify-content: space-between;
 }
@@ -1190,16 +1231,21 @@ td {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 11px;
 }
 .form-delivery input {
     width: 500px;
     height: 51px;
     border-radius: 10px;
-    border: 1px solid #000;
-    background: rgba(217, 217, 217, 0.00);
+    border: 1px solid #b1afaf;
+    color: #757575;
+    outline: none;
+    padding: 10px;
     margin-top: 10px;
-    margin-bottom: 11px;
+}
+.input-num::-webkit-outer-spin-button,
+.input-num::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 .button-enviar-pedido {
     width: 160px;
@@ -1219,4 +1265,102 @@ td {
 .form-delivery img {
     margin-top: 70px;
     margin-right: 50px;
+}
+.input-name:focus {
+    box-shadow: inset 0px 0px 2px 2px #F2BD57;
+}
+.input-telefone:focus {
+    box-shadow: inset 0px 0px 2px 2px #F2BD57;
+}
+.input-email:focus {
+    box-shadow: inset 0px 0px 2px 2px #F2BD57;
+}
+.input-endereco:focus {
+    box-shadow: inset 0px 0px 2px 2px #F2BD57;
+}
+.input-num:focus {
+    box-shadow: inset 0px 0px 2px 2px #F2BD57;
+}
+
+/* popups */
+
+label[for="username"],
+label[for="phone"],
+label[for="email"],
+label[for="endereco"],
+label[for="numero"] {
+    position: relative;
+}
+.required-popup::after {
+    content: "*Campo Obrigatório";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #4F2F24;
+    font-size: 12px;
+    text-align: center;
+    padding: .2rem .3rem;
+    border-radius: 10px;
+    width: 110px;
+    display: block;
+    background-color: #F2BD57;
+    margin-left: 380px;
+}
+
+/* Erros Form */
+
+input.error {
+    background-color: #CCBBBB;
+    color: #662020;
+}
+
+input.correct {
+    background-color: #BBCCBB;
+    color: #206620;
+}
+#username-helper,
+#phone-helper,
+#email-helper,
+#endereco-helper,
+#num-helper {
+    display: none;
+    font-size: 13px;
+}
+.error-container {
+    margin-bottom: 20px;
+    padding-top: 5px;
+    display: flex;
+}
+#username-helper.visible,
+#email-helper.visible,
+#phone-helper.visible,
+#endereco-helper.visible,
+#num-helper.visible {
+    display: block;
+}
+label[for="email"].required-popup::after {
+    top: 0.10rem;
+    /* Ajuste a distância conforme necessário */
+}
+label[for="phone"].required-popup::after {
+    top: 0.20rem;
+    /* Ajuste a distância conforme necessário */
+}
+label[for="endereco"].required-popup::after {
+    top: 0.10rem;
+    /* Ajuste a distância conforme necessário */
+}
+label[for="numero"].required-popup::after {
+    top: 0.50rem;
+    /* Ajuste a distância conforme necessário */
+}
+.pedido-delivery {
+    width: 500px;
+    height: 51px;
+    border-radius: 10px;
+    border: 1px solid #b1afaf;
+    color: #757575;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/style-root.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./cardapio.css">
-    <script src="./cardapio.js" defer></script>
+    <script src="./cardapio.js" async></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Cardápio | Mesa Para 5</title>
 </head>
@@ -38,7 +38,8 @@
                 <strong>Peça já pelo nosso Delivery!</strong>
             </h4>
             <button class="button-delivery">
-              <a  href="#delivery">Delivery</a>
+              <a  href="#pedidos">Faça seu Pedido!</a>
+              <img src="./img_cardapio/1-icone-pedidos.svg" alt="Icone Pedidos">
             </button>
           </div>
           <div class="img-hero">
@@ -128,53 +129,58 @@
            <img id="entradas-titulo-img" src="./img_cardapio/3-titulo-entradas.svg" alt="Entradas"> 
           </div>
           <div class="conteiner-brusquettas">
-            <img src="./img_cardapio/3-brusquettas.svg" alt="Pratos de entradas com cinco brusquettas">
+            <img class="imgBrusquettas" src="./img_cardapio/3-brusquettas.svg" alt="Pratos de entradas com cinco brusquettas">
             <h3 class="titulo-bruschetta">Bruschetta</h3>
             <div class="entrada-prato-1">
-              <h5 class="tex-entrada-prato-1">.Pão, tomate, cebola e pepino</h5>
+              <img class="imgBrusquettas-01 imagemProduto01" src="./img_cardapio/3-brusquettas-01.svg" alt="Imagem pão, tomate, cebola e pepino">
+              <h5 class="tex-entrada-prato-1 tituloProduto01">.Pão, tomate, cebola e pepino</h5>
               <svg xmlns="http://www.w3.org/2000/svg" width="202" height="2" viewBox="0 0 202 2" fill="none">
                 <path d="M0.576782 1.48145L201.423 1.48145" stroke="black"/>
               </svg>
-              <h5 class="preco-entrada-prato-1">R$ 12,00</h5>
-              <button class="button-entrada-prato-1">Adicionar</button>
+              <h5 class="preco-entrada-prato-1 precoProduto01">R$ 12,00</h5>
+              <button class="button-entrada-prato-1 buttonProduto01">Adicionar</button>
             </div>
             <div class="entrada-prato-2">
-              <h5 class="tex-entrada-prato-2">.Pão, carne, tomates seco e ervas finas</h5>
+              <img class="imgBrusquettas-02 imagemProduto01" src="./img_cardapio/3-brusquettas-02.svg" alt="Imagem pão, carne, tomates seco e ervas finas">
+              <h5 class="tex-entrada-prato-2 tituloProduto01">.Pão, carne, tomates seco e ervas finas</h5>
               <svg xmlns="http://www.w3.org/2000/svg" width="119" height="2" viewBox="0 0 119 2" fill="none">
                 <path d="M0.400146 1.22168L118.424 1.22168" stroke="black"/>
               </svg>
-              <h5 class="preco-entrada-prato-2">R$ 12,00</h5>
-              <button class="button-entrada-prato-2">Adicionar</button>
+              <h5 class="preco-entrada-prato-2 precoProduto01">R$ 12,00</h5>
+              <button class="button-entrada-prato-2 buttonProduto01">Adicionar</button>
             </div>
             <div class="entrada-prato-3">
-              <h5 class="tex-entrada-prato-3">.Pão, cogumelos e ervas finas</h5>
+              <img class="imgBrusquettas-03 imagemProduto01" src="./img_cardapio/3-brusquettas-03.svg" alt="Imagem pão, cogumelos e ervas finas">
+              <h5 class="tex-entrada-prato-3 tituloProduto01">.Pão, cogumelos e ervas finas</h5>
               <svg xmlns="http://www.w3.org/2000/svg" width="199" height="2" viewBox="0 0 199 2" fill="none">
                 <path d="M0.509521 0.961914L198.424 0.961914" stroke="black"/>
               </svg>
-              <h5 class="preco-entrada-prato-3">R$ 12,00</h5>
-              <button class="button-entrada-prato-3">Adicionar</button>
+              <h5 class="preco-entrada-prato-3 precoProduto01">R$ 12,00</h5>
+              <button class="button-entrada-prato-3 buttonProduto01">Adicionar</button>
             </div>
             <div class="entrada-prato-4">
-              <h5 class="tex-entrada-prato-4">.Pão, peixe, tomate e ervas finas</h5>
+              <img class="imgBrusquettas-04 imagemProduto01" src="./img_cardapio/3-brusquettas-04.svg" alt="Imagem pão, peixe, tomate e ervas finas">
+              <h5 class="tex-entrada-prato-4 tituloProduto01">.Pão, peixe, tomate e ervas finas</h5>
               <svg xmlns="http://www.w3.org/2000/svg" width="180" height="2" viewBox="0 0 180 2" fill="none">
                 <path d="M0.317993 0.703125L179.424 0.703125" stroke="black"/>
               </svg>
-              <h5 class="preco-entrada-prato-4">R$ 12,00</h5>
-              <button class="button-entrada-prato-4">Adicionar</button>
+              <h5 class="preco-entrada-prato-4 precoProduto01">R$ 12,00</h5>
+              <button class="button-entrada-prato-4 buttonProduto01">Adicionar</button>
             </div>
             <div class="entrada-prato-5">
-              <h5 class="tex-entrada-prato-5">.Tartare: pão, carne, ovo e alface</h5>
+              <img class="imgBrusquettas-05 imagemProduto01" src="./img_cardapio/3-brusquettas-05.svg" alt="Imagem tartare: pão, carne, ovo e alface">
+              <h5 class="tex-entrada-prato-5 tituloProduto01">.Tartare: pão, carne, ovo e alface</h5>
               <svg xmlns="http://www.w3.org/2000/svg" width="170" height="2" viewBox="0 0 170 2" fill="none">
                 <path d="M0.670898 1.44336L169.424 1.44336" stroke="black"/>
               </svg>
-              <h5 class="preco-entrada-prato-5">R$ 12,00</h5>
-              <button class="button-entrada-prato-5">Adicionar</button>
+              <h5 class="preco-entrada-prato-5 precoProduto01">R$ 12,00</h5>
+              <button class="button-entrada-prato-5 buttonProduto01">Adicionar</button>
             </div>
           </div>         
         </section>
         <section id="saladas">
           <h2 class="saladas-titulo">Saladas</h2>
-          <div class="saladas-cards">
+          <div class="saladas-cards" >
           </div>
         </section>
         <section id="carnes">
@@ -182,7 +188,7 @@
           <div class="carnes-cards">
           </div>
         </section>
-        <section id="vegetarianas-massas" >
+        <section id="vegetarianas-massas">
           <div class="vegetarianas-massas-titulos">
             <h2 class="vegetarianas-titulo">Vegetarianas</h2>
             <h2 class="massas-titulo">Massas</h2>
@@ -190,7 +196,7 @@
           <div class="vegetarianas-massas-cards">
           </div>
         </section>
-        <section id="acompanhamentos" >
+        <section id="acompanhamentos">
           <h2 class="acompanhamentos-titulo">Acompanhamentos</h2>
           <div class="acompanhamentos-cards">
           </div>
@@ -377,62 +383,35 @@
             <div class="content">
               <section>
                 <h3 class="confira-pedido">Confira seu pedido!</h3>
-                <table>
+                <table class="cardtable">
                   <thead>
                     <tr>
                       <th>Descrição do seu pedido</th>
                       <th>Preço</th>
                       <th>Quantidade</th>
-                      <th>Total</th>
                       <th>-</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td class="desc-pedido-campo">
-                        <img src="https://picsum.photos/100/120" alt="" />
-                        <div class="info">
-                          <div class="name">Nome do produto</div>
-                          <div class="category">Categoria</div>
-                        </div>
-                      </td>
-                      <td>R$ 15,00</td>
-                      <td>
-                        <div class="conteiner-quantidade">
-                          <button><i class='bx bx-minus'></i></button>
-                          <input class="quantCart" type="number" value="0">
-                          <button><i class='bx bx-plus'></i></button>
-                        </div>
-                      </td>
-                      <td>R$ 30,00</td>
-                      <td>
-                        <button class="remove-pedido"><i class='bx bx-x'></i></button>
-                      </td>
-                    </tr>
                   </tbody>
                 </table>
                 <div class="radio-form">
                   <h4 class="radio-titulo">Como prefere receber o seu pedido?</h4>
-                  <input type="radio" id="retirar-pedido" name="pedido" value="retirar">
-                  <label for="retirar">Retirar na loja</label>
+                  <input type="radio" id="retirar-pedido" name="pedido" value="retirar" checked>
+                  <label class="retirar-delivery" for="retirar">Retirar na loja</label>
                   <input type="radio" id="receber-delivery" name="pedido" value="delivery">
-                  <label for="delivery">Delivery</label>
+                  <label class="retirar-delivery" for="delivery">Delivery</label>
                 </div>
               </section>
               <aside>
                 <div class="resumo-compra">
                   <div class="resumo-compra-titulo">Resumo da compra</div>
-                  <div class="resumo-descricao">
-                    <div><span>Sub-total</span><span>R$ 30,00</span></div>
-                    <div><span>Quantidade itens</span><span>2</span></div>
-                  </div>
                   <div class="resumo-total">
                     <span>Total</span>
-                    <span>R$ 30,00</span>
+                    <span class="valorTotal">R$ 0,00</span>
                   </div>
                 </div>
                 <button class="button-resumo-compra" type="submit">Enviar Pedido</button>
-                <!-- <span>Seu pedido está sendo preparado e em breve estará pronto para ser retirado. AGRADEMOS O SEU PEDIDO!</span> -->
               </aside>
             </div>
         </section>
@@ -440,18 +419,34 @@
           <h2 class="delivery-titulo">Delivery</h2>
           <form class="form-delivery" action="#">
             <div>
-              <label>Nome:</label><br>
-              <input type="text"><br>
-              <label>Telefone:</label><br>
-              <input type="telefone"><br>
-              <label>Email:</label><br>
-              <input type="email"><br>
-              <label>Endereço de entrega:</label><br>
-              <input type="text"><br>
-              <label>Pedido:</label><br>
-              <input type=""><br>
+              <label for="username">Nome:</label><br>
+              <input class="input-name" type="text" id="username" name="username" placeholder="Insira seu nome">
+              <div class="error-container">
+                <p id="username-helper" class="error-text">Por favor introduza seu nome</p>
+              </div>
+              <label for="phone">Telefone:</label><br>
+              <input class="input-telefone" type="tel" id="phone" name="phone" placeholder="119XXXXXXXX">
+              <div class="error-container">
+                <p id="phone-helper" class="error-text">*Por favor insira o nº para contato</p><br>
+              </div>
+              <label for="email" class="label-email">Email:</label><br>
+              <input class="input-email" type="email" id="email" name="email" placeholder="Insira seu e-mail">
+              <div class="error-container">
+                <p id="email-helper" class="error-text">*Por favor introduza seu email</p><br>
+              </div>
+              <label for="endereco">Endereço de entrega:</label><br>
+              <input class="input-endereco" type="text" id="endereco" name="endereco" placeholder="Insira seu endereço">
+              <div class="error-container">
+                <p id="endereco-helper" class="error-text">*Por favor introduza seu endereço</p>
+              </div>
+              <label for="numero">Número:</label><br>
+              <input class="input-num" type="number" id="numero" name="numero" placeholder="Número residência">
+              <div class="error-container">
+                <p id="num-helper" class="error-text">*Por favor introduza seu endereço</p><br>
+              </div>
+              <label class="pedido-delivery-titulo" for="pedido">Pedido:</label><br>
+              <div class="pedido-delivery"></div><br>
               <button class="button-enviar-pedido" type="submit">Enviar Pedido</button>
-              <!-- <p>Seu pedido está sendo preparado e em breve será entregue. AGRADEMOS O SEU PEDIDO!</p> -->
             </div>
             <div>
               <img src="./img_cardapio/12-delivery.png" alt="">
