@@ -1,3 +1,5 @@
+
+// Criação de cards no DOM
 const cardsEspeciais = [
     {
         imagemEspeciais: "./img_cardapio/2-feijoada-tradicional.svg",
@@ -30,12 +32,12 @@ for (let i = 0; i < cardsEspeciais.length; i++) {
 
     divEspeciais.classList.add('conteiner-especiais')
     divEspeciais.innerHTML = `
-    <img class=imagemEspeciais src= ${cardsEspeciais[i].imagemEspeciais}>
-    <h3 class=tituloEspeciais>${cardsEspeciais[i].tituloEspeciais}</h3>
+    <img class=imagemProduto src= ${cardsEspeciais[i].imagemEspeciais}>
+    <h3 class=tituloProduto>${cardsEspeciais[i].tituloEspeciais}</h3>
     <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsEspeciais[i].imagemEstrelas}>
-    <h5 class=descEspeciais>${cardsEspeciais[i].descEspeciais}</h5>
-    <h4 class=precoEspeciais>${cardsEspeciais[i].precoEspeciais}</h4>
-    <button class="button-especiais">Adicionar</button>
+    <h5 class=descProduto>${cardsEspeciais[i].descEspeciais}</h5>
+    <h4 class=precoProduto>${cardsEspeciais[i].precoEspeciais}</h4>
+    <button class="buttonProduto">Adicionar</button>
   `
 especiaisCards.appendChild(divEspeciais)
 }
@@ -73,12 +75,12 @@ for (let i = 0; i < cardsSaladas.length; i++) {
 
     divSaladas.classList.add('conteiner-Saladas')
     divSaladas.innerHTML = `
-    <img class=imagemSaladas src= ${cardsSaladas[i].imagemSaladas}>
-    <h3 class=tituloSaladas>${cardsSaladas[i].tituloSaladas}</h3>
+    <img class=imagemProduto src= ${cardsSaladas[i].imagemSaladas}>
+    <h3 class=tituloProduto>${cardsSaladas[i].tituloSaladas}</h3>
     <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsEspeciais[i].imagemEstrelas}>
-    <h5 class=descSaladas>${cardsSaladas[i].descSaladas}</h5>
-    <h4 class=precoSaladas>${cardsSaladas[i].precoSaladas}</h4>
-    <button class="button-saladas">Adicionar</button>
+    <h5 class=descProduto>${cardsSaladas[i].descSaladas}</h5>
+    <h4 class=precoProduto>${cardsSaladas[i].precoSaladas}</h4>
+    <button class="buttonProduto">Adicionar</button>
   `
 saladasCards.appendChild(divSaladas)
 }
@@ -116,12 +118,12 @@ for (let i = 0; i < cardsCarnes.length; i++) {
 
     divCarnes.classList.add('conteiner-Carnes')
     divCarnes.innerHTML = `
-    <img class=imagemCarnes src= ${cardsCarnes[i].imagemCarnes}>
-    <h3 class=tituloCarnes>${cardsCarnes[i].tituloCarnes}</h3>
+    <img class=imagemProduto src= ${cardsCarnes[i].imagemCarnes}>
+    <h3 class=tituloProduto>${cardsCarnes[i].tituloCarnes}</h3>
     <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsEspeciais[i].imagemEstrelas}>
-    <h5 class=descCarnes>${cardsCarnes[i].descCarnes}</h5>
-    <h4 class=precoCarnes>${cardsCarnes[i].precoCarnes}</h4>
-    <button class="button-Carnes">Adicionar</button>
+    <h5 class=descProduto>${cardsCarnes[i].descCarnes}</h5>
+    <h4 class=precoProduto>${cardsCarnes[i].precoCarnes}</h4>
+    <button class="buttonProduto">Adicionar</button>
   `
 carnesCards.appendChild(divCarnes)
 }
@@ -159,12 +161,12 @@ for (let i = 0; i < cardsVegetarianaMassas.length; i++) {
 
     divVegetarianaMassas.classList.add('conteiner-VegetarianaMassas')
     divVegetarianaMassas.innerHTML = `
-    <img class=imagemVegetarianaMassas src= ${cardsVegetarianaMassas[i].imagemVegetarianaMassas}>
-    <h3 class=tituloVegetarianaMassas>${cardsVegetarianaMassas[i].tituloVegetarianaMassas}</h3>
+    <img class=imagemProduto src= ${cardsVegetarianaMassas[i].imagemVegetarianaMassas}>
+    <h3 class=tituloProduto>${cardsVegetarianaMassas[i].tituloVegetarianaMassas}</h3>
     <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsEspeciais[i].imagemEstrelas}>
-    <h5 class=descVegetarianaMassas>${cardsVegetarianaMassas[i].descVegetarianaMassas}</h5>
-    <h4 class=precoVegetarianaMassas>${cardsVegetarianaMassas[i].precoVegetarianaMassas}</h4>
-    <button class="button-VegetarianaMassas">Adicionar</button>
+    <h5 class=descProduto>${cardsVegetarianaMassas[i].descVegetarianaMassas}</h5>
+    <h4 class=precoProduto>${cardsVegetarianaMassas[i].precoVegetarianaMassas}</h4>
+    <button class="buttonProduto">Adicionar</button>
   `
 vegetarianaMassasCards.appendChild(divVegetarianaMassas)
 }
@@ -202,15 +204,372 @@ for (let i = 0; i < cardsAcompanhamentos.length; i++) {
 
     divAcompanhamentos.classList.add('conteiner-Acompanhamentos')
     divAcompanhamentos.innerHTML = `
-    <img class=imagemAcompanhamentos src= ${cardsAcompanhamentos[i].imagemAcompanhamentos}>
-    <h3 class=tituloAcompanhamentos>${cardsAcompanhamentos[i].tituloAcompanhamentos}</h3>
+    <img class=imagemProduto src= ${cardsAcompanhamentos[i].imagemAcompanhamentos}>
+    <h3 class=tituloProduto>${cardsAcompanhamentos[i].tituloAcompanhamentos}</h3>
     <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsEspeciais[i].imagemEstrelas}>
-    <h5 class=descAcompanhamentos>${cardsAcompanhamentos[i].descAcompanhamentos}</h5>
-    <h4 class=precoAcompanhamentos>${cardsAcompanhamentos[i].precoAcompanhamentos}</h4>
-    <button class="button-Acompanhamentos">Adicionar</button>
+    <h5 class=descProduto>${cardsAcompanhamentos[i].descAcompanhamentos}</h5>
+    <h4 class=precoProduto>${cardsAcompanhamentos[i].precoAcompanhamentos}</h4>
+    <button class="buttonProduto">Adicionar</button>
   `
 acompanhamentosCards.appendChild(divAcompanhamentos)
 }
+
+
+// PEDIDOS
+let inputsCorretos = {
+  username: false,
+  phone: false,
+  email: false,
+  endereco: false,
+  numero: false
+}
+if(document.readyState == "loading") {
+    document.addEventListener("DOMContentLoaded", ready)
+}else {
+    ready()
+}
+
+var totalPedido = "0,00"
+
+function ready() {
+    
+
+     // Preço e quantidade carrinho
+    const qtdProduto = document.getElementsByClassName("quantCart")
+    for (var i = 0; i < qtdProduto.length; i++) {
+        qtdProduto[i].addEventListener("change", updateTotal)
+    }
+
+    // Adicionando produtos no carrinho
+    const cardPedido = document.getElementsByClassName ("buttonProduto")
+    for (let i = 0; i < cardPedido.length; i ++){
+        cardPedido[i].addEventListener("click", addProductCart)
+    }
+
+    // Para botão finalizar compra funcionar
+    const enviarPedido = document.getElementsByClassName("button-resumo-compra")[0]
+    enviarPedido.addEventListener("click", compraFinalizada)
+
+}
+
+// Para botão finalizar compra funcionar
+function compraFinalizada() {
+
+    // Variável para criar números aleatórios: Senha do pedido
+    const numeroAleatorio = Math.floor(Math.random() * 900000) + 100000;
+
+    const pedidoDelivery = document.querySelector("input[name = 'pedido']:checked").value;
+    if (totalPedido === "0,00") {
+        alert("Carrinho de compras vazio!")
+    } else if (pedidoDelivery === "retirar"){
+        alert(
+            `
+                Seu pedido está sendo preparado!
+                Em breve estará pronto para ser retirado.
+                Valor do pedido: R$ ${totalPedido}
+                Senha do pedido: ${numeroAleatorio}
+                AGRADEMOS O SEU PEDIDO!
+            `
+        )
+    }
+
+    document.querySelector(".cardtable tbody").innerHTML = ""
+
+
+    if (pedidoDelivery === "delivery" && totalPedido != '0,00') {
+        location.href = '#delivery';
+        document.querySelector(".pedido-delivery").innerHTML = `R$ ${totalPedido}`
+    }
+    updateTotal()
+    
+    const deliveryFinalizado = document.querySelectorAll('button[type="submit"]')[1]
+    deliveryFinalizado.addEventListener("click", function(e) {
+        const totalPedidoDelivery = document.querySelector(".pedido-delivery").innerText
+        if(inputsCorretos.username == false ||
+            inputsCorretos.phone == false ||
+          inputsCorretos.email == false ||
+          inputsCorretos.endereco == false ||
+          inputsCorretos.numero == false){
+          e.preventDefault()
+          alert('Os campos obrigatório precisam ser preenchidos corretamente')
+        } else {
+            alert(
+            `
+                Seu pedido está sendo preparado!
+                Em breve será entregue.
+                Valor do pedido: R$ ${totalPedidoDelivery}
+                Senha do pedido: ${numeroAleatorio}
+                AGRADEMOS O SEU PEDIDO!
+            `
+            ); 
+        }
+    })
+}
+
+// Adicionando produtos no carrinho
+function addProductCart(event) {
+    const cardButton = event.target
+    const cardInfo = cardButton.parentElement
+    const imgInfo = cardInfo.getElementsByClassName('imagemProduto')[0].src
+    const tituloInfo = cardInfo.getElementsByClassName('tituloProduto')[0].innerHTML
+    const precoInfo =  cardInfo.getElementsByClassName('precoProduto')[0].innerHTML
+
+
+    let novoProduto = document.createElement("tr")
+    novoProduto.classList.add("cardPedido")
+
+    novoProduto.innerHTML = 
+    `
+        <td class="desc-pedido-campo">
+            <img src="${imgInfo}" alt="${tituloInfo}" />
+            <div class="info">
+                <div class="name">${tituloInfo}</div>
+            </div>
+        </td>
+        <td class= "precoPedido">${precoInfo}</td>
+        <td>
+            <input id="quantCart" class="quantCart" type="number" value="1" min="0">
+        </td>
+        <td>
+            <button class="remove-pedido"><i class='bx bx-x'></i></button>
+        </td>
+
+    `
+    const tableBody = document.querySelector(".cardtable tbody")
+    tableBody.append(novoProduto)
+
+    // Para atualizar o total, o remover e a quantidade
+    updateTotal()
+
+    // Remover pedido carrinho
+    const removePedido = document.getElementsByClassName("remove-pedido")
+    for (var i = 0; i < removePedido.length; i++) {
+        removePedido[i].addEventListener("click", removeProduct)
+    }
+    novoProduto.getElementsByClassName("quantCart")[0].addEventListener("change", updateTotal) 
+}
+
+// Remover pedido carrinho função
+function removeProduct(event) {
+    event.target.parentElement.parentElement.parentElement.remove()
+    updateTotal()
+}
+
+ // Preço e quantidade carrinho
+function updateTotal() {
+    totalPedido = 0
+    const cartPedido = document.getElementsByClassName("cardPedido")
+    for (var i = 0; i < cartPedido.length; i ++){
+    
+        const precoPedido = cartPedido[i].getElementsByClassName("precoPedido")[0].innerText.replace("R$", "").replace(",", ".")
+        const qtdPedido = cartPedido[i].getElementsByClassName("quantCart")[0].value
+        
+        totalPedido += precoPedido * qtdPedido
+    }
+    
+    totalPedido = parseFloat(totalPedido).toFixed(2)
+    totalPedido = totalPedido.replace(".", ",")
+    document.querySelectorAll(".resumo-total span")[1].innerText = "R$ " + totalPedido
+}
+
+
+
+//----------------------- DELIVERY ---------------------------//
+
+// ------------------Validação do Username------------------//
+let usernameInput = document.getElementById("username");
+let usernameLabel = document.querySelector('label[for="username"]');
+let usernameHelper = document.getElementById("username-helper")
+
+function mostrarPopup(input, label){
+    // Mostrar popup de campo obrigatório //
+    input.addEventListener("focus", function() {
+        label.classList.add("required-popup")
+    })
+
+    // Ocultar popup de campo obrigatório //
+    input.addEventListener("blur", function() {
+        label.classList.remove("required-popup")
+    })    
+}
+
+mostrarPopup(usernameInput, usernameLabel)
+
+
+// Validar valor do input //
+usernameInput.addEventListener("change", function(e) {
+    let valor = e.target.value
+    if (valor.length < 3) {
+        // Valor incorreto
+        usernameInput.classList.remove("correct");
+        usernameInput.classList.add("error");
+        usernameHelper.innerText = "Seu nome precisa ter 3 ou mais caracteres"
+        usernameHelper.classList.add("visible");
+
+    } else {
+        // Valor correto
+        usernameInput.classList.remove("error");
+        usernameInput.classList.add("correct");
+        usernameHelper.classList.remove("visible");
+        inputsCorretos.username = true
+    }
+})
+usernameInput.addEventListener("blur", function (e) {
+    let valor = e.target.value;
+    if (valor.length === 0) {
+
+       usernameHelper.innerText = "Preencha esse campo";
+       usernameHelper.classList.add("visible");
+    }
+});
+
+
+// ------------------Validação Email------------------//
+let emailInput = document.getElementById("email");
+let emailLabel = document.querySelector('label[for="email"]');
+let emailHelper = document.getElementById("email-helper");
+
+mostrarPopup(emailInput, emailLabel)
+
+// Validar email //
+emailInput.addEventListener("change", function(e){
+    let valor = e.target.value
+    if(valor.includes("@") && valor.includes(".com")){
+        // Email válido
+        emailInput.classList.remove("error");
+        emailInput.classList.add("correct");
+        emailHelper.classList.remove("visible");
+        inputsCorretos.email = true
+    } else {
+        // Email incorreto
+        emailInput.classList.remove("correct");
+        emailInput.classList.add("error");
+        emailHelper.innerText = "Forneça um endereço de e-mail pessoal válido."
+        emailHelper.classList.add("visible");
+    }
+})
+emailInput.addEventListener("blur", function (e) {
+    let valor = e.target.value;
+    if (valor.length === 0) {
+
+       emailHelper.innerText = "Preencha esse campo";
+       emailHelper.classList.add("visible");
+    }
+});
+
+
+// ------------------Validação do Numero do Telefone------------------//
+let phoneInput = document.getElementById("phone")
+let phoneLabel = document.querySelector('label[for="phone"]')
+let phoneHelper = document.getElementById("phone-helper")
+
+mostrarPopup(phoneInput, phoneLabel)
+
+phoneInput.addEventListener("input", function (e) {
+    let phoneNumber = e.target.value;
+
+    let phoneRegex = /^\d{11}$/;
+
+    if (phoneRegex.test(phoneNumber)) {
+        // Celular Valido válido
+        phoneInput.classList.remove("error");
+        phoneInput.classList.add("correct");
+        phoneHelper.classList.remove("visible");
+        inputsCorretos.phone = true
+    } else {
+        // Celular incorreto
+        phoneInput.classList.remove("correct");
+        phoneInput.classList.add("error");
+        phoneHelper.innerText = "O número de telefone que introduziu é inválido.";
+        phoneHelper.classList.add("visible");
+    }
+});
+phoneInput.addEventListener("blur", function (e) {
+    let valor = e.target.value;
+    if (valor.length === 0) {
+
+        phoneHelper.innerText = "Preencha esse campo";
+        phoneHelper.classList.add("visible");
+    }
+});
+
+
+// ------------------Validação do endereço------------------//
+let enderecoInput = document.getElementById("endereco");
+let enderecoLabel = document.querySelector('label[for="endereco"]');
+let enderecoHelper = document.getElementById("endereco-helper");
+
+mostrarPopup(enderecoInput, enderecoLabel)
+
+// Validar valor do input 
+enderecoInput.addEventListener("input", function (e) {
+    let valor = e.target.value;
+    if (valor.length < 3) {
+        // Valor incorreto
+        enderecoInput.classList.remove("correct");
+        enderecoInput.classList.add("error");
+        enderecoHelper.innerText = "Insira um endereço válido"
+        enderecoHelper.classList.add("visible");
+    } else {
+        // Valor Correto
+        enderecoInput.classList.remove("error");
+        enderecoInput.classList.add("correct");
+        enderecoHelper.classList.remove("visible");
+        inputsCorretos.endereco = true
+    }
+})
+enderecoInput.addEventListener("blur", function (e) {
+    let valor = e.target.value;
+    if (valor.length === 0) {
+
+        enderecoHelper.innerText = "Preencha esse campo";
+        enderecoHelper.classList.add("visible");
+    }
+});
+
+
+// ------------------Validação do número------------------//
+let numeroInput = document.getElementById("numero");
+let numeroLabel = document.querySelector('label[for="numero"]');
+let numeroHelper = document.getElementById("num-helper");
+
+mostrarPopup(numeroInput, numeroLabel)
+
+// Validar valor do input 
+numeroInput.addEventListener("input", function (e) {
+   
+    let valor = e.target.value;
+    if (valor.length < 2) {
+        // Valor incorreto
+        numeroInput.classList.remove("correct");
+        numeroInput.classList.add("error");
+        numeroHelper.innerText = "Insira um endereço válido"
+        numeroHelper.classList.add("visible");
+    } else {
+        // Valor Correto
+        numeroInput.classList.remove("error");
+        numeroInput.classList.add("correct");
+        numeroHelper.classList.remove("visible");
+        inputsCorretos.numero = true
+        
+    }
+})
+
+numeroInput.addEventListener("blur", function (e) {
+    let valor = e.target.value;
+    if (valor.length === 0) {
+
+       numeroHelper.innerText = "Preencha esse campo";
+       numeroHelper.classList.add("visible");
+    }
+});
+
+
+// ---------- EVITAR ENVIO DO FORMULÁRIO ---------- //
+
+// A lógica está dentro da função comprafinalizada()
+
+
 
 
 
