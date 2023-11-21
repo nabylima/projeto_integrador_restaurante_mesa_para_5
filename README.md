@@ -21,7 +21,6 @@ JS
 Figma
 
 Grupo: 03
-
 Para iniciar nosso projeto integrador nos formamos um grupo pelo whatsapp. Já participamos de três reuniões, uma pelo meet e duas pelo discord. Na reunião realizada no sábado abrimos um documento e um integrante foi digitando o código html e outros foram descrevendo as partes das páginas. Pesquisando imagens, elaborando textos.
 
 # Link do layout
