@@ -1,5 +1,5 @@
 
-// Criação de cards no DOM
+//----------------------- CRIAÇÃO DE CARDS NO DOM ---------------------------//
 const cardsEspeciais = [
     {
         imagemEspeciais: "./img_cardapio/2-feijoada-tradicional.svg",
@@ -43,6 +43,47 @@ especiaisCards.appendChild(divEspeciais)
 }
 
 
+const cardsEntradas = [
+    {
+        imagemEntradas: "./img_cardapio/3-brusquettas-01.svg",
+        tituloEntradas: "Bruschetta 1",
+        descEntradas: "Pão, tomate, cebola e pepino",
+        precoEntradas: "R$ 8,00",
+    },
+    {
+        imagemEntradas: "./img_cardapio/3-brusquettas-02.svg",
+        tituloEntradas: "Bruschetta 2",
+        descEntradas: "Pão, carne, tomates seco e ervas finas",
+        precoEntradas: "R$ 12,00",
+    },
+    {
+        imagemEntradas: "./img_cardapio/3-brusquettas-03.svg",
+        tituloEntradas: "Bruschetta 3",
+        descEntradas: "Pão, peixe, tomate e ervas finas",
+        precoEntradas: "R$ 12,00",
+    },
+    {
+        imagemEntradas: "./img_cardapio/3-brusquettas-04.svg",
+        tituloEntradas: "Tartare",
+        descEntradas: "Pão, carne, ovo e alface",
+        precoEntradas: "R$ 12,00",
+    },
+]
+const entradasCards = document.querySelector('.entradas-cards')
+for (let i = 0; i < cardsEntradas.length; i++) {
+    const divEntradas = document.createElement('div')
+
+    divEntradas.classList.add('conteiner-Entradas')
+    divEntradas.innerHTML = `
+    <img class=imagemProduto src= ${cardsEntradas[i].imagemEntradas}>
+    <h3 class=tituloProduto>${cardsEntradas[i].tituloEntradas}</h3>
+    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsEntradas[i].imagemEstrelas}>
+    <h5 class=descProduto>${cardsEntradas[i].descEntradas}</h5>
+    <h4 class=precoProduto>${cardsEntradas[i].precoEntradas}</h4>
+    <button class="buttonProduto">Adicionar</button>
+  `
+entradasCards.appendChild(divEntradas)
+}
 const cardsSaladas = [
     {
         imagemSaladas: "./img_cardapio/4-salada-verde.svg",
@@ -77,7 +118,7 @@ for (let i = 0; i < cardsSaladas.length; i++) {
     divSaladas.innerHTML = `
     <img class=imagemProduto src= ${cardsSaladas[i].imagemSaladas}>
     <h3 class=tituloProduto>${cardsSaladas[i].tituloSaladas}</h3>
-    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsEspeciais[i].imagemEstrelas}>
+    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsSaladas[i].imagemEstrelas}>
     <h5 class=descProduto>${cardsSaladas[i].descSaladas}</h5>
     <h4 class=precoProduto>${cardsSaladas[i].precoSaladas}</h4>
     <button class="buttonProduto">Adicionar</button>
@@ -120,7 +161,7 @@ for (let i = 0; i < cardsCarnes.length; i++) {
     divCarnes.innerHTML = `
     <img class=imagemProduto src= ${cardsCarnes[i].imagemCarnes}>
     <h3 class=tituloProduto>${cardsCarnes[i].tituloCarnes}</h3>
-    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsEspeciais[i].imagemEstrelas}>
+    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsCarnes[i].imagemEstrelas}>
     <h5 class=descProduto>${cardsCarnes[i].descCarnes}</h5>
     <h4 class=precoProduto>${cardsCarnes[i].precoCarnes}</h4>
     <button class="buttonProduto">Adicionar</button>
@@ -163,7 +204,7 @@ for (let i = 0; i < cardsVegetarianaMassas.length; i++) {
     divVegetarianaMassas.innerHTML = `
     <img class=imagemProduto src= ${cardsVegetarianaMassas[i].imagemVegetarianaMassas}>
     <h3 class=tituloProduto>${cardsVegetarianaMassas[i].tituloVegetarianaMassas}</h3>
-    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsEspeciais[i].imagemEstrelas}>
+    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsVegetarianaMassas[i].imagemEstrelas}>
     <h5 class=descProduto>${cardsVegetarianaMassas[i].descVegetarianaMassas}</h5>
     <h4 class=precoProduto>${cardsVegetarianaMassas[i].precoVegetarianaMassas}</h4>
     <button class="buttonProduto">Adicionar</button>
@@ -206,7 +247,7 @@ for (let i = 0; i < cardsAcompanhamentos.length; i++) {
     divAcompanhamentos.innerHTML = `
     <img class=imagemProduto src= ${cardsAcompanhamentos[i].imagemAcompanhamentos}>
     <h3 class=tituloProduto>${cardsAcompanhamentos[i].tituloAcompanhamentos}</h3>
-    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsEspeciais[i].imagemEstrelas}>
+    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsAcompanhamentos[i].imagemEstrelas}>
     <h5 class=descProduto>${cardsAcompanhamentos[i].descAcompanhamentos}</h5>
     <h4 class=precoProduto>${cardsAcompanhamentos[i].precoAcompanhamentos}</h4>
     <button class="buttonProduto">Adicionar</button>
@@ -215,7 +256,184 @@ acompanhamentosCards.appendChild(divAcompanhamentos)
 }
 
 
-// PEDIDOS
+const cardsSobremesas = [
+    {
+        imagemSobremesas: "./img_cardapio/8-sobremesas-01.svg",
+        tituloSobremesas: "Mousse de chocolate",
+        descSobremesas: "Mousse de chocolate",
+        precoSobremesas: "R$ 12,00",
+    },
+    {
+        imagemSobremesas: "./img_cardapio/8-sobremesas-02.svg",
+        tituloSobremesas: "Cupcake de morango",
+        descSobremesas: "Cupcake de morango",
+        precoSobremesas: "R$ 12,00",
+    },
+    {
+        imagemSobremesas: "./img_cardapio/8-sobremesas-03.svg",
+        tituloSobremesas: "Cupcake de chocolate ",
+        descSobremesas: "Cupcake de chocolate e menta",
+        precoSobremesas: "R$ 12,00",
+    },
+    {
+        imagemSobremesas: "./img_cardapio/8-sobremesas-04.svg",
+        tituloSobremesas: "Milk-shake de chocolate",
+        descSobremesas: "Milk-shake de chocolate",
+        precoSobremesas: "R$ 12,00",
+    },
+]
+const sobremesasCards = document.querySelector('.sobremesas-cards')
+for (let i = 0; i < cardsSobremesas.length; i++) {
+    const divSobremesas = document.createElement('div')
+
+    divSobremesas.classList.add('conteiner-sobremesas')
+    divSobremesas.innerHTML = `
+    <img class=imagemProduto src= ${cardsSobremesas[i].imagemSobremesas}>
+    <h3 class=tituloProduto>${cardsSobremesas[i].tituloSobremesas}</h3>
+    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsSobremesas[i].imagemEstrelas}>
+    <h5 class=descProduto>${cardsSobremesas[i].descSobremesas}</h5>
+    <h4 class=precoProduto>${cardsSobremesas[i].precoSobremesas}</h4>
+    <button class="buttonProduto">Adicionar</button>
+  `
+sobremesasCards.appendChild(divSobremesas)
+}
+
+
+const cardsLanches = [
+    {
+        imagemLanches: "./img_cardapio/8-lanches-01.svg",
+        tituloLanches: "Sanduíche natural ",
+        descLanches: "Sanduíche natural vegetariano ",
+        precoLanches: "R$ 15,00",
+    },
+    {
+        imagemLanches: "./img_cardapio/8-lanches-02.svg",
+        tituloLanches: "Hambúrguer",
+        descLanches: "Hambúrguer de carne bovina",
+        precoLanches: "R$ 15,00",
+    },
+    {
+        imagemLanches: "./img_cardapio/8-lanches-03.svg",
+        tituloLanches: "Porção de asinhas",
+        descLanches: "Porção de asinhas empanadas",
+        precoLanches: "R$ 15,00",
+    },
+    {
+        imagemLanches: "./img_cardapio/8-lanches-04.svg",
+        tituloLanches: "Porção de calabresa",
+        descLanches: "Porção de calabresa com batatas",
+        precoLanches: "R$ 15,00",
+    },
+]
+const lanchesCards = document.querySelector('.lanches-cards')
+for (let i = 0; i < cardsLanches.length; i++) {
+    const divLanches = document.createElement('div')
+
+    divLanches.classList.add('conteiner-lanches')
+    divLanches.innerHTML = `
+    <img class=imagemProduto src= ${cardsLanches[i].imagemLanches}>
+    <h3 class=tituloProduto>${cardsLanches[i].tituloLanches}</h3>
+    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsLanches[i].imagemEstrelas}>
+    <h5 class=descProduto>${cardsLanches[i].descLanches}</h5>
+    <h4 class=precoProduto>${cardsLanches[i].precoLanches}</h4>
+    <button class="buttonProduto">Adicionar</button>
+  `
+lanchesCards.appendChild(divLanches)
+}
+
+
+const cardsBebidas = [
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-01.svg",
+        tituloBebidas: "Suco de laranja",
+        descBebidas: "Suco de laranja",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-02.svg",
+        tituloBebidas: "Suco de manga",
+        descBebidas: "Suco de manga",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-03.svg",
+        tituloBebidas: "Suco de melancia",
+        descBebidas: "Suco de melancia",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-04.svg",
+        tituloBebidas: "Suco de limão",
+        descBebidas: "Suco de limão",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-05.svg",
+        tituloBebidas: "Coca-Cola",
+        descBebidas: "Refrigerante lata 250ml",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-05.svg",
+        tituloBebidas: "Sprite",
+        descBebidas: "Refrigerante lata 250ml",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-05.svg",
+        tituloBebidas: "Fanta laranja",
+        descBebidas: "Refrigerante lata 250ml",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-05.svg",
+        tituloBebidas: "Guaraná Antártica",
+        descBebidas: "Refrigerante lata 250ml",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-06.svg",
+        tituloBebidas: "Coca-Cola",
+        descBebidas: "Refrigerante 2L",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-07.svg",
+        tituloBebidas: "Sprite",
+        descBebidas: "Refrigerante 2L",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-08.svg",
+        tituloBebidas: "Fanta laranja",
+        descBebidas: "Refrigerante 2L",
+        precoBebidas: "R$ 8,00",
+    },
+    {
+        imagemBebidas: "./img_cardapio/9-bebidas-09.svg",
+        tituloBebidas: "Guaraná Antártica",
+        descBebidas: "Refrigerante 2L",
+        precoBebidas: "R$ 8,00",
+    },
+]
+const bebidasCards = document.querySelector('.bebidas-cards')
+for (let i = 0; i < cardsBebidas.length; i++) {
+    const divBebidas = document.createElement('div')
+
+    divBebidas.classList.add('conteiner-bebidas')
+    divBebidas.innerHTML = `
+    <img class=imagemProduto src= ${cardsBebidas[i].imagemBebidas}>
+    <h3 class=tituloProduto>${cardsBebidas[i].tituloBebidas}</h3>
+    <img class=imagemEstrelas src= "./img_cardapio/13-Estrelas.svg" ${cardsBebidas[i].imagemEstrelas}>
+    <h5 class=descProduto>${cardsBebidas[i].descBebidas}</h5>
+    <h4 class=precoProduto>${cardsBebidas[i].precoBebidas}</h4>
+    <button class="buttonProduto">Adicionar</button>
+  `
+bebidasCards.appendChild(divBebidas)
+}
+
+//----------------------- PEDIDOS ---------------------------//
+
 let inputsCorretos = {
   username: false,
   phone: false,
@@ -282,6 +500,7 @@ function compraFinalizada() {
     }
     updateTotal()
     
+    // Validação e envio do formulário
     const deliveryFinalizado = document.querySelectorAll('button[type="submit"]')[1]
     deliveryFinalizado.addEventListener("click", function(e) {
         const totalPedidoDelivery = document.querySelector(".pedido-delivery").innerText
@@ -372,8 +591,6 @@ function updateTotal() {
     document.querySelectorAll(".resumo-total span")[1].innerText = "R$ " + totalPedido
 }
 
-
-
 //----------------------- DELIVERY ---------------------------//
 
 // ------------------Validação do Username------------------//
@@ -458,7 +675,7 @@ emailInput.addEventListener("blur", function (e) {
 });
 
 
-// ------------------Validação do Numero do Telefone------------------//
+// -----------Validação do Numero do Telefone------------//
 let phoneInput = document.getElementById("phone")
 let phoneLabel = document.querySelector('label[for="phone"]')
 let phoneHelper = document.getElementById("phone-helper")
@@ -494,7 +711,7 @@ phoneInput.addEventListener("blur", function (e) {
 });
 
 
-// ------------------Validação do endereço------------------//
+// ---------------Validação do endereço----------------//
 let enderecoInput = document.getElementById("endereco");
 let enderecoLabel = document.querySelector('label[for="endereco"]');
 let enderecoHelper = document.getElementById("endereco-helper");
@@ -528,7 +745,7 @@ enderecoInput.addEventListener("blur", function (e) {
 });
 
 
-// ------------------Validação do número------------------//
+// ----------------Validação do número----------------//
 let numeroInput = document.getElementById("numero");
 let numeroLabel = document.querySelector('label[for="numero"]');
 let numeroHelper = document.getElementById("num-helper");
@@ -563,13 +780,3 @@ numeroInput.addEventListener("blur", function (e) {
        numeroHelper.classList.add("visible");
     }
 });
-
-
-// ---------- EVITAR ENVIO DO FORMULÁRIO ---------- //
-
-// A lógica está dentro da função comprafinalizada()
-
-
-
-
-
