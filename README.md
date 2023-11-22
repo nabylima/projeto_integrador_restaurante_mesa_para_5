@@ -1,4 +1,4 @@
-![](C:\Users\Naby\Desktop\Projeto Integrador\projeto_integrador_restaurante_mesa_para_5\img\header-git-restaurante-mesa-para-5.png)
+![](/img/header-git-restaurante-mesa-para-5.png)
 
 ## |Descrição|
 
