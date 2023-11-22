@@ -38,14 +38,20 @@ https://www.figma.com/file/QFt7KIPpKStWVHc5QK9Zq8/Site%2FRestaurante?type=design
 
 [Vercel](https://vercel.com/)
 
+## |Sistema de Banco de Dados de parte do projeto integrador|
+
+Sistema de Banco de Dados de parte do projeto integrador. Modelagem conceitual no brmodel online. Foram criadas quatro tabelas: cliente, cardápio, pedido, entregador no site sqlonline PostgreSQL. Parte do projeto integrador restaurante mesa para cinco. Inserido dados e realizadas algumas operações.
+
+https://drive.google.com/drive/folders/11kGEfZJa6rY-Smtm-LZ8lwYcl_qpfUJ6?usp=sharing
+
 ## |Desenvolvedores|
 
-Alano Santos
+[Alano Santos]
 
-Quezia Santos
+[Quezia Santos](https://www.linkedin.com/in/quezia-guilhermina-4a0122190/)
 
 [Naby Lima](https://www.linkedin.com/in/naby-lima/)
 
 [Tassia Ferreira](https://www.linkedin.com/in/tassia-a-ferreira?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
-Wesley Jesus
+[Wesley Jesus](https://www.linkedin.com/in/wesley-gabriel-a61853299/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
