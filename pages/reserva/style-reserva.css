@@ -8,6 +8,17 @@
     padding-top: 20px;
 }
 
+.feedback {
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+::selection {
+    background: #F2BD57;
+}
+
 .conteiner-conteudo {
     display: flex;
     align-items: flex-start;
@@ -504,4 +515,116 @@ input[type=radio]:checked+.label-aniversariante:before {
 
 #circulo:hover {
     background-color: #F2BD57;
+}
+
+/* Comentários */
+
+.container-comentatios {
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-comentatios .box {
+    background: #F8F2E9;
+    width: calc(33% - 10px);
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px #dfdfdf;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-comentatios .box::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100%;
+    background-image: url(/img/comentarios-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: slideAnimation 10s linear infinite;
+    z-index: 0;
+}
+
+.container-comentatios .box > * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes slideAnimation {
+    0%, 100% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+}
+
+.container-comentatios .box i.quote {
+    font-size: 20px;
+    color: #4F2F24;
+}
+
+.box .content-comentarios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.box .info .name-comentarios {
+    font-weight: 600;
+    font-size: 17px;
+    color: #4F2F24;
+}
+
+.box .info .job {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4F2F24;
+}
+
+.box .info .stars {
+    margin-top: 2px;
+}
+
+.stars i {
+    color: #F2BD57;
+}
+
+.box .content-comentarios .imagem-cliente {
+    height: 75px;
+    width: 75px;
+    padding: 3px;
+    background: #4F2F24;
+    border-radius: 50%;
+}
+
+.content-comentarios .imagem-cliente img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 1045px) {
+    .container-comentatios .box {
+        width: calc(50% - 10px);
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 702px) {
+    .container-comentatios .box {
+        width: 100%;
+    }
 }
