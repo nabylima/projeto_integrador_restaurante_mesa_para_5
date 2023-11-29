@@ -37,6 +37,7 @@ https://www.figma.com/file/QFt7KIPpKStWVHc5QK9Zq8/Site%2FRestaurante?type=design
 ## |Deploy|
 
 [Vercel](https://vercel.com/)
+Link: https://projeto-integrador-restaurante-mesa-para-5.vercel.app/
 
 ## |Sistema de Banco de Dados de parte do projeto integrador|
 
